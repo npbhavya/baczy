@@ -1,0 +1,4 @@
+include sphaehost/sphaehost.LICENSE
+include sphaehost/sphaehost.CITATION
+include sphaehost/sphaehost.VERSION
+recursive-include sphaehost *
