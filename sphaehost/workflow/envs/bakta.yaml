@@ -1,0 +1,6 @@
+name: bakta
+channels:
+    - defaults
+    - bioconda
+dependencies:
+    - bakta>=1.9.3

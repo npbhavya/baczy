@@ -42,10 +42,8 @@ def common_options(func):
     Define common command line args here, and include them with the @common_options decorator below.
     """
     options = [
-        click.option(
-            "--output",
-            help="Output directory",
-            type=click.Path(dir_okay=True, writable=True, readable=True),
+        click.option("--output",help="Output directory",
+            type=click.Path(),
             default="sphaehost.out",
             show_default=True,
         ),
@@ -112,7 +110,7 @@ def common_options(func):
 )
 @click.version_option(get_version(), "-v", "--version", is_flag=True)
 def cli():
-    """Bacterial asembly and annotation [D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D
+    """Bacterial asembly and annotation
     \b
     For more options, run:
     sphaehost command --help"""
@@ -138,6 +136,22 @@ Available targets:
     print_targets   List available targets
 """
 
+@click.command(epilog=help_msg_extra, context_settings=dict(help_option_names=["-h", "--help"], ignore_unknown_options=True))
+@common_options
+def install(**kwargs):
+    """The install function for databases"""
+    merge_config = {
+        'sphae': {
+            'args': kwargs   
+        }
+    }
+
+    # run!
+    run_snakemake(
+        snakefile_path=snake_base(os.path.join('workflow', 'install.smk')),
+        merge_config=merge_config,
+        **kwargs
+    )
 
 @click.command(
     epilog=help_msg_extra,
@@ -146,6 +160,8 @@ Available targets:
     ),
 )
 @click.option("--input", "_input", help="Input file/directory", type=str, required=True)
+@click.option('--sequencing', help="sequencing method", default='paired', show_default=True,
+                type=click.Choice(['paired', 'longread']))
 @common_options
 def run(**kwargs):
     """Run sphaehost"""
@@ -166,7 +182,7 @@ def run(**kwargs):
 
 
 @click.command()
-@common_options
+@click.option('--configfile', default='config.yaml', help='Copy template config to file', show_default=True)
 def config(configfile, system_config, **kwargs):
     """Copy the system default config file"""
     copy_config(configfile, system_config=system_config)
@@ -179,6 +195,7 @@ def citation(**kwargs):
 
 
 cli.add_command(run)
+cli.add_command(install)
 cli.add_command(config)
 cli.add_command(citation)
 

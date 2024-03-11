@@ -43,7 +43,7 @@ setup(
     packages=find_packages(),
     url="",
     python_requires=">=3.9",
-    description="Bacterial asembly and annotation [D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D",
+    description="Bacterial asembly and annotation",
     long_description=get_description(),
     long_description_content_type="text/markdown",
     version=get_version(),

@@ -1,0 +1,6 @@
+name: phispy
+channels:
+    - defaults
+    - bioconda
+dependencies:
+    - phispy>=4.2.21
