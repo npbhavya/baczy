@@ -1,8 +1,0 @@
-name: megahit
-channels:
-    - defaults
-    - bioconda
-dependencies:
-    - megahit>=1.2.9
-    - bandage>=0.8.1
-    - mesa-libgl-cos6-x86_64 
