@@ -1,5 +1,6 @@
 databases
 sphaehost.egg-info
+sphaehost/workflow/conda
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
