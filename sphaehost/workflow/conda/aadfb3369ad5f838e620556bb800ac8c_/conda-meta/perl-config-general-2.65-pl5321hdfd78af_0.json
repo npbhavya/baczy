@@ -1,0 +1,94 @@
+{
+  "build": "pl5321hdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5",
+    "perl-pathtools"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-config-general-2.65-pl5321hdfd78af_0",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/Config/General/.packlist",
+    "lib/perl5/site_perl/Config/General.pm",
+    "lib/perl5/site_perl/Config/General/Extended.pm",
+    "lib/perl5/site_perl/Config/General/Interpolated.pm",
+    "man/man3/Config::General.3",
+    "man/man3/Config::General::Extended.3",
+    "man/man3/Config::General::Interpolated.3"
+  ],
+  "fn": "perl-config-general-2.65-pl5321hdfd78af_0.tar.bz2",
+  "license": "perl_5",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-config-general-2.65-pl5321hdfd78af_0",
+    "type": 1
+  },
+  "md5": "5db2b44f2e5ae5a525805860088f89d4",
+  "name": "perl-config-general",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-config-general-2.65-pl5321hdfd78af_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Config/General/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-config-general_1649753390942/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "4e8c6f8dc5f6c7f4d52928858fe7322f7814cb4815cc9fbd412a6a549f949a0c",
+        "sha256_in_prefix": "4962db1c40c7aa1d6bcb4ae23ec9aad2a0af4d87834e07fe322590d454ff3461",
+        "size_in_bytes": 2168
+      },
+      {
+        "_path": "lib/perl5/site_perl/Config/General.pm",
+        "path_type": "hardlink",
+        "sha256": "e338479a89d940d6b6b8d1d6ee04805d18ee518bd772c8b22f6d7dbe7156c391",
+        "sha256_in_prefix": "e338479a89d940d6b6b8d1d6ee04805d18ee518bd772c8b22f6d7dbe7156c391",
+        "size_in_bytes": 86209
+      },
+      {
+        "_path": "lib/perl5/site_perl/Config/General/Extended.pm",
+        "path_type": "hardlink",
+        "sha256": "d003cc019fb5591d1362f5f3c8f4117b2386a17b173efbef72af1215dd9a412c",
+        "sha256_in_prefix": "d003cc019fb5591d1362f5f3c8f4117b2386a17b173efbef72af1215dd9a412c",
+        "size_in_bytes": 14980
+      },
+      {
+        "_path": "lib/perl5/site_perl/Config/General/Interpolated.pm",
+        "path_type": "hardlink",
+        "sha256": "d39c4e584f34e6169e162bf6ee2b0806b076092417a49cd8da31a0099de43129",
+        "sha256_in_prefix": "d39c4e584f34e6169e162bf6ee2b0806b076092417a49cd8da31a0099de43129",
+        "size_in_bytes": 9033
+      },
+      {
+        "_path": "man/man3/Config::General.3",
+        "path_type": "hardlink",
+        "sha256": "2afc5a44b813227e32a391a40d587badaffb93ee2e76e7800fe9558b699a09fb",
+        "sha256_in_prefix": "2afc5a44b813227e32a391a40d587badaffb93ee2e76e7800fe9558b699a09fb",
+        "size_in_bytes": 46723
+      },
+      {
+        "_path": "man/man3/Config::General::Extended.3",
+        "path_type": "hardlink",
+        "sha256": "07475f79a4da7b1dfe87e0dd9092ba7a7619260645246d0ab6a0714fde392386",
+        "sha256_in_prefix": "07475f79a4da7b1dfe87e0dd9092ba7a7619260645246d0ab6a0714fde392386",
+        "size_in_bytes": 10836
+      },
+      {
+        "_path": "man/man3/Config::General::Interpolated.3",
+        "path_type": "hardlink",
+        "sha256": "4effb440f2f5cf097dbc214f3e58365b22ac1586ca4e838f0a0834ad4498e5a4",
+        "sha256_in_prefix": "4effb440f2f5cf097dbc214f3e58365b22ac1586ca4e838f0a0834ad4498e5a4",
+        "size_in_bytes": 5970
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e949fb8a1ff5ecb02dd31911e1f3131e0b3c3493927fdeba5651607f20973d6b",
+  "size": 44558,
+  "subdir": "noarch",
+  "timestamp": 1649753516996,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-config-general-2.65-pl5321hdfd78af_0.tar.bz2",
+  "version": "2.65"
+}

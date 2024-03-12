@@ -1,0 +1,76 @@
+{
+  "build": "pl5321h694c41f_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<5.33.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-inc-latest-0.500-pl5321h694c41f_0",
+  "files": [
+    "lib/perl5/5.32/vendor_perl/auto/inc/latest/.packlist",
+    "lib/perl5/vendor_perl/inc/latest.pm",
+    "lib/perl5/vendor_perl/inc/latest/private.pm",
+    "man/man3/inc::latest.3",
+    "man/man3/inc::latest::private.3"
+  ],
+  "fn": "perl-inc-latest-0.500-pl5321h694c41f_0.conda",
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-inc-latest-0.500-pl5321h694c41f_0",
+    "type": 1
+  },
+  "md5": "ea9e9feb1bcdf9a8a83ff4e90cc4f274",
+  "name": "perl-inc-latest",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-inc-latest-0.500-pl5321h694c41f_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/vendor_perl/auto/inc/latest/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/perl-inc-latest_1669240365903/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "dcb384b4e970f634cd42ea5a2017fb156067640c5d9948082fb9f03f97379515",
+        "sha256_in_prefix": "44ea36e94ce4812f425103722e45e0c5a14e1ff7f81403ebd3775b9a507df569",
+        "size_in_bytes": 1394
+      },
+      {
+        "_path": "lib/perl5/vendor_perl/inc/latest.pm",
+        "path_type": "hardlink",
+        "sha256": "14f86f697a2e8277a506b3de07d9d82333521c915d2310dc737cc8204e3a7276",
+        "sha256_in_prefix": "14f86f697a2e8277a506b3de07d9d82333521c915d2310dc737cc8204e3a7276",
+        "size_in_bytes": 9698
+      },
+      {
+        "_path": "lib/perl5/vendor_perl/inc/latest/private.pm",
+        "path_type": "hardlink",
+        "sha256": "07a035b9348687a9dc4302fd28a0c1be8becafe14f53a05abf5da756f719a040",
+        "sha256_in_prefix": "07a035b9348687a9dc4302fd28a0c1be8becafe14f53a05abf5da756f719a040",
+        "size_in_bytes": 3086
+      },
+      {
+        "_path": "man/man3/inc::latest.3",
+        "path_type": "hardlink",
+        "sha256": "9ef2e111c218171e276a342fc467503d6fc3269c071bc3bca62754021089ae8b",
+        "sha256_in_prefix": "9ef2e111c218171e276a342fc467503d6fc3269c071bc3bca62754021089ae8b",
+        "size_in_bytes": 9528
+      },
+      {
+        "_path": "man/man3/inc::latest::private.3",
+        "path_type": "hardlink",
+        "sha256": "519ec6015f0fdbb252f80b1931bc72351bf4dbc30168e7195ceb734c941851ed",
+        "sha256_in_prefix": "519ec6015f0fdbb252f80b1931bc72351bf4dbc30168e7195ceb734c941851ed",
+        "size_in_bytes": 2842
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "f4f48b244255f335f63bd4d6166232d5a78464215e440be9c5685f5c7fbc5a4b",
+  "size": 16072,
+  "subdir": "osx-64",
+  "timestamp": 1669240520417,
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/perl-inc-latest-0.500-pl5321h694c41f_0.conda",
+  "version": "0.500"
+}

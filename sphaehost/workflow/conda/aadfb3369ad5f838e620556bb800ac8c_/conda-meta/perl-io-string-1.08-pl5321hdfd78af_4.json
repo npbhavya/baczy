@@ -1,0 +1,61 @@
+{
+  "build": "pl5321hdfd78af_4",
+  "build_number": 4,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-io-string-1.08-pl5321hdfd78af_4",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/IO/String/.packlist",
+    "lib/perl5/site_perl/IO/String.pm",
+    "man/man3/IO::String.3"
+  ],
+  "fn": "perl-io-string-1.08-pl5321hdfd78af_4.tar.bz2",
+  "license": "unknown",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-io-string-1.08-pl5321hdfd78af_4",
+    "type": 1
+  },
+  "md5": "c34ef3559a60db3eeddbdd10718906a4",
+  "name": "perl-io-string",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-io-string-1.08-pl5321hdfd78af_4.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/IO/String/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-io-string_1642491101588/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "48bc5d4d17f5757e6d1b5aaa6b404128cbce9e2fc26db87a7423edb2ec239ac1",
+        "sha256_in_prefix": "1bcdfd5765b303293ffcec05fac270536a20bc6d0f80a5d9bc56e1726bdfb99e",
+        "size_in_bytes": 672
+      },
+      {
+        "_path": "lib/perl5/site_perl/IO/String.pm",
+        "path_type": "hardlink",
+        "sha256": "1ab64bb458aff8fa644ef8b89ffdf28b7e76f647ecc130032ee25df4b95ca993",
+        "sha256_in_prefix": "1ab64bb458aff8fa644ef8b89ffdf28b7e76f647ecc130032ee25df4b95ca993",
+        "size_in_bytes": 11461
+      },
+      {
+        "_path": "man/man3/IO::String.3",
+        "path_type": "hardlink",
+        "sha256": "2283e6dadcb2e84f992c4af395121fec274d63c991be2be53bb7850aa502d5e2",
+        "sha256_in_prefix": "2283e6dadcb2e84f992c4af395121fec274d63c991be2be53bb7850aa502d5e2",
+        "size_in_bytes": 7080
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "bc9664b4a2cf4444210f31039855de9e56c044ede35a98e0d647969994730dd7",
+  "size": 12423,
+  "subdir": "noarch",
+  "timestamp": 1642491318305,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-io-string-1.08-pl5321hdfd78af_4.tar.bz2",
+  "version": "1.08"
+}

@@ -1,0 +1,41 @@
+{
+  "build": "h85dcccf_4",
+  "build_number": 4,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=15.0.7"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/piler-cr-1.06-h85dcccf_4",
+  "files": [
+    "bin/pilercr"
+  ],
+  "fn": "piler-cr-1.06-h85dcccf_4.tar.bz2",
+  "license": "Public Domain",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/piler-cr-1.06-h85dcccf_4",
+    "type": 1
+  },
+  "md5": "379093600e7c6b09c21f0e6afe069159",
+  "name": "piler-cr",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/piler-cr-1.06-h85dcccf_4.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/pilercr",
+        "path_type": "hardlink",
+        "sha256": "1661938b6fd0911b1fc30f137914ab03277231105f0deb6336f7058a69024b83",
+        "sha256_in_prefix": "1661938b6fd0911b1fc30f137914ab03277231105f0deb6336f7058a69024b83",
+        "size_in_bytes": 282080
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "d3a61d3d0f76e76e7430e7c0e78497295d74f6dab02dcbd475d4c3122d85199a",
+  "size": 142447,
+  "subdir": "osx-64",
+  "timestamp": 1684418357824,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/piler-cr-1.06-h85dcccf_4.tar.bz2",
+  "version": "1.06"
+}

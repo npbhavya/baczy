@@ -1,0 +1,77 @@
+{
+  "build": "h6c40b1e_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "libunistring >=0,<1.0a0"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/libidn2-2.3.4-h6c40b1e_0",
+  "files": [
+    "bin/idn2",
+    "include/idn2.h",
+    "lib/libidn2.0.dylib",
+    "lib/libidn2.dylib",
+    "lib/pkgconfig/libidn2.pc"
+  ],
+  "fn": "libidn2-2.3.4-h6c40b1e_0.conda",
+  "legacy_bz2_md5": "73d2eab3cf92050a0281239abf43ebd5",
+  "legacy_bz2_size": 174622,
+  "license": "LGPL-2.0 AND LGPL-3.0-or-later AND GPL-3.0-or-later",
+  "license_family": "OTHER",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/libidn2-2.3.4-h6c40b1e_0",
+    "type": 1
+  },
+  "md5": "304613f6ce02853761e9c01017334897",
+  "name": "libidn2",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/libidn2-2.3.4-h6c40b1e_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/idn2",
+        "path_type": "hardlink",
+        "sha256": "804a1ab223bfda46c12adcf244ec19158d7539e43b3ac29e375e950666f35cf4",
+        "sha256_in_prefix": "804a1ab223bfda46c12adcf244ec19158d7539e43b3ac29e375e950666f35cf4",
+        "size_in_bytes": 37928
+      },
+      {
+        "_path": "include/idn2.h",
+        "path_type": "hardlink",
+        "sha256": "0e0be80e6e5993dfd78ea528edcfc0f6ac13a67e0548de993b16b5cd2855bd35",
+        "sha256_in_prefix": "0e0be80e6e5993dfd78ea528edcfc0f6ac13a67e0548de993b16b5cd2855bd35",
+        "size_in_bytes": 14185
+      },
+      {
+        "_path": "lib/libidn2.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "ce6da5d42773d089408ba9113f9c1ecfaeded70a0938f7f8d6309b00f01a3efc",
+        "sha256_in_prefix": "ce6da5d42773d089408ba9113f9c1ecfaeded70a0938f7f8d6309b00f01a3efc",
+        "size_in_bytes": 365560
+      },
+      {
+        "_path": "lib/libidn2.dylib",
+        "path_type": "softlink",
+        "sha256": "ce6da5d42773d089408ba9113f9c1ecfaeded70a0938f7f8d6309b00f01a3efc",
+        "size_in_bytes": 365560
+      },
+      {
+        "_path": "lib/pkgconfig/libidn2.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b9dfrgpd1s/croot/libidn2_1684519348940/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "e6faad8c6f26aea289f5fba8ac2c64df36147e07f248d73b9e3bc1c499af419e",
+        "sha256_in_prefix": "9ac1629e8a1cac499246dbd25bb6df8df2c6e168cc27657b7a8d762abef1ee9a",
+        "size_in_bytes": 1029
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "0174e1a0552b999608c383c6639f7ab311bb9a70fa6154e69b08e3cadebf104e",
+  "size": 160491,
+  "subdir": "osx-64",
+  "timestamp": 1684519423955,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/libidn2-2.3.4-h6c40b1e_0.conda",
+  "version": "2.3.4"
+}

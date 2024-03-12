@@ -1,0 +1,22 @@
+sphaehost:
+  args:
+    _input: sample-data/illumina
+    conda_prefix: /Users/bhavyapapudeshi/Downloads/sphaehost/sphaehost/workflow/conda
+    configfile: example/config.yaml
+    db_dir: null
+    input: null
+    log: example/sphaehost.log
+    output: example
+    profile: null
+    sequencing: paired
+    snake_args:
+    - --conda-frontend
+    - conda
+    snake_default:
+    - --printshellcmds
+    - --nolock
+    - --show-failed-logs
+    system_config: /Users/bhavyapapudeshi/Downloads/sphaehost/sphaehost/config/config.yaml
+    temp_dir: null
+    threads: 1
+    use_conda: true

@@ -1,0 +1,45 @@
+{
+  "build": "h94ec1f5_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "blast",
+    "libcxx >=15.0.7",
+    "libzlib >=1.2.13,<1.3.0a0",
+    "zlib"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/diamond-2.1.8-h94ec1f5_0",
+  "files": [
+    "bin/diamond"
+  ],
+  "fn": "diamond-2.1.8-h94ec1f5_0.tar.bz2",
+  "license": "GPL-3.0",
+  "license_family": "GPL",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/diamond-2.1.8-h94ec1f5_0",
+    "type": 1
+  },
+  "md5": "2e394526d9ac391dd456dc51a239a18c",
+  "name": "diamond",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/diamond-2.1.8-h94ec1f5_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/diamond",
+        "path_type": "hardlink",
+        "sha256": "adf8e2ed29bd8a7331f3418b41a1ed19d70a6705eeab90cd98c8ae722328e2ce",
+        "sha256_in_prefix": "adf8e2ed29bd8a7331f3418b41a1ed19d70a6705eeab90cd98c8ae722328e2ce",
+        "size_in_bytes": 10244728
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "dd7a84fdbdd2a4a35a6490d67c6ecf26e01029ca46016af5cc5e2489a47a7e31",
+  "size": 3079466,
+  "subdir": "osx-64",
+  "timestamp": 1688076820354,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/diamond-2.1.8-h94ec1f5_0.tar.bz2",
+  "version": "2.1.8"
+}

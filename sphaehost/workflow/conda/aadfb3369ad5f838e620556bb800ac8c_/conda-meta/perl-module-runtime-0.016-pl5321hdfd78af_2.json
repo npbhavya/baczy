@@ -1,0 +1,61 @@
+{
+  "build": "pl5321hdfd78af_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-module-runtime-0.016-pl5321hdfd78af_2",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/Module/Runtime/.packlist",
+    "lib/perl5/site_perl/Module/Runtime.pm",
+    "man/man3/Module::Runtime.3"
+  ],
+  "fn": "perl-module-runtime-0.016-pl5321hdfd78af_2.tar.bz2",
+  "license": "perl_5",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-module-runtime-0.016-pl5321hdfd78af_2",
+    "type": 1
+  },
+  "md5": "a7afc95ab783e0b7c3671fa5e4de9b2f",
+  "name": "perl-module-runtime",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-module-runtime-0.016-pl5321hdfd78af_2.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Module/Runtime/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-module-runtime_1643011190051/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "a8f7664c374458953076f05f74b2496992af2820c9ca95d8da59d97ff3a3f39f",
+        "sha256_in_prefix": "8f845235204b7fe925bd3dbed1574761347ad9a41945a4b956c67dcdadff1e62",
+        "size_in_bytes": 692
+      },
+      {
+        "_path": "lib/perl5/site_perl/Module/Runtime.pm",
+        "path_type": "hardlink",
+        "sha256": "40a2264baee46070db9a84e0bfb6a15b349619661ec3cafd40b7a45695774763",
+        "sha256_in_prefix": "40a2264baee46070db9a84e0bfb6a15b349619661ec3cafd40b7a45695774763",
+        "size_in_bytes": 17521
+      },
+      {
+        "_path": "man/man3/Module::Runtime.3",
+        "path_type": "hardlink",
+        "sha256": "d9df12aca7c57d63aece116fa527417e98972177aeae95d0c8ad40a3e462f955",
+        "sha256_in_prefix": "d9df12aca7c57d63aece116fa527417e98972177aeae95d0c8ad40a3e462f955",
+        "size_in_bytes": 19000
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "257fc49f021c7e640b89e3bd282b4498d057dced6e4485049153606bc187de52",
+  "size": 17114,
+  "subdir": "noarch",
+  "timestamp": 1643011410105,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-module-runtime-0.016-pl5321hdfd78af_2.tar.bz2",
+  "version": "0.016"
+}

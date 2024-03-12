@@ -1,0 +1,61 @@
+{
+  "build": "pl5321hdfd78af_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-math-bezier-0.01-pl5321hdfd78af_2",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/Math/Bezier/.packlist",
+    "lib/perl5/site_perl/Math/Bezier.pm",
+    "man/man3/Math::Bezier.3"
+  ],
+  "fn": "perl-math-bezier-0.01-pl5321hdfd78af_2.tar.bz2",
+  "license": "unknown",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-math-bezier-0.01-pl5321hdfd78af_2",
+    "type": 1
+  },
+  "md5": "5cef53ed1e5305e7e1aa9b5459e00611",
+  "name": "perl-math-bezier",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-math-bezier-0.01-pl5321hdfd78af_2.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Math/Bezier/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-math-bezier_1642423852076/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "ee6fd006b55f676476bd9cb897b3131b8b542f6bbd4ca0673fb6a7a9de61c52c",
+        "sha256_in_prefix": "a4c57ea38b34c7e82f419f980a079760c87030be79da44c16cccfc3747bde671",
+        "size_in_bytes": 680
+      },
+      {
+        "_path": "lib/perl5/site_perl/Math/Bezier.pm",
+        "path_type": "hardlink",
+        "sha256": "24dc57b2a883a035bde3a0522e24c6a3ad6320f2fc7b2cdaeb19c66ddd03b438",
+        "sha256_in_prefix": "24dc57b2a883a035bde3a0522e24c6a3ad6320f2fc7b2cdaeb19c66ddd03b438",
+        "size_in_bytes": 5804
+      },
+      {
+        "_path": "man/man3/Math::Bezier.3",
+        "path_type": "hardlink",
+        "sha256": "d1e7e471d5a5b9faaa0bfbf95b466f4d0a693f84c46ce9fb73dbbaa7c646f595",
+        "sha256_in_prefix": "d1e7e471d5a5b9faaa0bfbf95b466f4d0a693f84c46ce9fb73dbbaa7c646f595",
+        "size_in_bytes": 5182
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "423527bcf0b518b0504ea06cb07aabfababbe841511b1b3d340edcb04bf1f11b",
+  "size": 10237,
+  "subdir": "noarch",
+  "timestamp": 1642424049667,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-math-bezier-0.01-pl5321hdfd78af_2.tar.bz2",
+  "version": "0.01"
+}

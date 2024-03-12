@@ -1,0 +1,44 @@
+{
+  "build": "h5712c04_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "isa-l",
+    "libcxx >=15.0.7",
+    "libdeflate >=1.18,<1.20.0a0"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/fastp-0.23.4-h5712c04_2",
+  "files": [
+    "bin/fastp"
+  ],
+  "fn": "fastp-0.23.4-h5712c04_2.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/fastp-0.23.4-h5712c04_2",
+    "type": 1
+  },
+  "md5": "20a11aa6c7e99292faa9a4af8f9a157a",
+  "name": "fastp",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/fastp-0.23.4-h5712c04_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/fastp",
+        "path_type": "hardlink",
+        "sha256": "f813896bbcc827eb926e5bd23ceaf71ef6c5109b9eb116c9ceb7bf838862401b",
+        "sha256_in_prefix": "f813896bbcc827eb926e5bd23ceaf71ef6c5109b9eb116c9ceb7bf838862401b",
+        "size_in_bytes": 715896
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "fastp[version='>=0.23.4']",
+  "sha256": "c2198cd59cef3fe3a4997d9a08538030735c60fcda21d953f7132956f232c63f",
+  "size": 243077,
+  "subdir": "osx-64",
+  "timestamp": 1688108991035,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/fastp-0.23.4-h5712c04_2.tar.bz2",
+  "version": "0.23.4"
+}

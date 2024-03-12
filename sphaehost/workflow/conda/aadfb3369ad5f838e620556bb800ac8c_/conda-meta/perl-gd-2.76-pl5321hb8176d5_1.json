@@ -1,0 +1,177 @@
+{
+  "build": "pl5321hb8176d5_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=12.0.1",
+    "libgd >=2.3.3,<2.4.0a0",
+    "libzlib >=1.2.11,<1.3.0a0",
+    "perl >=5.32.1,<5.33.0a0 *_perl5",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-gd-2.76-pl5321hb8176d5_1",
+  "files": [
+    "bin/bdf2gdfont.pl",
+    "lib/perl5/5.32/site_perl/GD.pm",
+    "lib/perl5/5.32/site_perl/GD/Group.pm",
+    "lib/perl5/5.32/site_perl/GD/Image.pm",
+    "lib/perl5/5.32/site_perl/GD/Polygon.pm",
+    "lib/perl5/5.32/site_perl/GD/Polyline.pm",
+    "lib/perl5/5.32/site_perl/GD/Simple.pm",
+    "lib/perl5/5.32/site_perl/auto/GD/.packlist",
+    "lib/perl5/5.32/site_perl/auto/GD/GD.bundle",
+    "lib/perl5/5.32/site_perl/auto/GD/autosplit.ix",
+    "man/man1/bdf2gdfont.pl.1",
+    "man/man3/GD.3",
+    "man/man3/GD::Group.3",
+    "man/man3/GD::Image.3",
+    "man/man3/GD::Polygon.3",
+    "man/man3/GD::Polyline.3",
+    "man/man3/GD::Simple.3"
+  ],
+  "fn": "perl-gd-2.76-pl5321hb8176d5_1.tar.bz2",
+  "license": "perl_5",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-gd-2.76-pl5321hb8176d5_1",
+    "type": 1
+  },
+  "md5": "39166a085e34d5d8d978c1196a77ab2e",
+  "name": "perl-gd",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-gd-2.76-pl5321hb8176d5_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/bdf2gdfont.pl",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/bioconda/conda-bld/perl-gd_1645770308476/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "33cf6d7db4d7459eb1e30f02fd283861a53528f406f6641216db378d6f496c66",
+        "sha256_in_prefix": "b6eee54d03ccc5396429789eeb2b478b37f1908c4c0817c9accfeebb8b059d77",
+        "size_in_bytes": 4940
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/GD.pm",
+        "path_type": "hardlink",
+        "sha256": "687ed090605a2580d4a956db15a9babb758b26238a20ff4234f088862e7be863",
+        "sha256_in_prefix": "687ed090605a2580d4a956db15a9babb758b26238a20ff4234f088862e7be863",
+        "size_in_bytes": 70936
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/GD/Group.pm",
+        "path_type": "hardlink",
+        "sha256": "a5c8d2674d72cc5fccb54aedf6665b524a52ce86b3852e6767fbde74141274fc",
+        "sha256_in_prefix": "a5c8d2674d72cc5fccb54aedf6665b524a52ce86b3852e6767fbde74141274fc",
+        "size_in_bytes": 671
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/GD/Image.pm",
+        "path_type": "hardlink",
+        "sha256": "faabca355f4a8181bc02967026045aa7456ae55921ef06fad6160babe0755f2a",
+        "sha256_in_prefix": "faabca355f4a8181bc02967026045aa7456ae55921ef06fad6160babe0755f2a",
+        "size_in_bytes": 5974
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/GD/Polygon.pm",
+        "path_type": "hardlink",
+        "sha256": "3144437f39c3b1b8cb1d266d0370bd51c260a9d5e14824619ef6889f34ee7935",
+        "sha256_in_prefix": "3144437f39c3b1b8cb1d266d0370bd51c260a9d5e14824619ef6889f34ee7935",
+        "size_in_bytes": 4346
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/GD/Polyline.pm",
+        "path_type": "hardlink",
+        "sha256": "3ebe1c4f9224d59a632186445f127729debcf2d36833c0a2a6ea7c22d6e83802",
+        "sha256_in_prefix": "3ebe1c4f9224d59a632186445f127729debcf2d36833c0a2a6ea7c22d6e83802",
+        "size_in_bytes": 22292
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/GD/Simple.pm",
+        "path_type": "hardlink",
+        "sha256": "19cf8d16f8f430eef4b22af0d1deeed9ed0ae31b10dc82dd2bf628d058378a7a",
+        "sha256_in_prefix": "19cf8d16f8f430eef4b22af0d1deeed9ed0ae31b10dc82dd2bf628d058378a7a",
+        "size_in_bytes": 37898
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/GD/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/bioconda/conda-bld/perl-gd_1645770308476/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "7c1bd99737dcb3b1b6c5fab3be18399f2a7c8135f37601c9e3218622f40bf4b2",
+        "sha256_in_prefix": "dbb4cacdffc45022afe6ff6042b56979776b6681817db370dbebf97c179e79d9",
+        "size_in_bytes": 5210
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/GD/GD.bundle",
+        "path_type": "hardlink",
+        "sha256": "f021947b91270b9e3972902f1737d6e94b1f2180379ab65d2b256dc271b6f22e",
+        "sha256_in_prefix": "f021947b91270b9e3972902f1737d6e94b1f2180379ab65d2b256dc271b6f22e",
+        "size_in_bytes": 161720
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/GD/autosplit.ix",
+        "path_type": "hardlink",
+        "sha256": "fe6097e49bf7e9be1d8f5c40bec6c46379425d26713d82f8d30ebdd3acbd2776",
+        "sha256_in_prefix": "fe6097e49bf7e9be1d8f5c40bec6c46379425d26713d82f8d30ebdd3acbd2776",
+        "size_in_bytes": 81
+      },
+      {
+        "_path": "man/man1/bdf2gdfont.pl.1",
+        "path_type": "hardlink",
+        "sha256": "76b5a7aa65ff9ca0d41d4a3b21781ab6ef44e2c174797e3329cb91f5a9393faa",
+        "sha256_in_prefix": "76b5a7aa65ff9ca0d41d4a3b21781ab6ef44e2c174797e3329cb91f5a9393faa",
+        "size_in_bytes": 4392
+      },
+      {
+        "_path": "man/man3/GD.3",
+        "path_type": "hardlink",
+        "sha256": "6b3ffbc28ab125b652196b50e07e33db30b42322023c9f71110553022aca3d55",
+        "sha256_in_prefix": "6b3ffbc28ab125b652196b50e07e33db30b42322023c9f71110553022aca3d55",
+        "size_in_bytes": 90022
+      },
+      {
+        "_path": "man/man3/GD::Group.3",
+        "path_type": "hardlink",
+        "sha256": "292f8241e0a584ec559a94c3705af56443a98a7b76e3f71bf06f198dba5bc1e4",
+        "sha256_in_prefix": "292f8241e0a584ec559a94c3705af56443a98a7b76e3f71bf06f198dba5bc1e4",
+        "size_in_bytes": 2379
+      },
+      {
+        "_path": "man/man3/GD::Image.3",
+        "path_type": "hardlink",
+        "sha256": "63c4569b84816113320ecabc92fa614abed51ba34501e6c519b8768fe8f277fa",
+        "sha256_in_prefix": "63c4569b84816113320ecabc92fa614abed51ba34501e6c519b8768fe8f277fa",
+        "size_in_bytes": 3263
+      },
+      {
+        "_path": "man/man3/GD::Polygon.3",
+        "path_type": "hardlink",
+        "sha256": "7ac75f04a3f7814e69c1d3ff2ae028149e88d9954d6d42a8912cdaeebf7c70e4",
+        "sha256_in_prefix": "7ac75f04a3f7814e69c1d3ff2ae028149e88d9954d6d42a8912cdaeebf7c70e4",
+        "size_in_bytes": 2842
+      },
+      {
+        "_path": "man/man3/GD::Polyline.3",
+        "path_type": "hardlink",
+        "sha256": "a339a60da381c1ef5440a575f433b0796fd01eee1a05954608bec0a89292814d",
+        "sha256_in_prefix": "a339a60da381c1ef5440a575f433b0796fd01eee1a05954608bec0a89292814d",
+        "size_in_bytes": 16038
+      },
+      {
+        "_path": "man/man3/GD::Simple.3",
+        "path_type": "hardlink",
+        "sha256": "9d70acf0cb5783512ded49241bb38c2abc648c1cb79d113b557d180b6bd4db34",
+        "sha256_in_prefix": "9d70acf0cb5783512ded49241bb38c2abc648c1cb79d113b557d180b6bd4db34",
+        "size_in_bytes": 22703
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "9b086cf4748c203d63e8f7ff5332e5b2fd013f41d21aa2ff785d66693d5547be",
+  "size": 114942,
+  "subdir": "osx-64",
+  "timestamp": 1645770604052,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/perl-gd-2.76-pl5321hb8176d5_1.tar.bz2",
+  "version": "2.76"
+}

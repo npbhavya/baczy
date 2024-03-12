@@ -1,0 +1,145 @@
+{
+  "build": "py310h2ec42d9_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "isa-l >=2.30",
+    "pbzip2",
+    "pigz",
+    "python >=3.10,<3.11.0a0",
+    "python-isal >=1.0.1",
+    "python_abi 3.10.* *_cp310",
+    "zstandard",
+    "zstd"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/xopen-1.7.0-py310h2ec42d9_3",
+  "files": [
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/LICENSE",
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/METADATA",
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/RECORD",
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/WHEEL",
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/xopen-1.7.0.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/xopen/__init__.py",
+    "lib/python3.10/site-packages/xopen/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/xopen/__pycache__/_version.cpython-310.pyc",
+    "lib/python3.10/site-packages/xopen/_version.py",
+    "lib/python3.10/site-packages/xopen/py.typed"
+  ],
+  "fn": "xopen-1.7.0-py310h2ec42d9_3.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/xopen-1.7.0-py310h2ec42d9_3",
+    "type": 1
+  },
+  "md5": "0ca3041f7dbddc913f04b5298959167d",
+  "name": "xopen",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/xopen-1.7.0-py310h2ec42d9_3.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "13760ce1aa595334d1753ce64717b9cf05f97b8190176019d8e97c4e6bcc6a40",
+        "sha256_in_prefix": "13760ce1aa595334d1753ce64717b9cf05f97b8190176019d8e97c4e6bcc6a40",
+        "size_in_bytes": 1065
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "cd79ba964a9e42d20d36dffd0f6d3cfe964a880ae55be6b56752b5817d2a4088",
+        "sha256_in_prefix": "cd79ba964a9e42d20d36dffd0f6d3cfe964a880ae55be6b56752b5817d2a4088",
+        "size_in_bytes": 10355
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "67797cfa3f50e5728a519da8d971c44c9e0e3e1ff30abac9dc645b2481068014",
+        "sha256_in_prefix": "67797cfa3f50e5728a519da8d971c44c9e0e3e1ff30abac9dc645b2481068014",
+        "size_in_bytes": 957
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c903798389a0e00c9b4639208bef72cb889010589b1909a5cfbf0f8a4e4eafe0",
+        "sha256_in_prefix": "c903798389a0e00c9b4639208bef72cb889010589b1909a5cfbf0f8a4e4eafe0",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "d7e5459d01d33360cd311346f0bbb332fb24bf8be8ec9d97a89199c43492caca",
+        "sha256_in_prefix": "d7e5459d01d33360cd311346f0bbb332fb24bf8be8ec9d97a89199c43492caca",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen-1.7.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "4a9343354e5e37342549a21e7c84dfdf589a1ca1ddca62142a5eb47a2a4fe1e2",
+        "sha256_in_prefix": "4a9343354e5e37342549a21e7c84dfdf589a1ca1ddca62142a5eb47a2a4fe1e2",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0e01d0bedee304f5beae6d287dc54a636de2c6a077ab66a00bca6f0e24d270a7",
+        "sha256_in_prefix": "0e01d0bedee304f5beae6d287dc54a636de2c6a077ab66a00bca6f0e24d270a7",
+        "size_in_bytes": 41530
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "f62a47fb10b20fc1fb6c4f1d6a2bf0e92dad6099639b67cfbb4ad602aafe03f4",
+        "sha256_in_prefix": "f62a47fb10b20fc1fb6c4f1d6a2bf0e92dad6099639b67cfbb4ad602aafe03f4",
+        "size_in_bytes": 31401
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen/__pycache__/_version.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "31d8de5b49e7aa90b3750f7dbeae170e65dd7c53a660dfde1e43501abe310ff6",
+        "sha256_in_prefix": "31d8de5b49e7aa90b3750f7dbeae170e65dd7c53a660dfde1e43501abe310ff6",
+        "size_in_bytes": 303
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen/_version.py",
+        "path_type": "hardlink",
+        "sha256": "38f7cfa856641685c52d9b10f256d1224b5c2a7680bc463e8435d597f77e5b58",
+        "sha256_in_prefix": "38f7cfa856641685c52d9b10f256d1224b5c2a7680bc463e8435d597f77e5b58",
+        "size_in_bytes": 274
+      },
+      {
+        "_path": "lib/python3.10/site-packages/xopen/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "87c5713c40752b947a2fac883ac37bf3849b9f6ae6bda6cafb6a42381e8200f2",
+  "size": 31210,
+  "subdir": "osx-64",
+  "timestamp": 1695808124379,
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/xopen-1.7.0-py310h2ec42d9_3.conda",
+  "version": "1.7.0"
+}

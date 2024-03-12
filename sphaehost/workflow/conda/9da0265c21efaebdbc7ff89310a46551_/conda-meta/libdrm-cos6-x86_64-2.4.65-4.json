@@ -1,0 +1,246 @@
+{
+  "build": "4",
+  "build_number": 4,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/libdrm-cos6-x86_64-2.4.65-4",
+  "files": [
+    "x86_64-conda-linux-gnu/sysroot/lib/udev/rules.d/91-drm-modeset.rules",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2.4.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1.0.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/share/doc/libdrm-2.4.65/README",
+    "x86_64-conda_cos6-linux-gnu/sysroot/lib/udev/rules.d/91-drm-modeset.rules",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm.so.2",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm.so.2.4.0",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1.0.0",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1.0.0",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1.0.0",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2.0.0",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1.0.1",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/share/doc/libdrm-2.4.65/README"
+  ],
+  "fn": "libdrm-cos6-x86_64-2.4.65-4.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/libdrm-cos6-x86_64-2.4.65-4",
+    "type": 1
+  },
+  "md5": "ac2f574801b46421fe217a254bac8d5e",
+  "name": "libdrm-cos6-x86_64",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/libdrm-cos6-x86_64-2.4.65-4.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/lib/udev/rules.d/91-drm-modeset.rules",
+        "path_type": "hardlink",
+        "sha256": "f29c28ca7fd5de46ff3382015b994ba3873519170e793925b5bc4e39c45486bb",
+        "sha256_in_prefix": "f29c28ca7fd5de46ff3382015b994ba3873519170e793925b5bc4e39c45486bb",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2",
+        "path_type": "softlink",
+        "sha256": "04405024275687224fe42bd44e28de41162ff88b4bca2497e73990710ac139a8",
+        "size_in_bytes": 58424
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm.so.2.4.0",
+        "path_type": "hardlink",
+        "sha256": "04405024275687224fe42bd44e28de41162ff88b4bca2497e73990710ac139a8",
+        "sha256_in_prefix": "04405024275687224fe42bd44e28de41162ff88b4bca2497e73990710ac139a8",
+        "size_in_bytes": 58424
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1",
+        "path_type": "softlink",
+        "sha256": "a353b42ab5555ac94c98ed441d7848b5d201be89f698750425dd6f4dec3103e2",
+        "size_in_bytes": 30904
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "a353b42ab5555ac94c98ed441d7848b5d201be89f698750425dd6f4dec3103e2",
+        "sha256_in_prefix": "a353b42ab5555ac94c98ed441d7848b5d201be89f698750425dd6f4dec3103e2",
+        "size_in_bytes": 30904
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1",
+        "path_type": "softlink",
+        "sha256": "734c1fae6bfd72df5672297fa4c3af5dab4259c62eeb87793ee55190e510adb1",
+        "size_in_bytes": 143232
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "734c1fae6bfd72df5672297fa4c3af5dab4259c62eeb87793ee55190e510adb1",
+        "sha256_in_prefix": "734c1fae6bfd72df5672297fa4c3af5dab4259c62eeb87793ee55190e510adb1",
+        "size_in_bytes": 143232
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1",
+        "path_type": "softlink",
+        "sha256": "e92976917c28c9cdb551a310d1d9e0d9eca45bed8724ef09fda2715df6a6d144",
+        "size_in_bytes": 26896
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "e92976917c28c9cdb551a310d1d9e0d9eca45bed8724ef09fda2715df6a6d144",
+        "sha256_in_prefix": "e92976917c28c9cdb551a310d1d9e0d9eca45bed8724ef09fda2715df6a6d144",
+        "size_in_bytes": 26896
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2",
+        "path_type": "softlink",
+        "sha256": "cca1845a3d1a1be1d405f6213632dc24423fcd9940d5864f6ceafca12e9dcb9a",
+        "size_in_bytes": 26664
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2.0.0",
+        "path_type": "hardlink",
+        "sha256": "cca1845a3d1a1be1d405f6213632dc24423fcd9940d5864f6ceafca12e9dcb9a",
+        "sha256_in_prefix": "cca1845a3d1a1be1d405f6213632dc24423fcd9940d5864f6ceafca12e9dcb9a",
+        "size_in_bytes": 26664
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1",
+        "path_type": "softlink",
+        "sha256": "5614543a4792eef9705cf4cb9ed0cd1017cc0c5e3ac301dc80075b0b97797016",
+        "size_in_bytes": 47344
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1.0.1",
+        "path_type": "hardlink",
+        "sha256": "5614543a4792eef9705cf4cb9ed0cd1017cc0c5e3ac301dc80075b0b97797016",
+        "sha256_in_prefix": "5614543a4792eef9705cf4cb9ed0cd1017cc0c5e3ac301dc80075b0b97797016",
+        "size_in_bytes": 47344
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/share/doc/libdrm-2.4.65/README",
+        "path_type": "hardlink",
+        "sha256": "c1aa294e56f0d551e89e35f4172aa83b79df2c893d0e4d332d56f8e1ebab8088",
+        "sha256_in_prefix": "c1aa294e56f0d551e89e35f4172aa83b79df2c893d0e4d332d56f8e1ebab8088",
+        "size_in_bytes": 1627
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/lib/udev/rules.d/91-drm-modeset.rules",
+        "path_type": "hardlink",
+        "sha256": "f29c28ca7fd5de46ff3382015b994ba3873519170e793925b5bc4e39c45486bb",
+        "sha256_in_prefix": "f29c28ca7fd5de46ff3382015b994ba3873519170e793925b5bc4e39c45486bb",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm.so.2",
+        "path_type": "softlink",
+        "sha256": "04405024275687224fe42bd44e28de41162ff88b4bca2497e73990710ac139a8",
+        "size_in_bytes": 58424
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm.so.2.4.0",
+        "path_type": "hardlink",
+        "sha256": "04405024275687224fe42bd44e28de41162ff88b4bca2497e73990710ac139a8",
+        "sha256_in_prefix": "04405024275687224fe42bd44e28de41162ff88b4bca2497e73990710ac139a8",
+        "size_in_bytes": 58424
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1",
+        "path_type": "softlink",
+        "sha256": "a353b42ab5555ac94c98ed441d7848b5d201be89f698750425dd6f4dec3103e2",
+        "size_in_bytes": 30904
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_amdgpu.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "a353b42ab5555ac94c98ed441d7848b5d201be89f698750425dd6f4dec3103e2",
+        "sha256_in_prefix": "a353b42ab5555ac94c98ed441d7848b5d201be89f698750425dd6f4dec3103e2",
+        "size_in_bytes": 30904
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1",
+        "path_type": "softlink",
+        "sha256": "734c1fae6bfd72df5672297fa4c3af5dab4259c62eeb87793ee55190e510adb1",
+        "size_in_bytes": 143232
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_intel.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "734c1fae6bfd72df5672297fa4c3af5dab4259c62eeb87793ee55190e510adb1",
+        "sha256_in_prefix": "734c1fae6bfd72df5672297fa4c3af5dab4259c62eeb87793ee55190e510adb1",
+        "size_in_bytes": 143232
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1",
+        "path_type": "softlink",
+        "sha256": "e92976917c28c9cdb551a310d1d9e0d9eca45bed8724ef09fda2715df6a6d144",
+        "size_in_bytes": 26896
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "e92976917c28c9cdb551a310d1d9e0d9eca45bed8724ef09fda2715df6a6d144",
+        "sha256_in_prefix": "e92976917c28c9cdb551a310d1d9e0d9eca45bed8724ef09fda2715df6a6d144",
+        "size_in_bytes": 26896
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2",
+        "path_type": "softlink",
+        "sha256": "cca1845a3d1a1be1d405f6213632dc24423fcd9940d5864f6ceafca12e9dcb9a",
+        "size_in_bytes": 26664
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_nouveau2.so.2.0.0",
+        "path_type": "hardlink",
+        "sha256": "cca1845a3d1a1be1d405f6213632dc24423fcd9940d5864f6ceafca12e9dcb9a",
+        "sha256_in_prefix": "cca1845a3d1a1be1d405f6213632dc24423fcd9940d5864f6ceafca12e9dcb9a",
+        "size_in_bytes": 26664
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1",
+        "path_type": "softlink",
+        "sha256": "5614543a4792eef9705cf4cb9ed0cd1017cc0c5e3ac301dc80075b0b97797016",
+        "size_in_bytes": 47344
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libdrm_radeon.so.1.0.1",
+        "path_type": "hardlink",
+        "sha256": "5614543a4792eef9705cf4cb9ed0cd1017cc0c5e3ac301dc80075b0b97797016",
+        "sha256_in_prefix": "5614543a4792eef9705cf4cb9ed0cd1017cc0c5e3ac301dc80075b0b97797016",
+        "size_in_bytes": 47344
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/share/doc/libdrm-2.4.65/README",
+        "path_type": "hardlink",
+        "sha256": "c1aa294e56f0d551e89e35f4172aa83b79df2c893d0e4d332d56f8e1ebab8088",
+        "sha256_in_prefix": "c1aa294e56f0d551e89e35f4172aa83b79df2c893d0e4d332d56f8e1ebab8088",
+        "size_in_bytes": 1627
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "2825dc7255a45b97792cd50dfd94e5e7caab0a46c553a22d02f3983bc854d7a1",
+  "size": 162211,
+  "subdir": "noarch",
+  "timestamp": 1622813352489,
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/libdrm-cos6-x86_64-2.4.65-4.tar.bz2",
+  "version": "2.4.65"
+}

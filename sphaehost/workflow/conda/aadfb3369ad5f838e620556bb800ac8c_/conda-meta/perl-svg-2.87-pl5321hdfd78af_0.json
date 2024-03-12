@@ -1,0 +1,125 @@
+{
+  "build": "pl5321hdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-svg-2.87-pl5321hdfd78af_0",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/SVG/.packlist",
+    "lib/perl5/site_perl/SVG.pm",
+    "lib/perl5/site_perl/SVG/DOM.pm",
+    "lib/perl5/site_perl/SVG/Element.pm",
+    "lib/perl5/site_perl/SVG/Extension.pm",
+    "lib/perl5/site_perl/SVG/XML.pm",
+    "man/man3/SVG.3",
+    "man/man3/SVG::DOM.3",
+    "man/man3/SVG::Element.3",
+    "man/man3/SVG::Extension.3",
+    "man/man3/SVG::XML.3"
+  ],
+  "fn": "perl-svg-2.87-pl5321hdfd78af_0.tar.bz2",
+  "license": "perl_5",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-svg-2.87-pl5321hdfd78af_0",
+    "type": 1
+  },
+  "md5": "3648e74be270e358310658edfa31458e",
+  "name": "perl-svg",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-svg-2.87-pl5321hdfd78af_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/SVG/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-svg_1652981937960/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "6ef5522c59576462a7f53e3e39d32250ea689378ead67c3700df6fe8ea6e2a2f",
+        "sha256_in_prefix": "ab90e7289b0f702d72b8fb1355fb68e0872aa05467d5203e48ca1f22fa6a3ba2",
+        "size_in_bytes": 3312
+      },
+      {
+        "_path": "lib/perl5/site_perl/SVG.pm",
+        "path_type": "hardlink",
+        "sha256": "141a053247924fb1a8533e13de91ac19fcdfec0698c39aae322709175a016b3e",
+        "sha256_in_prefix": "141a053247924fb1a8533e13de91ac19fcdfec0698c39aae322709175a016b3e",
+        "size_in_bytes": 42490
+      },
+      {
+        "_path": "lib/perl5/site_perl/SVG/DOM.pm",
+        "path_type": "hardlink",
+        "sha256": "dde9fe4f21e8b1a56252d2f97ff961fa3c0a9c2ff0f6d1eafb1ae5f5923f19c6",
+        "sha256_in_prefix": "dde9fe4f21e8b1a56252d2f97ff961fa3c0a9c2ff0f6d1eafb1ae5f5923f19c6",
+        "size_in_bytes": 19247
+      },
+      {
+        "_path": "lib/perl5/site_perl/SVG/Element.pm",
+        "path_type": "hardlink",
+        "sha256": "db19aadf1ce33980956fcf36ebb6ab6b913bdd2754be09d13f9338dac383f4be",
+        "sha256_in_prefix": "db19aadf1ce33980956fcf36ebb6ab6b913bdd2754be09d13f9338dac383f4be",
+        "size_in_bytes": 19796
+      },
+      {
+        "_path": "lib/perl5/site_perl/SVG/Extension.pm",
+        "path_type": "hardlink",
+        "sha256": "bdf1f64988c640440e026b463591a2073d28d6d5aae2300dfb02b0d4d280a6fb",
+        "sha256_in_prefix": "bdf1f64988c640440e026b463591a2073d28d6d5aae2300dfb02b0d4d280a6fb",
+        "size_in_bytes": 11586
+      },
+      {
+        "_path": "lib/perl5/site_perl/SVG/XML.pm",
+        "path_type": "hardlink",
+        "sha256": "52aa5c66a04932f077bcb0d872a97c53f56f54dee3bf8a9c8f92a2cce2d98794",
+        "sha256_in_prefix": "52aa5c66a04932f077bcb0d872a97c53f56f54dee3bf8a9c8f92a2cce2d98794",
+        "size_in_bytes": 4709
+      },
+      {
+        "_path": "man/man3/SVG.3",
+        "path_type": "hardlink",
+        "sha256": "777bc4a267fa366da2c0ec854e0c6651da4bbe6109bf1d3d034c922a8234bac6",
+        "sha256_in_prefix": "777bc4a267fa366da2c0ec854e0c6651da4bbe6109bf1d3d034c922a8234bac6",
+        "size_in_bytes": 48810
+      },
+      {
+        "_path": "man/man3/SVG::DOM.3",
+        "path_type": "hardlink",
+        "sha256": "6dfcffb751a56ffb3c2ab9e3c2e92daed36479d258f344be99f565ed4cb1f698",
+        "sha256_in_prefix": "6dfcffb751a56ffb3c2ab9e3c2e92daed36479d258f344be99f565ed4cb1f698",
+        "size_in_bytes": 12303
+      },
+      {
+        "_path": "man/man3/SVG::Element.3",
+        "path_type": "hardlink",
+        "sha256": "4f22b74286062c1e3ce23b7f2c75a0478206d187813137b20b7bb1549e2bd482",
+        "sha256_in_prefix": "4f22b74286062c1e3ce23b7f2c75a0478206d187813137b20b7bb1549e2bd482",
+        "size_in_bytes": 2506
+      },
+      {
+        "_path": "man/man3/SVG::Extension.3",
+        "path_type": "hardlink",
+        "sha256": "be2547690069cdfd005cac77633ff41bd0a1edc3130e42c6be8e1c4a21f96d03",
+        "sha256_in_prefix": "be2547690069cdfd005cac77633ff41bd0a1edc3130e42c6be8e1c4a21f96d03",
+        "size_in_bytes": 3515
+      },
+      {
+        "_path": "man/man3/SVG::XML.3",
+        "path_type": "hardlink",
+        "sha256": "59f030b237b332d4bf0db10e7c7c3acc154e5b45543213dc2ee68036c6def2e0",
+        "sha256_in_prefix": "59f030b237b332d4bf0db10e7c7c3acc154e5b45543213dc2ee68036c6def2e0",
+        "size_in_bytes": 2438
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "9cff52fbe3c42ad95ad4ecc77bd96844ada5157eba878da1304b86e6e39bdda1",
+  "size": 39804,
+  "subdir": "noarch",
+  "timestamp": 1652982077528,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-svg-2.87-pl5321hdfd78af_0.tar.bz2",
+  "version": "2.87"
+}

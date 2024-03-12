@@ -1,0 +1,64 @@
+{
+  "build": "h92b232e_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "bzip2 >=1.0.8,<2.0a0",
+    "libcxx >=15.0.7"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/pbzip2-1.1.13-h92b232e_2",
+  "files": [
+    "bin/pbunzip2",
+    "bin/pbzcat",
+    "bin/pbzip2",
+    "share/man/man1/pbzip2.1"
+  ],
+  "fn": "pbzip2-1.1.13-h92b232e_2.conda",
+  "license": "pbzip2",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/pbzip2-1.1.13-h92b232e_2",
+    "type": 1
+  },
+  "md5": "d1da539e2ca1e5d1e77ccaa0183aa5f9",
+  "name": "pbzip2",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/pbzip2-1.1.13-h92b232e_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/pbunzip2",
+        "path_type": "softlink",
+        "sha256": "55429e6ba145a55485a8cb40de96226a2656ffbccf03b981ead45a3343cc61b9",
+        "size_in_bytes": 81704
+      },
+      {
+        "_path": "bin/pbzcat",
+        "path_type": "softlink",
+        "sha256": "55429e6ba145a55485a8cb40de96226a2656ffbccf03b981ead45a3343cc61b9",
+        "size_in_bytes": 81704
+      },
+      {
+        "_path": "bin/pbzip2",
+        "path_type": "hardlink",
+        "sha256": "55429e6ba145a55485a8cb40de96226a2656ffbccf03b981ead45a3343cc61b9",
+        "sha256_in_prefix": "55429e6ba145a55485a8cb40de96226a2656ffbccf03b981ead45a3343cc61b9",
+        "size_in_bytes": 81704
+      },
+      {
+        "_path": "share/man/man1/pbzip2.1",
+        "path_type": "hardlink",
+        "sha256": "5622dd23c391014361cbd072491881c1323a5088d1cd8831ab1ece7a985fe061",
+        "sha256_in_prefix": "5622dd23c391014361cbd072491881c1323a5088d1cd8831ab1ece7a985fe061",
+        "size_in_bytes": 5569
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "0dfc53a7d0bfb08634a96a7dcc94d97a0351e479b02fa1729463d6f3d97abdb3",
+  "size": 40769,
+  "subdir": "osx-64",
+  "timestamp": 1696007041920,
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/pbzip2-1.1.13-h92b232e_2.conda",
+  "version": "1.1.13"
+}

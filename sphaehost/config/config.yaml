@@ -3,4 +3,6 @@ sphaehost:
     args: # Command line args will be (over)written here at runtime
         input:
         output:
+        db_dir:
+        temp_dir:
     # Add customisable config here

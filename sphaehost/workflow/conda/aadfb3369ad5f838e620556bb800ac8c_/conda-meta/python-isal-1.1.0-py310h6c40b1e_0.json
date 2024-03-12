@@ -1,0 +1,213 @@
+{
+  "build": "py310h6c40b1e_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-64",
+  "constrains": [],
+  "depends": [
+    "isa-l >=2.26",
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/python-isal-1.1.0-py310h6c40b1e_0",
+  "files": [
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/LICENSE",
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/METADATA",
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/RECORD",
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/WHEEL",
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/isal-1.1.0.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/isal/__init__.py",
+    "lib/python3.10/site-packages/isal/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/isal/__pycache__/igzip.cpython-310.pyc",
+    "lib/python3.10/site-packages/isal/_isal.cpython-310-darwin.so",
+    "lib/python3.10/site-packages/isal/_isal.pyi",
+    "lib/python3.10/site-packages/isal/igzip.py",
+    "lib/python3.10/site-packages/isal/igzip_lib.cpython-310-darwin.so",
+    "lib/python3.10/site-packages/isal/igzip_lib.pyi",
+    "lib/python3.10/site-packages/isal/isa-l/LICENSE",
+    "lib/python3.10/site-packages/isal/isa-l/README.md",
+    "lib/python3.10/site-packages/isal/isa-l/Release_notes.txt",
+    "lib/python3.10/site-packages/isal/isal_zlib.cpython-310-darwin.so",
+    "lib/python3.10/site-packages/isal/isal_zlib.pyi",
+    "lib/python3.10/site-packages/isal/py.typed"
+  ],
+  "fn": "python-isal-1.1.0-py310h6c40b1e_0.conda",
+  "legacy_bz2_md5": "90ce26b0f852cff29183436d652775e5",
+  "legacy_bz2_size": 46450,
+  "license": "PSF-2.0",
+  "license_family": "PSF",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/python-isal-1.1.0-py310h6c40b1e_0",
+    "type": 1
+  },
+  "md5": "f15732dcc12acff3766f8f9ebdca29f6",
+  "name": "python-isal",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/python-isal-1.1.0-py310h6c40b1e_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "83b042fc7d6aca0f10d68e45efa56b9bc0a1496608e7e7728fe09d1a534a054a",
+        "sha256_in_prefix": "83b042fc7d6aca0f10d68e45efa56b9bc0a1496608e7e7728fe09d1a534a054a",
+        "size_in_bytes": 2484
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "2deec2a380f4e1c583ce9337ca09709613c64bf275f1a50e28c1b9df2c7c362f",
+        "sha256_in_prefix": "2deec2a380f4e1c583ce9337ca09709613c64bf275f1a50e28c1b9df2c7c362f",
+        "size_in_bytes": 8609
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "405ff727ee69bd6c5fd6cfc039b902247a436dd75b397db34bac941edc9f2ffb",
+        "sha256_in_prefix": "405ff727ee69bd6c5fd6cfc039b902247a436dd75b397db34bac941edc9f2ffb",
+        "size_in_bytes": 1683
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f395f1a949992c2a4051bc8de5588bdeb800e43c346f59279c2e20b6baed0e31",
+        "sha256_in_prefix": "f395f1a949992c2a4051bc8de5588bdeb800e43c346f59279c2e20b6baed0e31",
+        "size_in_bytes": 111
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "aff2bccb4e7b2fb8e06fd1e9606c578aabfadef4233c5c8fc05afed0edf983a2",
+        "sha256_in_prefix": "aff2bccb4e7b2fb8e06fd1e9606c578aabfadef4233c5c8fc05afed0edf983a2",
+        "size_in_bytes": 142
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal-1.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b29203fd76dfe50ccb5d2aaf5f2382cfc4d49353f3d8ccbc08336cddb256c40c",
+        "sha256_in_prefix": "b29203fd76dfe50ccb5d2aaf5f2382cfc4d49353f3d8ccbc08336cddb256c40c",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cfc313fc16341f8425e6e381dbb4d90484f967bd7f00b4c32a105a2d0557d939",
+        "sha256_in_prefix": "cfc313fc16341f8425e6e381dbb4d90484f967bd7f00b4c32a105a2d0557d939",
+        "size_in_bytes": 909
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e36dd97299a69b3dac96ca41391c3275a3d43bcd0949b40346a86ccaacabbda8",
+        "sha256_in_prefix": "e36dd97299a69b3dac96ca41391c3275a3d43bcd0949b40346a86ccaacabbda8",
+        "size_in_bytes": 554
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/__pycache__/igzip.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "567e7800498e6815ec2e9cf186e04660f941c8eec67327de9a1ded39ee44cc13",
+        "sha256_in_prefix": "567e7800498e6815ec2e9cf186e04660f941c8eec67327de9a1ded39ee44cc13",
+        "size_in_bytes": 13219
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/_isal.cpython-310-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "a09688201e89c5f4e8aadc311035305cec9395a66a05c0117eabb014f9ce8000",
+        "sha256_in_prefix": "a09688201e89c5f4e8aadc311035305cec9395a66a05c0117eabb014f9ce8000",
+        "size_in_bytes": 8656
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/_isal.pyi",
+        "path_type": "hardlink",
+        "sha256": "a2ff6b29f584171d15f001a5a0933733d9b574fbb949c440979f541d21bc86b3",
+        "sha256_in_prefix": "a2ff6b29f584171d15f001a5a0933733d9b574fbb949c440979f541d21bc86b3",
+        "size_in_bytes": 405
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/igzip.py",
+        "path_type": "hardlink",
+        "sha256": "0c5640210500e9f505eacee267ddb78893b03f2e1e8f4ff729522a24a704b047",
+        "sha256_in_prefix": "0c5640210500e9f505eacee267ddb78893b03f2e1e8f4ff729522a24a704b047",
+        "size_in_bytes": 22284
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/igzip_lib.cpython-310-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "102faa9180e1c9295968c52c57c1d9406d0d84db1df91332ed82bbaea1ba3603",
+        "sha256_in_prefix": "102faa9180e1c9295968c52c57c1d9406d0d84db1df91332ed82bbaea1ba3603",
+        "size_in_bytes": 24012
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/igzip_lib.pyi",
+        "path_type": "hardlink",
+        "sha256": "70c807c3eb208b04be9df861ff7fa5029b7b832980bdfaf9d3bad9fb8d5bab16",
+        "sha256_in_prefix": "70c807c3eb208b04be9df861ff7fa5029b7b832980bdfaf9d3bad9fb8d5bab16",
+        "size_in_bytes": 1623
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/isa-l/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "054cd5fb2ac94c050c11920ba242a8b65298de654ede890597217954cde1393c",
+        "sha256_in_prefix": "054cd5fb2ac94c050c11920ba242a8b65298de654ede890597217954cde1393c",
+        "size_in_bytes": 1559
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/isa-l/README.md",
+        "path_type": "hardlink",
+        "sha256": "588dcfbd70068d1e972e7abf692adf39747df126be879bff5099bedf8cdb4c5c",
+        "sha256_in_prefix": "588dcfbd70068d1e972e7abf692adf39747df126be879bff5099bedf8cdb4c5c",
+        "size_in_bytes": 2570
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/isa-l/Release_notes.txt",
+        "path_type": "hardlink",
+        "sha256": "dffb481702adcfa3b74d487d80ac44939064fd5f1a7fde9e403d8b36be498f4c",
+        "sha256_in_prefix": "dffb481702adcfa3b74d487d80ac44939064fd5f1a7fde9e403d8b36be498f4c",
+        "size_in_bytes": 9439
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/isal_zlib.cpython-310-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "e90f7bf7568c9ac0ca1266236e2cd32ef6661a1292f8753b86afcfe47104d7ed",
+        "sha256_in_prefix": "e90f7bf7568c9ac0ca1266236e2cd32ef6661a1292f8753b86afcfe47104d7ed",
+        "size_in_bytes": 33424
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/isal_zlib.pyi",
+        "path_type": "hardlink",
+        "sha256": "2084000b26513511b5567382facdc1c86dcead5eaba40d0342dd139d373126bd",
+        "sha256_in_prefix": "2084000b26513511b5567382facdc1c86dcead5eaba40d0342dd139d373126bd",
+        "size_in_bytes": 1754
+      },
+      {
+        "_path": "lib/python3.10/site-packages/isal/py.typed",
+        "path_type": "hardlink",
+        "sha256": "6d67b0f661e0332f0ba8cbbb46ea905c55cb071876091c747546d2c7edf0138f",
+        "sha256_in_prefix": "6d67b0f661e0332f0ba8cbbb46ea905c55cb071876091c747546d2c7edf0138f",
+        "size_in_bytes": 27
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "c2342b6266d9847622966ab8506a2a0f01cb1cf5a897201d9a169d55e879f153",
+  "size": 48490,
+  "subdir": "osx-64",
+  "timestamp": 1682692193351,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-64/python-isal-1.1.0-py310h6c40b1e_0.conda",
+  "version": "1.1.0"
+}

@@ -1,0 +1,5 @@
+#!/Users/bhavyapapudeshi/Downloads/sphaehost/sphaehost/workflow/conda/83effb2285bc414f5fa3f17ac168e27c_/bin/python3.10
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

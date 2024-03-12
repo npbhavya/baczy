@@ -1,0 +1,61 @@
+{
+  "build": "pl5321hdfd78af_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-math-vecstat-0.08-pl5321hdfd78af_2",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/Math/VecStat/.packlist",
+    "lib/perl5/site_perl/Math/VecStat.pm",
+    "man/man3/Math::VecStat.3"
+  ],
+  "fn": "perl-math-vecstat-0.08-pl5321hdfd78af_2.tar.bz2",
+  "license": "unknown",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-math-vecstat-0.08-pl5321hdfd78af_2",
+    "type": 1
+  },
+  "md5": "b7670a82a5134ef35e5aa4291861eccb",
+  "name": "perl-math-vecstat",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-math-vecstat-0.08-pl5321hdfd78af_2.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Math/VecStat/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-math-vecstat_1642424499261/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "a2c2e1301b6d5df6aa8a61c612dd718fba0e1bddde731de0b7e6b66590072bc4",
+        "sha256_in_prefix": "9ee14367251014b0061ae01b5be4cd42347394126fd8d425f06c8bc9233ad587",
+        "size_in_bytes": 684
+      },
+      {
+        "_path": "lib/perl5/site_perl/Math/VecStat.pm",
+        "path_type": "hardlink",
+        "sha256": "0d06aa99bd08a8d231bc045178bf6928c3aed356cd239f1de4004dffc0569a19",
+        "sha256_in_prefix": "0d06aa99bd08a8d231bc045178bf6928c3aed356cd239f1de4004dffc0569a19",
+        "size_in_bytes": 8902
+      },
+      {
+        "_path": "man/man3/Math::VecStat.3",
+        "path_type": "hardlink",
+        "sha256": "909c36500aaab3f32ca5ba454eebea60bed95f95d9b98ec886a4b1824f89718c",
+        "sha256_in_prefix": "909c36500aaab3f32ca5ba454eebea60bed95f95d9b98ec886a4b1824f89718c",
+        "size_in_bytes": 8897
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "25c5bb78e0db8e2e8ac4eaf2de79b04a8d13821a63f2c9c4efe79a20d0069163",
+  "size": 11901,
+  "subdir": "noarch",
+  "timestamp": 1642424740725,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-math-vecstat-0.08-pl5321hdfd78af_2.tar.bz2",
+  "version": "0.08"
+}

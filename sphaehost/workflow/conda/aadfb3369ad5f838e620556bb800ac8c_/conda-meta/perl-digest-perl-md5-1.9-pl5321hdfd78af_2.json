@@ -1,0 +1,61 @@
+{
+  "build": "pl5321hdfd78af_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-digest-perl-md5-1.9-pl5321hdfd78af_2",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/Digest/Perl/MD5/.packlist",
+    "lib/perl5/site_perl/Digest/Perl/MD5.pm",
+    "man/man3/Digest::Perl::MD5.3"
+  ],
+  "fn": "perl-digest-perl-md5-1.9-pl5321hdfd78af_2.tar.bz2",
+  "license": "unknown",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-digest-perl-md5-1.9-pl5321hdfd78af_2",
+    "type": 1
+  },
+  "md5": "8577327a82c15a0ed3bc0d54bd42adf8",
+  "name": "perl-digest-perl-md5",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-digest-perl-md5-1.9-pl5321hdfd78af_2.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Digest/Perl/MD5/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-digest-perl-md5_1642419088693/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "sha256": "e1889c6a529bad3ff84764f01bc41a00f977f4ca02bc8d16e7f08617448b3c30",
+        "sha256_in_prefix": "32afca1723eeb6a5e86ca5e5fc13db87b7f5adf190dd9a0f4258844bd1b731d4",
+        "size_in_bytes": 704
+      },
+      {
+        "_path": "lib/perl5/site_perl/Digest/Perl/MD5.pm",
+        "path_type": "hardlink",
+        "sha256": "2332e3500d52bca8536d5b80f7b1862f66d84bbd6f4d107a6c61db7ce2c64b1d",
+        "sha256_in_prefix": "2332e3500d52bca8536d5b80f7b1862f66d84bbd6f4d107a6c61db7ce2c64b1d",
+        "size_in_bytes": 12762
+      },
+      {
+        "_path": "man/man3/Digest::Perl::MD5.3",
+        "path_type": "hardlink",
+        "sha256": "d58471f44a2fb142c8222e8cf74e632b267da6c85a9df635576ba4980c541d21",
+        "sha256_in_prefix": "d58471f44a2fb142c8222e8cf74e632b267da6c85a9df635576ba4980c541d21",
+        "size_in_bytes": 7907
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a9f46066b9489091896997d0a93a08916a9dd8dadb0b71d3365c8222a2f5aa37",
+  "size": 13848,
+  "subdir": "noarch",
+  "timestamp": 1642419290662,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-digest-perl-md5-1.9-pl5321hdfd78af_2.tar.bz2",
+  "version": "1.9"
+}

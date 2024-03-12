@@ -1,24 +1,20 @@
+"""CONFIGURATION"""
+configfile: os.path.join(workflow.basedir, "..", "config", "config.yaml")
 
-# Update default config with runtime config
-configfile: os.path.join(workflow.basedir, "../", "config", "config.yaml")
-configfile: os.path.join(workflow.basedir, "../", "config", "system_config.yaml")
-config.update(config["sphaehost"]) # convenience if using namespaced config
+"""PREFLIGHT CHECKS"""
+include: os.path.join("rules", "preflight.smk")
 
-
-# Rules files
-include: os.path.join(workflow.basedir, "rules", "preflight.smk")
-include: os.path.join(workflow.basedir, "rules", "example.smk")
-
+"""Rules"""
+include: os.path.join("rules", "illumina.smk")
 
 # Target rules
-@targetRule
+targets = []
+targets.append(expand(os.path.join(dir_fastp,"{sample}_R1.fastq.gz"), sample=sample_names)),
+targets.append(expand(os.path.join(dir_fastp,"{sample}_R2.fastq.gz"), sample=sample_names))
+targets.append(expand(os.path.join(dir_megahit, "{sample}-pr", "final.contigs.fa"), sample=sample_names)),
+targets.append(expand(os.path.join(dir_megahit, "{sample}-pr", "final.gfa"), sample=sample_names)),
+
+
 rule all:
     input:
         targets
-
-
-@targetRule
-rule print_targets:
-    run:
-        print("\nTop level rules are: \n", file=sys.stderr)
-        print("* " + "\n* ".join(target_rules) + "\n\n", file=sys.stderr)

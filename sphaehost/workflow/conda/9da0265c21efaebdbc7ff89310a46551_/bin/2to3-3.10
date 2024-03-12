@@ -1,0 +1,5 @@
+#!/Users/bhavyapapudeshi/Downloads/sphaehost/sphaehost/workflow/conda/9da0265c21efaebdbc7ff89310a46551_/bin/python3.10
+import sys
+from lib2to3.main import main
+
+sys.exit(main("lib2to3.fixes"))

@@ -1,0 +1,76 @@
+{
+  "build": "pl5321h1e3017b_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<5.33.0a0 *_perl5",
+    "perl-b-cow 0.007.*"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-clone-0.46-pl5321h1e3017b_0",
+  "files": [
+    "lib/perl5/5.32/site_perl/Clone.pm",
+    "lib/perl5/5.32/site_perl/auto/Clone/.packlist",
+    "lib/perl5/5.32/site_perl/auto/Clone/Clone.bundle",
+    "lib/perl5/5.32/site_perl/auto/Clone/autosplit.ix",
+    "man/man3/Clone.3"
+  ],
+  "fn": "perl-clone-0.46-pl5321h1e3017b_0.tar.bz2",
+  "license": "perl_5",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-clone-0.46-pl5321h1e3017b_0",
+    "type": 1
+  },
+  "md5": "d47740af9ce62d2a1b1226a80e285066",
+  "name": "perl-clone",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-clone-0.46-pl5321h1e3017b_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/Clone.pm",
+        "path_type": "hardlink",
+        "sha256": "e7386414a7bfdda5c831aed3e397368dcefdc2cff92e6865334481f71fb19471",
+        "sha256_in_prefix": "e7386414a7bfdda5c831aed3e397368dcefdc2cff92e6865334481f71fb19471",
+        "size_in_bytes": 2354
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Clone/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/usr/local/miniconda/envs/bioconda/conda-bld/perl-clone_1666949065511/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "7dee68d0d82b74af6ee6f16d39dbc8738a98829ef3500079aca78ef84307e5d2",
+        "sha256_in_prefix": "dc8eb6c6c22dc955c1570af5d87b7380430e7be5c0773f0c5c64ecfc29791a4d",
+        "size_in_bytes": 1297
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Clone/Clone.bundle",
+        "path_type": "hardlink",
+        "sha256": "4b3ee36da59308880db7dfde469031843d4c24e7a3820cabee7311d2a26709cc",
+        "sha256_in_prefix": "4b3ee36da59308880db7dfde469031843d4c24e7a3820cabee7311d2a26709cc",
+        "size_in_bytes": 14864
+      },
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Clone/autosplit.ix",
+        "path_type": "hardlink",
+        "sha256": "e2a7fe380261b618083faa0ddcd68fbd1c9fe3fd6df366c9128b5ecffb107b33",
+        "sha256_in_prefix": "e2a7fe380261b618083faa0ddcd68fbd1c9fe3fd6df366c9128b5ecffb107b33",
+        "size_in_bytes": 84
+      },
+      {
+        "_path": "man/man3/Clone.3",
+        "path_type": "hardlink",
+        "sha256": "99399d20bb30fb7bfea3e8ffced08eb1ecc19174bec010b083ba17accc5172e6",
+        "sha256_in_prefix": "99399d20bb30fb7bfea3e8ffced08eb1ecc19174bec010b083ba17accc5172e6",
+        "size_in_bytes": 4225
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "bc1711c40ba8c99be5ab6d1e63b654b64cca6b986fe163401af3c8a8d4f994aa",
+  "size": 14602,
+  "subdir": "osx-64",
+  "timestamp": 1666949295642,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/perl-clone-0.46-pl5321h1e3017b_0.tar.bz2",
+  "version": "0.46"
+}

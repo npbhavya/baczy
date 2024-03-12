@@ -1,0 +1,202 @@
+{
+  "build": "pl5321h2413b67_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<5.33.0a0 *_perl5"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/infernal-1.1.5-pl5321h2413b67_0",
+  "files": [
+    "bin/cmalign",
+    "bin/cmbuild",
+    "bin/cmcalibrate",
+    "bin/cmconvert",
+    "bin/cmemit",
+    "bin/cmfetch",
+    "bin/cmpress",
+    "bin/cmscan",
+    "bin/cmsearch",
+    "bin/cmstat",
+    "share/man/man1/cmalign.1",
+    "share/man/man1/cmbuild.1",
+    "share/man/man1/cmcalibrate.1",
+    "share/man/man1/cmconvert.1",
+    "share/man/man1/cmemit.1",
+    "share/man/man1/cmfetch.1",
+    "share/man/man1/cmpress.1",
+    "share/man/man1/cmscan.1",
+    "share/man/man1/cmsearch.1",
+    "share/man/man1/cmstat.1",
+    "share/man/man1/infernal.1"
+  ],
+  "fn": "infernal-1.1.5-pl5321h2413b67_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/infernal-1.1.5-pl5321h2413b67_0",
+    "type": 1
+  },
+  "md5": "b20635360cafa6f38a73f838dff025e0",
+  "name": "infernal",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/infernal-1.1.5-pl5321h2413b67_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/cmalign",
+        "path_type": "hardlink",
+        "sha256": "bd1e39584deb400ce71ff878de069e312b21070600020645c7b22d1fda36428d",
+        "sha256_in_prefix": "bd1e39584deb400ce71ff878de069e312b21070600020645c7b22d1fda36428d",
+        "size_in_bytes": 2351528
+      },
+      {
+        "_path": "bin/cmbuild",
+        "path_type": "hardlink",
+        "sha256": "1e82faac6ad8478b3bd3f87ed1f0c1c4906e61a1256574f916812216fe21b0ad",
+        "sha256_in_prefix": "1e82faac6ad8478b3bd3f87ed1f0c1c4906e61a1256574f916812216fe21b0ad",
+        "size_in_bytes": 2566168
+      },
+      {
+        "_path": "bin/cmcalibrate",
+        "path_type": "hardlink",
+        "sha256": "5f841c26d36f56cb130fdbedc85464a23cf7cac6798265a3bacce94c8ec382ad",
+        "sha256_in_prefix": "5f841c26d36f56cb130fdbedc85464a23cf7cac6798265a3bacce94c8ec382ad",
+        "size_in_bytes": 2348264
+      },
+      {
+        "_path": "bin/cmconvert",
+        "path_type": "hardlink",
+        "sha256": "9735088f7d122c087fc3d90eae2c5875d3b6d65dd01d1c5cf40fce8a728fb5ab",
+        "sha256_in_prefix": "9735088f7d122c087fc3d90eae2c5875d3b6d65dd01d1c5cf40fce8a728fb5ab",
+        "size_in_bytes": 2287224
+      },
+      {
+        "_path": "bin/cmemit",
+        "path_type": "hardlink",
+        "sha256": "af10029ef84a9a675811df2990b6d5269bb1e29a7259d27450f6d7e8fe2c1fea",
+        "sha256_in_prefix": "af10029ef84a9a675811df2990b6d5269bb1e29a7259d27450f6d7e8fe2c1fea",
+        "size_in_bytes": 2295496
+      },
+      {
+        "_path": "bin/cmfetch",
+        "path_type": "hardlink",
+        "sha256": "ac9d83ca437564d4514039defb07cfb72f9c4ddc2ed454f3bf53995e360426ad",
+        "sha256_in_prefix": "ac9d83ca437564d4514039defb07cfb72f9c4ddc2ed454f3bf53995e360426ad",
+        "size_in_bytes": 2287312
+      },
+      {
+        "_path": "bin/cmpress",
+        "path_type": "hardlink",
+        "sha256": "c5fe550371a04b784d33a43f226c308f1c148170cfc96e02367b4874edc177ef",
+        "sha256_in_prefix": "c5fe550371a04b784d33a43f226c308f1c148170cfc96e02367b4874edc177ef",
+        "size_in_bytes": 2287240
+      },
+      {
+        "_path": "bin/cmscan",
+        "path_type": "hardlink",
+        "sha256": "a5a3d5e7b551f0249c1c057a141edf7221a08436f85675d046829ac67660d606",
+        "sha256_in_prefix": "a5a3d5e7b551f0249c1c057a141edf7221a08436f85675d046829ac67660d606",
+        "size_in_bytes": 2363560
+      },
+      {
+        "_path": "bin/cmsearch",
+        "path_type": "hardlink",
+        "sha256": "aa839206dd65e437eac5f25d429c608f7e27338e9f4e493f488c135ddee01235",
+        "sha256_in_prefix": "aa839206dd65e437eac5f25d429c608f7e27338e9f4e493f488c135ddee01235",
+        "size_in_bytes": 2359448
+      },
+      {
+        "_path": "bin/cmstat",
+        "path_type": "hardlink",
+        "sha256": "2d8499b6e1cb6c7289e11f0b7e356f578f6dc4474eb80876b05dab63497a94d0",
+        "sha256_in_prefix": "2d8499b6e1cb6c7289e11f0b7e356f578f6dc4474eb80876b05dab63497a94d0",
+        "size_in_bytes": 2334192
+      },
+      {
+        "_path": "share/man/man1/cmalign.1",
+        "path_type": "hardlink",
+        "sha256": "65809e9c085c727b033d9d1b82f25fb088bec1f3185e187bbe824d17a9265044",
+        "sha256_in_prefix": "65809e9c085c727b033d9d1b82f25fb088bec1f3185e187bbe824d17a9265044",
+        "size_in_bytes": 20886
+      },
+      {
+        "_path": "share/man/man1/cmbuild.1",
+        "path_type": "hardlink",
+        "sha256": "6ffe8d38aad99c9e78dce4904395825d634a74f29d8b3ecb25cf43c228e0b100",
+        "sha256_in_prefix": "6ffe8d38aad99c9e78dce4904395825d634a74f29d8b3ecb25cf43c228e0b100",
+        "size_in_bytes": 18752
+      },
+      {
+        "_path": "share/man/man1/cmcalibrate.1",
+        "path_type": "hardlink",
+        "sha256": "d48f2d11cfc49eeb9e95dfd3ce65aa5fe436666675cf343d818455cf8c5ac234",
+        "sha256_in_prefix": "d48f2d11cfc49eeb9e95dfd3ce65aa5fe436666675cf343d818455cf8c5ac234",
+        "size_in_bytes": 13092
+      },
+      {
+        "_path": "share/man/man1/cmconvert.1",
+        "path_type": "hardlink",
+        "sha256": "8a7dcc82e20dd1e19cd4a2b12dd3f5415caab45cf02414eadca7aad0e076669c",
+        "sha256_in_prefix": "8a7dcc82e20dd1e19cd4a2b12dd3f5415caab45cf02414eadca7aad0e076669c",
+        "size_in_bytes": 2252
+      },
+      {
+        "_path": "share/man/man1/cmemit.1",
+        "path_type": "hardlink",
+        "sha256": "279bfd3769380a63f1672a07c3b96c90a89ef7479016eae77dc233598519e4ff",
+        "sha256_in_prefix": "279bfd3769380a63f1672a07c3b96c90a89ef7479016eae77dc233598519e4ff",
+        "size_in_bytes": 7559
+      },
+      {
+        "_path": "share/man/man1/cmfetch.1",
+        "path_type": "hardlink",
+        "sha256": "cb62d6a2d8182782fe1b0e548918c864e4b2bb30acbdc117700fba43d753ae5a",
+        "sha256_in_prefix": "cb62d6a2d8182782fe1b0e548918c864e4b2bb30acbdc117700fba43d753ae5a",
+        "size_in_bytes": 3637
+      },
+      {
+        "_path": "share/man/man1/cmpress.1",
+        "path_type": "hardlink",
+        "sha256": "18ff57c5f7fbd9cca65b7ecb962a885b91bb2cf4cb368eff7bd4b0c6d0338e63",
+        "sha256_in_prefix": "18ff57c5f7fbd9cca65b7ecb962a885b91bb2cf4cb368eff7bd4b0c6d0338e63",
+        "size_in_bytes": 2101
+      },
+      {
+        "_path": "share/man/man1/cmscan.1",
+        "path_type": "hardlink",
+        "sha256": "7ce6bc771b38378b553c815323fff00a54f3f379fe9701be383af3ba573e98ce",
+        "sha256_in_prefix": "7ce6bc771b38378b553c815323fff00a54f3f379fe9701be383af3ba573e98ce",
+        "size_in_bytes": 24344
+      },
+      {
+        "_path": "share/man/man1/cmsearch.1",
+        "path_type": "hardlink",
+        "sha256": "8f1231c9b64ada80b56715defe726a1bbf2ea4f8f13021dd6409e43e847881ea",
+        "sha256_in_prefix": "8f1231c9b64ada80b56715defe726a1bbf2ea4f8f13021dd6409e43e847881ea",
+        "size_in_bytes": 22505
+      },
+      {
+        "_path": "share/man/man1/cmstat.1",
+        "path_type": "hardlink",
+        "sha256": "cd51aa110a08c7052fa24f15f120a804d91c0699887737b4498c286fa4210e36",
+        "sha256_in_prefix": "cd51aa110a08c7052fa24f15f120a804d91c0699887737b4498c286fa4210e36",
+        "size_in_bytes": 5688
+      },
+      {
+        "_path": "share/man/man1/infernal.1",
+        "path_type": "hardlink",
+        "sha256": "4c076389a865a7762ad51fab07baa24b314a4bd031721d7726b3167c96fe06c3",
+        "sha256_in_prefix": "4c076389a865a7762ad51fab07baa24b314a4bd031721d7726b3167c96fe06c3",
+        "size_in_bytes": 4582
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "e7ebb489cb76bdb76effcbf88c21d401948aa490bec8ef63660763c3e6845754",
+  "size": 10352971,
+  "subdir": "osx-64",
+  "timestamp": 1707870821084,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/infernal-1.1.5-pl5321h2413b67_0.tar.bz2",
+  "version": "1.1.5"
+}

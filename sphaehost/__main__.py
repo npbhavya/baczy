@@ -119,21 +119,16 @@ def cli():
 
 help_msg_extra = """
 \b
+INSTALLING DATABASES REQUIRED
+This command downloads the databases to the directory 'database' 
+\b
+sphae install 
+\b
 CLUSTER EXECUTION:
 sphaehost run ... --profile [profile]
 For information on Snakemake profiles see:
 https://snakemake.readthedocs.io/en/stable/executing/cli.html#profiles
 \b
-RUN EXAMPLES:
-Required:           sphaehost run --input [file]
-Specify threads:    sphaehost run ... --threads [threads]
-Disable conda:      sphaehost run ... --no-use-conda 
-Change defaults:    sphaehost run ... --snake-default="-k --nolock"
-Add Snakemake args: sphaehost run ... --dry-run --keep-going --touch
-Specify targets:    sphaehost run ... all print_targets
-Available targets:
-    all             Run everything (default)
-    print_targets   List available targets
 """
 
 @click.command(epilog=help_msg_extra, context_settings=dict(help_option_names=["-h", "--help"], ignore_unknown_options=True))

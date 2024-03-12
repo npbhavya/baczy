@@ -1,0 +1,149 @@
+{
+  "build": "h2ed8fcc_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=14.0.4",
+    "libzlib >=1.2.12,<1.3.0a0",
+    "llvm-openmp >=14.0.4",
+    "python",
+    "zlib >=1.2.12,<1.3.0a0"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/megahit-1.2.9-h2ed8fcc_1",
+  "files": [
+    "bin/megahit",
+    "bin/megahit_core",
+    "bin/megahit_core_no_hw_accel",
+    "bin/megahit_core_popcnt",
+    "bin/megahit_toolkit",
+    "share/megahit/test_data/empty.fa",
+    "share/megahit/test_data/generate_random_fasta.py",
+    "share/megahit/test_data/loop.fa",
+    "share/megahit/test_data/r1.il.fa.gz",
+    "share/megahit/test_data/r2.il.fa.bz2",
+    "share/megahit/test_data/r3_1.fa",
+    "share/megahit/test_data/r3_2.fa",
+    "share/megahit/test_data/r4.fa",
+    "share/megahit/test_data/ref.fa"
+  ],
+  "fn": "megahit-1.2.9-h2ed8fcc_1.tar.bz2",
+  "license": "GPL-3.0",
+  "license_family": "GPL",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/megahit-1.2.9-h2ed8fcc_1",
+    "type": 1
+  },
+  "md5": "d65281a04acd0242a3607eac93fd6e12",
+  "name": "megahit",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/megahit-1.2.9-h2ed8fcc_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/megahit",
+        "path_type": "hardlink",
+        "sha256": "723f8a4993c0777c4259d26b9576dcbbd14496ccd9325344505c9447f6344d98",
+        "sha256_in_prefix": "723f8a4993c0777c4259d26b9576dcbbd14496ccd9325344505c9447f6344d98",
+        "size_in_bytes": 38498
+      },
+      {
+        "_path": "bin/megahit_core",
+        "path_type": "hardlink",
+        "sha256": "cdd30d7f42a8a1c68ffd77e512eab4b56a28c0e4c10c76e12abdc6586dd2ccb4",
+        "sha256_in_prefix": "cdd30d7f42a8a1c68ffd77e512eab4b56a28c0e4c10c76e12abdc6586dd2ccb4",
+        "size_in_bytes": 2048824
+      },
+      {
+        "_path": "bin/megahit_core_no_hw_accel",
+        "path_type": "hardlink",
+        "sha256": "c5d016f817057adfdbd26b8a0f80582ec0636575d88be81b5d5c436950dacb93",
+        "sha256_in_prefix": "c5d016f817057adfdbd26b8a0f80582ec0636575d88be81b5d5c436950dacb93",
+        "size_in_bytes": 2052920
+      },
+      {
+        "_path": "bin/megahit_core_popcnt",
+        "path_type": "hardlink",
+        "sha256": "731e1e29c803ff8cc6291ab3e1ce90be769f7954603d62c378f21ba31d61dbe3",
+        "sha256_in_prefix": "731e1e29c803ff8cc6291ab3e1ce90be769f7954603d62c378f21ba31d61dbe3",
+        "size_in_bytes": 2048824
+      },
+      {
+        "_path": "bin/megahit_toolkit",
+        "path_type": "softlink",
+        "sha256": "c5d016f817057adfdbd26b8a0f80582ec0636575d88be81b5d5c436950dacb93",
+        "size_in_bytes": 2052920
+      },
+      {
+        "_path": "share/megahit/test_data/empty.fa",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "share/megahit/test_data/generate_random_fasta.py",
+        "path_type": "hardlink",
+        "sha256": "ea8983353bf84bd5e0f36e1e101dc65509798b2ac1575d00cb1ad7de690d04b2",
+        "sha256_in_prefix": "ea8983353bf84bd5e0f36e1e101dc65509798b2ac1575d00cb1ad7de690d04b2",
+        "size_in_bytes": 265
+      },
+      {
+        "_path": "share/megahit/test_data/loop.fa",
+        "path_type": "hardlink",
+        "sha256": "046a36b571eac4231632ee87ccbe4255dc9c8f9647fa8a80bb5ed1ce17599d1b",
+        "sha256_in_prefix": "046a36b571eac4231632ee87ccbe4255dc9c8f9647fa8a80bb5ed1ce17599d1b",
+        "size_in_bytes": 1102
+      },
+      {
+        "_path": "share/megahit/test_data/r1.il.fa.gz",
+        "path_type": "hardlink",
+        "sha256": "1fad7772f6aee9dc0cf08c27b393d6d3186a58d62cd6e9d497c8fd635779551d",
+        "sha256_in_prefix": "1fad7772f6aee9dc0cf08c27b393d6d3186a58d62cd6e9d497c8fd635779551d",
+        "size_in_bytes": 4381
+      },
+      {
+        "_path": "share/megahit/test_data/r2.il.fa.bz2",
+        "path_type": "hardlink",
+        "sha256": "91b26ba723baf902b22f7aea279b07230d7587dc35dc81c2743d4dc6366c28ba",
+        "sha256_in_prefix": "91b26ba723baf902b22f7aea279b07230d7587dc35dc81c2743d4dc6366c28ba",
+        "size_in_bytes": 4120
+      },
+      {
+        "_path": "share/megahit/test_data/r3_1.fa",
+        "path_type": "hardlink",
+        "sha256": "c29a60b56e632728c383bc8e950747dc75b91235b0bb9c329cbaecbae717143d",
+        "sha256_in_prefix": "c29a60b56e632728c383bc8e950747dc75b91235b0bb9c329cbaecbae717143d",
+        "size_in_bytes": 14757
+      },
+      {
+        "_path": "share/megahit/test_data/r3_2.fa",
+        "path_type": "hardlink",
+        "sha256": "a148e2b1d12d5cd6aa5f83e111d4c8c736833498744a5f4a4252df8f3429d9eb",
+        "sha256_in_prefix": "a148e2b1d12d5cd6aa5f83e111d4c8c736833498744a5f4a4252df8f3429d9eb",
+        "size_in_bytes": 14757
+      },
+      {
+        "_path": "share/megahit/test_data/r4.fa",
+        "path_type": "hardlink",
+        "sha256": "1cc4edc7fce90dd76524d58aa127a22f677299c56f415da8a9523f8c904509c4",
+        "sha256_in_prefix": "1cc4edc7fce90dd76524d58aa127a22f677299c56f415da8a9523f8c904509c4",
+        "size_in_bytes": 271
+      },
+      {
+        "_path": "share/megahit/test_data/ref.fa",
+        "path_type": "hardlink",
+        "sha256": "9bea082b695d5fdbe407bf261d306b5d262cf5ca1f158f9417d357465cd0660e",
+        "sha256_in_prefix": "9bea082b695d5fdbe407bf261d306b5d262cf5ca1f158f9417d357465cd0660e",
+        "size_in_bytes": 1271
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "megahit[version='>=1.2.9']",
+  "sha256": "b3cf3894678bc34198c99f1537ee1153876d25ea9fa288fc3b52bc45938de604",
+  "size": 1653703,
+  "subdir": "osx-64",
+  "timestamp": 1665421228715,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/megahit-1.2.9-h2ed8fcc_1.tar.bz2",
+  "version": "1.2.9"
+}

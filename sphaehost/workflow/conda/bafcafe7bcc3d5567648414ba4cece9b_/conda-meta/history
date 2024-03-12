@@ -1,0 +1,8 @@
+==> 2024-03-11 17:12:03 <==
+# cmd: /Users/bhavyapapudeshi/miniconda3/bin/conda-env create --quiet --file /Users/bhavyapapudeshi/Downloads/sphaehost/sphaehost/workflow/conda/bafcafe7bcc3d5567648414ba4cece9b_.yaml --prefix /Users/bhavyapapudeshi/Downloads/sphaehost/sphaehost/workflow/conda/bafcafe7bcc3d5567648414ba4cece9b_
+# conda version: 23.7.2
++bioconda/osx-64::fastp-0.23.4-h5712c04_2
++conda-forge/osx-64::libcxx-16.0.6-hd57cbcb_0
++conda-forge/osx-64::libdeflate-1.19-ha4e1b8e_0
++defaults/osx-64::isa-l-2.30.0-h6c40b1e_0
+# update specs: ["fastp[version='>=0.23.4']"]

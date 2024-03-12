@@ -1,0 +1,96 @@
+{
+  "build": "4",
+  "build_number": 4,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [
+    "libx11-common-cos6-x86_64 1.6.4"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/libx11-cos6-x86_64-1.6.4-4",
+  "files": [
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1.0.0",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11.so.6",
+    "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11.so.6.3.0",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1.0.0",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11.so.6",
+    "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11.so.6.3.0"
+  ],
+  "fn": "libx11-cos6-x86_64-1.6.4-4.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/libx11-cos6-x86_64-1.6.4-4",
+    "type": 1
+  },
+  "md5": "6d73359be6e15464f9641b5a5daaa9d8",
+  "name": "libx11-cos6-x86_64",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/libx11-cos6-x86_64-1.6.4-4.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1",
+        "path_type": "softlink",
+        "sha256": "f155f8bd212e15d11e315ebfa267b1bf0f5f5940a40ca059c9984b2070966555",
+        "size_in_bytes": 5120
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "f155f8bd212e15d11e315ebfa267b1bf0f5f5940a40ca059c9984b2070966555",
+        "sha256_in_prefix": "f155f8bd212e15d11e315ebfa267b1bf0f5f5940a40ca059c9984b2070966555",
+        "size_in_bytes": 5120
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11.so.6",
+        "path_type": "softlink",
+        "sha256": "94c999cb297b33cf143f4c4a4e0c9a4211c28a7ea0c535d28a09a3213b21a6e2",
+        "size_in_bytes": 1332056
+      },
+      {
+        "_path": "x86_64-conda-linux-gnu/sysroot/usr/lib64/libX11.so.6.3.0",
+        "path_type": "hardlink",
+        "sha256": "94c999cb297b33cf143f4c4a4e0c9a4211c28a7ea0c535d28a09a3213b21a6e2",
+        "sha256_in_prefix": "94c999cb297b33cf143f4c4a4e0c9a4211c28a7ea0c535d28a09a3213b21a6e2",
+        "size_in_bytes": 1332056
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1",
+        "path_type": "softlink",
+        "sha256": "f155f8bd212e15d11e315ebfa267b1bf0f5f5940a40ca059c9984b2070966555",
+        "size_in_bytes": 5120
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11-xcb.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "f155f8bd212e15d11e315ebfa267b1bf0f5f5940a40ca059c9984b2070966555",
+        "sha256_in_prefix": "f155f8bd212e15d11e315ebfa267b1bf0f5f5940a40ca059c9984b2070966555",
+        "size_in_bytes": 5120
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11.so.6",
+        "path_type": "softlink",
+        "sha256": "94c999cb297b33cf143f4c4a4e0c9a4211c28a7ea0c535d28a09a3213b21a6e2",
+        "size_in_bytes": 1332056
+      },
+      {
+        "_path": "x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/libX11.so.6.3.0",
+        "path_type": "hardlink",
+        "sha256": "94c999cb297b33cf143f4c4a4e0c9a4211c28a7ea0c535d28a09a3213b21a6e2",
+        "sha256_in_prefix": "94c999cb297b33cf143f4c4a4e0c9a4211c28a7ea0c535d28a09a3213b21a6e2",
+        "size_in_bytes": 1332056
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "f89ec906075c3d88ad73cd5b9fec4e733e6eb7151edbaa4fa17b980c9af45386",
+  "size": 1464417,
+  "subdir": "noarch",
+  "timestamp": 1622813831896,
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/libx11-cos6-x86_64-1.6.4-4.tar.bz2",
+  "version": "1.6.4"
+}

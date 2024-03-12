@@ -1,0 +1,1476 @@
+{
+  "build": "py310he07d9a1_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [
+    "psutil >=5.8",
+    "python >=3.10,<3.11.0a0",
+    "python_abi 3.10.* *_cp310"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/pyhmmer-0.10.8-py310he07d9a1_0",
+  "files": [
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/COPYING",
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/METADATA",
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/RECORD",
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/WHEEL",
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/pyhmmer/__init__.py",
+    "lib/python3.10/site-packages/pyhmmer/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/__pycache__/hmmer.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/__pycache__/utils.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/_getid.pxi",
+    "lib/python3.10/site-packages/pyhmmer/daemon.cpython-310-darwin.so",
+    "lib/python3.10/site-packages/pyhmmer/daemon.pxd",
+    "lib/python3.10/site-packages/pyhmmer/daemon.pyi",
+    "lib/python3.10/site-packages/pyhmmer/daemon.pyx",
+    "lib/python3.10/site-packages/pyhmmer/easel.cpython-310-darwin.so",
+    "lib/python3.10/site-packages/pyhmmer/easel.pxd",
+    "lib/python3.10/site-packages/pyhmmer/easel.pyi",
+    "lib/python3.10/site-packages/pyhmmer/easel.pyx",
+    "lib/python3.10/site-packages/pyhmmer/errors.cpython-310-darwin.so",
+    "lib/python3.10/site-packages/pyhmmer/errors.pyi",
+    "lib/python3.10/site-packages/pyhmmer/errors.pyx",
+    "lib/python3.10/site-packages/pyhmmer/exceptions.pxi",
+    "lib/python3.10/site-packages/pyhmmer/fileobj/__init__.pxd",
+    "lib/python3.10/site-packages/pyhmmer/fileobj/bsd.h",
+    "lib/python3.10/site-packages/pyhmmer/fileobj/bsd.pxd",
+    "lib/python3.10/site-packages/pyhmmer/fileobj/linux.h",
+    "lib/python3.10/site-packages/pyhmmer/fileobj/linux.pxd",
+    "lib/python3.10/site-packages/pyhmmer/fileobj/util.h",
+    "lib/python3.10/site-packages/pyhmmer/hmmer.py",
+    "lib/python3.10/site-packages/pyhmmer/plan7.cpython-310-darwin.so",
+    "lib/python3.10/site-packages/pyhmmer/plan7.pxd",
+    "lib/python3.10/site-packages/pyhmmer/plan7.pyi",
+    "lib/python3.10/site-packages/pyhmmer/plan7.pyx",
+    "lib/python3.10/site-packages/pyhmmer/py.typed",
+    "lib/python3.10/site-packages/pyhmmer/reexports/__init__.pxd",
+    "lib/python3.10/site-packages/pyhmmer/reexports/esl_sqio_ascii.h",
+    "lib/python3.10/site-packages/pyhmmer/reexports/esl_sqio_ascii.pxd",
+    "lib/python3.10/site-packages/pyhmmer/reexports/p7_hmmfile.h",
+    "lib/python3.10/site-packages/pyhmmer/reexports/p7_hmmfile.pxd",
+    "lib/python3.10/site-packages/pyhmmer/reexports/p7_tophits.h",
+    "lib/python3.10/site-packages/pyhmmer/reexports/p7_tophits.pxd",
+    "lib/python3.10/site-packages/pyhmmer/tests/__init__.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/test_doctest.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/test_errors.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/test_hmmer.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/utils.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/README.md",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/PF02826.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/PKSI-AT.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/Thioesterase.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/t2pks.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3f",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3i",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3p",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3f",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3i",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3p",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3f",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3i",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3p",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3f",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3i",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3m",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3p",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/make.sh",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/LuxC.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/PF02826.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/PKSI-AT.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/RF00001.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/Thioesterase.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/bmyD.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/laccase.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/t2pks.hmm",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/PF02826.hmm2",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/PKSI-AT.hmm2",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/Thioesterase.hmm2",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/t2pks.hmm2",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-1.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-1_bkup.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-2.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-3.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-4.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-5.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-6.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/p12748-1.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/p12748-2.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/p12748-3.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/msa/LuxC.faa",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/msa/LuxC.hmmalign.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/msa/LuxC.sto",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/msa/laccase.clw",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/938293.PRJEB85.HG003687.faa",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/BGC0001090.gbk",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/CP000560.2.fna",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/CP040672.1.genes_100.fna",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/LuxC.faa",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/PKSI.faa",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/bmyD.fna",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/A0A089QRB9.domtbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/PF02826.domtbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/PF02826.tbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/bmyD1.tbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/bmyD2.tbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/bmyD3.tbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/t2pks.domtbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/t2pks.scan.tbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/data/tables/t2pks.tbl",
+    "lib/python3.10/site-packages/pyhmmer/tests/requirements.txt",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_doctest.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__init__.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_alphabet.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_bitfield.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_block.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_gencode.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_keyhash.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_matrix.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_msa.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_msafile.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_randomness.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_sequence.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_sequencefile.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_ssi.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_vector.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_alphabet.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_bitfield.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_block.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_gencode.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_keyhash.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_matrix.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_msa.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_msafile.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_randomness.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_sequence.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_sequencefile.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_ssi.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_vector.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_errors.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_hmmer.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__init__.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_alignment.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_background.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_block.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_builder.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_hit.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_hmm.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_hmmfile.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_optimizedprofile.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_pipeline.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_profile.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_tophits.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_tracealigner.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_traces.cpython-310.pyc",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_alignment.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_background.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_block.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_builder.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_hit.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_hmm.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_hmmfile.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_optimizedprofile.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_pipeline.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_profile.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_tophits.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_tracealigner.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_traces.py",
+    "lib/python3.10/site-packages/pyhmmer/tests/utils.py",
+    "lib/python3.10/site-packages/pyhmmer/utils.py"
+  ],
+  "fn": "pyhmmer-0.10.8-py310he07d9a1_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/pyhmmer-0.10.8-py310he07d9a1_0",
+    "type": 1
+  },
+  "md5": "0d41506957e603cdd08969712e07b354",
+  "name": "pyhmmer",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/pyhmmer-0.10.8-py310he07d9a1_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/COPYING",
+        "path_type": "hardlink",
+        "sha256": "2adc01589586d05b85c6dc684175e5373a852b060f5b2fe40d301587361edb27",
+        "sha256_in_prefix": "2adc01589586d05b85c6dc684175e5373a852b060f5b2fe40d301587361edb27",
+        "size_in_bytes": 1103
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "94e89562f3667feaec7242eba727b8612631467b1115f7b4735ddef05ff7f5b4",
+        "sha256_in_prefix": "94e89562f3667feaec7242eba727b8612631467b1115f7b4735ddef05ff7f5b4",
+        "size_in_bytes": 14279
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "74539f2a3d97c27cee6dcd31d611429efe00639073f599bd7d16e90fe2230318",
+        "sha256_in_prefix": "74539f2a3d97c27cee6dcd31d611429efe00639073f599bd7d16e90fe2230318",
+        "size_in_bytes": 15733
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "a96f719707b0c9006e7c453398cfbc0888d9edf47ae7d2ce4ab720a2eba2e19e",
+        "sha256_in_prefix": "a96f719707b0c9006e7c453398cfbc0888d9edf47ae7d2ce4ab720a2eba2e19e",
+        "size_in_bytes": 111
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "e0e0ff7bd177f73456536ce4a0c920c3d23005cba32e6daf0ac1ea6cdeb35352",
+        "sha256_in_prefix": "e0e0ff7bd177f73456536ce4a0c920c3d23005cba32e6daf0ac1ea6cdeb35352",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer-0.10.8.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "9923da5b5ef7d6110598eff13c1e72a09cfb76d7f970cc2a5e2cc63edd4be2bd",
+        "sha256_in_prefix": "9923da5b5ef7d6110598eff13c1e72a09cfb76d7f970cc2a5e2cc63edd4be2bd",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3bc34469575ccfa4d77737dc580dd6e5aad2964aae4c2024549ea81b32c02162",
+        "sha256_in_prefix": "3bc34469575ccfa4d77737dc580dd6e5aad2964aae4c2024549ea81b32c02162",
+        "size_in_bytes": 2688
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "f6b6e363410a1daa30c069b73af28cab52af0613c1a222bb86542897e0ff2a31",
+        "sha256_in_prefix": "f6b6e363410a1daa30c069b73af28cab52af0613c1a222bb86542897e0ff2a31",
+        "size_in_bytes": 2164
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/__pycache__/hmmer.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "c7bac75e5878bd3b19df857b8188a549cf6b6d9d5159f66b5689bdbbda1524b1",
+        "sha256_in_prefix": "c7bac75e5878bd3b19df857b8188a549cf6b6d9d5159f66b5689bdbbda1524b1",
+        "size_in_bytes": 49136
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/__pycache__/utils.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d662097ee3a0bc7c58e1cd7fad6cce43aecef1a26e035e6af067283c5bda4e3a",
+        "sha256_in_prefix": "d662097ee3a0bc7c58e1cd7fad6cce43aecef1a26e035e6af067283c5bda4e3a",
+        "size_in_bytes": 4579
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/_getid.pxi",
+        "path_type": "hardlink",
+        "sha256": "f7fa7a4335e6a63cf0f8d9029abde4ead300cd1cdf1608c6692d254513f52876",
+        "sha256_in_prefix": "f7fa7a4335e6a63cf0f8d9029abde4ead300cd1cdf1608c6692d254513f52876",
+        "size_in_bytes": 258
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/daemon.cpython-310-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "bfe332dff91e56403af69f5da853f15eb466c3dcb40e2cddf7e4204c3903fc7c",
+        "sha256_in_prefix": "bfe332dff91e56403af69f5da853f15eb466c3dcb40e2cddf7e4204c3903fc7c",
+        "size_in_bytes": 549864
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/daemon.pxd",
+        "path_type": "hardlink",
+        "sha256": "bce3fec5379e3f04d7ed7bc9fda7a75d7ec49c91b2b10ae712924da142de8e7d",
+        "sha256_in_prefix": "bce3fec5379e3f04d7ed7bc9fda7a75d7ec49c91b2b10ae712924da142de8e7d",
+        "size_in_bytes": 1022
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/daemon.pyi",
+        "path_type": "hardlink",
+        "sha256": "7f62456e73d80de359378c329a8daca875f2da5eccd0ea792e7b57266d76b72e",
+        "sha256_in_prefix": "7f62456e73d80de359378c329a8daca875f2da5eccd0ea792e7b57266d76b72e",
+        "size_in_bytes": 5458
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/daemon.pyx",
+        "path_type": "hardlink",
+        "sha256": "a1fabe2c4481f6b891ee301ecb12317dc9d9d80d9d9c859dfda7a9343bd9e459",
+        "sha256_in_prefix": "a1fabe2c4481f6b891ee301ecb12317dc9d9d80d9d9c859dfda7a9343bd9e459",
+        "size_in_bytes": 24403
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/easel.cpython-310-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "751e2aa70c8bad58d064f4371efc39bbbe59d0793c7ee8326c5cdbd91f10c8bb",
+        "sha256_in_prefix": "751e2aa70c8bad58d064f4371efc39bbbe59d0793c7ee8326c5cdbd91f10c8bb",
+        "size_in_bytes": 1727320
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/easel.pxd",
+        "path_type": "hardlink",
+        "sha256": "df468add9573357fcb1357b60d3f1b459bebdbda1dac9ae7f7bf6d83adc37267",
+        "sha256_in_prefix": "df468add9573357fcb1357b60d3f1b459bebdbda1dac9ae7f7bf6d83adc37267",
+        "size_in_bytes": 9905
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/easel.pyi",
+        "path_type": "hardlink",
+        "sha256": "b7a7986df714f594285c9f0dfb1d87373b5c713d636b606122e8ecb534d4cf88",
+        "sha256_in_prefix": "b7a7986df714f594285c9f0dfb1d87373b5c713d636b606122e8ecb534d4cf88",
+        "size_in_bytes": 27113
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/easel.pyx",
+        "path_type": "hardlink",
+        "sha256": "d920f2a265c3fa73415dc2e83d319ff74a68c64b73a5a669439ab15ecaad41a6",
+        "sha256_in_prefix": "d920f2a265c3fa73415dc2e83d319ff74a68c64b73a5a669439ab15ecaad41a6",
+        "size_in_bytes": 230000
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/errors.cpython-310-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "b281ee5df92886f3f29b07f7d7a4cd3c2dd602bbb39b0edfba26501fe870d5e1",
+        "sha256_in_prefix": "b281ee5df92886f3f29b07f7d7a4cd3c2dd602bbb39b0edfba26501fe870d5e1",
+        "size_in_bytes": 132224
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/errors.pyi",
+        "path_type": "hardlink",
+        "sha256": "5cc6379b395a898204de1f258ab698a500d74e799b6af0299926ddc3ea79e2c2",
+        "sha256_in_prefix": "5cc6379b395a898204de1f258ab698a500d74e799b6af0299926ddc3ea79e2c2",
+        "size_in_bytes": 2083
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/errors.pyx",
+        "path_type": "hardlink",
+        "sha256": "e364d56ff394e9dca677915a44eb92eac94d5b35e4d3a984f983caf42927d9f4",
+        "sha256_in_prefix": "e364d56ff394e9dca677915a44eb92eac94d5b35e4d3a984f983caf42927d9f4",
+        "size_in_bytes": 7808
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/exceptions.pxi",
+        "path_type": "hardlink",
+        "sha256": "30b3a9dfff4b85218543f4305c66cbccb31df8dc98f7925ce90bab2dca03bcdc",
+        "sha256_in_prefix": "30b3a9dfff4b85218543f4305c66cbccb31df8dc98f7925ce90bab2dca03bcdc",
+        "size_in_bytes": 1985
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/fileobj/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/fileobj/bsd.h",
+        "path_type": "hardlink",
+        "sha256": "dceea20b3c3ddc5f7f480ce199b763bb093b12d154c5664be2a590a234bb6429",
+        "sha256_in_prefix": "dceea20b3c3ddc5f7f480ce199b763bb093b12d154c5664be2a590a234bb6429",
+        "size_in_bytes": 5152
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/fileobj/bsd.pxd",
+        "path_type": "hardlink",
+        "sha256": "7158dcaef28630d7c5ef9c5f75f9b36ed5b86d32784cd467eab6dad75f2ba352",
+        "sha256_in_prefix": "7158dcaef28630d7c5ef9c5f75f9b36ed5b86d32784cd467eab6dad75f2ba352",
+        "size_in_bytes": 132
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/fileobj/linux.h",
+        "path_type": "hardlink",
+        "sha256": "009089446f522099f3b1881e8177fb8b7c4c0bdc059775e57c6a6bb3a2eaf220",
+        "sha256_in_prefix": "009089446f522099f3b1881e8177fb8b7c4c0bdc059775e57c6a6bb3a2eaf220",
+        "size_in_bytes": 4947
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/fileobj/linux.pxd",
+        "path_type": "hardlink",
+        "sha256": "38b66a3063a27cec3dec58a615a23e168250729393015e6c04bb13afdf8f233b",
+        "sha256_in_prefix": "38b66a3063a27cec3dec58a615a23e168250729393015e6c04bb13afdf8f233b",
+        "size_in_bytes": 136
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/fileobj/util.h",
+        "path_type": "hardlink",
+        "sha256": "1f92e8105452845be8b7aecdbb013c89368044efecca42151f7ac1ce8fd37c9c",
+        "sha256_in_prefix": "1f92e8105452845be8b7aecdbb013c89368044efecca42151f7ac1ce8fd37c9c",
+        "size_in_bytes": 501
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/hmmer.py",
+        "path_type": "hardlink",
+        "sha256": "4feddaca632792df3994531f5c21fd07ce1ec4bfd8a048a0746ce4c832cad3ee",
+        "sha256_in_prefix": "4feddaca632792df3994531f5c21fd07ce1ec4bfd8a048a0746ce4c832cad3ee",
+        "size_in_bytes": 68515
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/plan7.cpython-310-darwin.so",
+        "path_type": "hardlink",
+        "sha256": "0b44ca2455e5f2137fddc613d2279bf7d8c7e9f0995344189bd1da82e575fb16",
+        "sha256_in_prefix": "0b44ca2455e5f2137fddc613d2279bf7d8c7e9f0995344189bd1da82e575fb16",
+        "size_in_bytes": 2540512
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/plan7.pxd",
+        "path_type": "hardlink",
+        "sha256": "54362673fe6f8d20fb27aeaabc9bf546356a0042d0c7f460e3e3d815f860bef1",
+        "sha256_in_prefix": "54362673fe6f8d20fb27aeaabc9bf546356a0042d0c7f460e3e3d815f860bef1",
+        "size_in_bytes": 13621
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/plan7.pyi",
+        "path_type": "hardlink",
+        "sha256": "1d1021e50bbe78ff2161b371510b18aeb54d075d27ae671f2bbd20435398e30c",
+        "sha256_in_prefix": "1d1021e50bbe78ff2161b371510b18aeb54d075d27ae671f2bbd20435398e30c",
+        "size_in_bytes": 32652
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/plan7.pyx",
+        "path_type": "hardlink",
+        "sha256": "118630eb4958665d7b28795488ee97266f4d00723a92c06befc92a0228e954ad",
+        "sha256_in_prefix": "118630eb4958665d7b28795488ee97266f4d00723a92c06befc92a0228e954ad",
+        "size_in_bytes": 320703
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/reexports/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/reexports/esl_sqio_ascii.h",
+        "path_type": "hardlink",
+        "sha256": "acace8928b4830db8ce7ffaec7092d5ed4ed214dc7670932cdaed7e7413c0427",
+        "sha256_in_prefix": "acace8928b4830db8ce7ffaec7092d5ed4ed214dc7670932cdaed7e7413c0427",
+        "size_in_bytes": 3265
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/reexports/esl_sqio_ascii.pxd",
+        "path_type": "hardlink",
+        "sha256": "9e38226871fe815c99217bb04d9c74efdb922a5b18e5f953b178b9872eb37ace",
+        "sha256_in_prefix": "9e38226871fe815c99217bb04d9c74efdb922a5b18e5f953b178b9872eb37ace",
+        "size_in_bytes": 3629
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/reexports/p7_hmmfile.h",
+        "path_type": "hardlink",
+        "sha256": "9daecd67eaf3ad07e0c0a915f91d42aa14ad6418768ebeddeabc33f0105d89ac",
+        "sha256_in_prefix": "9daecd67eaf3ad07e0c0a915f91d42aa14ad6418768ebeddeabc33f0105d89ac",
+        "size_in_bytes": 438
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/reexports/p7_hmmfile.pxd",
+        "path_type": "hardlink",
+        "sha256": "7734faee98abca9c374f0abd1b862faeaa8c90bf59e6af4b58ccc40935ffaa23",
+        "sha256_in_prefix": "7734faee98abca9c374f0abd1b862faeaa8c90bf59e6af4b58ccc40935ffaa23",
+        "size_in_bytes": 621
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/reexports/p7_tophits.h",
+        "path_type": "hardlink",
+        "sha256": "a340e48c4c90e11e3088920eb10ab0cc3ca3646bf932dd8d858459831bb87499",
+        "sha256_in_prefix": "a340e48c4c90e11e3088920eb10ab0cc3ca3646bf932dd8d858459831bb87499",
+        "size_in_bytes": 64
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/reexports/p7_tophits.pxd",
+        "path_type": "hardlink",
+        "sha256": "5a83e46c1c2e98b7be990492fe64f6a7318b6c23f397d574c3de277f8030dc6e",
+        "sha256_in_prefix": "5a83e46c1c2e98b7be990492fe64f6a7318b6c23f397d574c3de277f8030dc6e",
+        "size_in_bytes": 134
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0d70a19144b87d3e54cd6607717b6c11defc35c5e7c4ccacae3c225d7e24eedc",
+        "sha256_in_prefix": "0d70a19144b87d3e54cd6607717b6c11defc35c5e7c4ccacae3c225d7e24eedc",
+        "size_in_bytes": 457
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "97cd8ff5a07ac94da53c2b3a89a2ece282578a3c623f4bf57e72f9bdc3f9d4ca",
+        "sha256_in_prefix": "97cd8ff5a07ac94da53c2b3a89a2ece282578a3c623f4bf57e72f9bdc3f9d4ca",
+        "size_in_bytes": 538
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/test_doctest.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a5359a18591adda273e68cb7b455bffaf62436a3287052d3b195744cb25554c5",
+        "sha256_in_prefix": "a5359a18591adda273e68cb7b455bffaf62436a3287052d3b195744cb25554c5",
+        "size_in_bytes": 3498
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/test_errors.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "8070efe711fc87e66ed4327a549598caa3e84c8d6d26e2531d2b47b072be6bcf",
+        "sha256_in_prefix": "8070efe711fc87e66ed4327a549598caa3e84c8d6d26e2531d2b47b072be6bcf",
+        "size_in_bytes": 2561
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/test_hmmer.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "1caa559a2fb5f9e72ba45afeac04b07711cd9d5298d055080d6c028c93d70b9a",
+        "sha256_in_prefix": "1caa559a2fb5f9e72ba45afeac04b07711cd9d5298d055080d6c028c93d70b9a",
+        "size_in_bytes": 29773
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/__pycache__/utils.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "3df1f027e4c3f7a8dbf7d17b2b2859193ef485b53a1b786ea86336c3ca582ed9",
+        "sha256_in_prefix": "3df1f027e4c3f7a8dbf7d17b2b2859193ef485b53a1b786ea86336c3ca582ed9",
+        "size_in_bytes": 541
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/README.md",
+        "path_type": "hardlink",
+        "sha256": "2039f9fac5dd1ccd5474c02b8d5040dc672ef36e251d9a4998d48c0d77e70981",
+        "sha256_in_prefix": "2039f9fac5dd1ccd5474c02b8d5040dc672ef36e251d9a4998d48c0d77e70981",
+        "size_in_bytes": 966
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/PF02826.h3m",
+        "path_type": "hardlink",
+        "sha256": "c80ab2c9d78905286ba81959fb2460f596053c82de418e88099ef778980dec53",
+        "sha256_in_prefix": "c80ab2c9d78905286ba81959fb2460f596053c82de418e88099ef778980dec53",
+        "size_in_bytes": 34863
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/PKSI-AT.h3m",
+        "path_type": "hardlink",
+        "sha256": "ae996666a85a7d91c7cc90571280af8ae1c3809206b075577b0b2e035fdd3c97",
+        "sha256_in_prefix": "ae996666a85a7d91c7cc90571280af8ae1c3809206b075577b0b2e035fdd3c97",
+        "size_in_bytes": 59772
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/Thioesterase.h3m",
+        "path_type": "hardlink",
+        "sha256": "98cdb86d74d3af608102eb49fbfaab520c70bf6c452e894a29aa16ff8966d24b",
+        "sha256_in_prefix": "98cdb86d74d3af608102eb49fbfaab520c70bf6c452e894a29aa16ff8966d24b",
+        "size_in_bytes": 47215
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/bin/t2pks.h3m",
+        "path_type": "hardlink",
+        "sha256": "903c374d87004e37f914943cdda7e6e04c9d8902079cb72b47036e9010a070a7",
+        "sha256_in_prefix": "903c374d87004e37f914943cdda7e6e04c9d8902079cb72b47036e9010a070a7",
+        "size_in_bytes": 2442922
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm",
+        "path_type": "hardlink",
+        "sha256": "b1906c33a8fdeecdfbd5b4cd7fd619de8c8fb965b7c5286be0f2a29c6929ab03",
+        "sha256_in_prefix": "b1906c33a8fdeecdfbd5b4cd7fd619de8c8fb965b7c5286be0f2a29c6929ab03",
+        "size_in_bytes": 83710
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3f",
+        "path_type": "hardlink",
+        "sha256": "56e0aefd8e4479f11b273adf6030614645116a06b728735557b33c7c4793d8f1",
+        "sha256_in_prefix": "56e0aefd8e4479f11b273adf6030614645116a06b728735557b33c7c4793d8f1",
+        "size_in_bytes": 19198
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3i",
+        "path_type": "hardlink",
+        "sha256": "ea7ee5fce85298698d4f3040cc6b445bafea08a64b6b0754d996a7d1eef9d4d5",
+        "sha256_in_prefix": "ea7ee5fce85298698d4f3040cc6b445bafea08a64b6b0754d996a7d1eef9d4d5",
+        "size_in_bytes": 173
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3m",
+        "path_type": "hardlink",
+        "sha256": "c80ab2c9d78905286ba81959fb2460f596053c82de418e88099ef778980dec53",
+        "sha256_in_prefix": "c80ab2c9d78905286ba81959fb2460f596053c82de418e88099ef778980dec53",
+        "size_in_bytes": 34863
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PF02826.hmm.h3p",
+        "path_type": "hardlink",
+        "sha256": "011f40569465167686556c0e181faf8b65a46ed119cb31058e1d6447691b3cc1",
+        "sha256_in_prefix": "011f40569465167686556c0e181faf8b65a46ed119cb31058e1d6447691b3cc1",
+        "size_in_bytes": 41190
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm",
+        "path_type": "hardlink",
+        "sha256": "cbd61e9b9b59b867bc1374dfdfc1802964522c761b6374d0514fca8795079c71",
+        "sha256_in_prefix": "cbd61e9b9b59b867bc1374dfdfc1802964522c761b6374d0514fca8795079c71",
+        "size_in_bytes": 144119
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3f",
+        "path_type": "hardlink",
+        "sha256": "904c0a3f41db416b7952997676ecad4059d69eab0dab52a560fe64e1445625bc",
+        "sha256_in_prefix": "904c0a3f41db416b7952997676ecad4059d69eab0dab52a560fe64e1445625bc",
+        "size_in_bytes": 26624
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3i",
+        "path_type": "hardlink",
+        "sha256": "0cc1051f0627e6679a18a31378aeac247fe4f71009823b4d371257d4ff6ea0ff",
+        "sha256_in_prefix": "0cc1051f0627e6679a18a31378aeac247fe4f71009823b4d371257d4ff6ea0ff",
+        "size_in_bytes": 150
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3m",
+        "path_type": "hardlink",
+        "sha256": "ae996666a85a7d91c7cc90571280af8ae1c3809206b075577b0b2e035fdd3c97",
+        "sha256_in_prefix": "ae996666a85a7d91c7cc90571280af8ae1c3809206b075577b0b2e035fdd3c97",
+        "size_in_bytes": 59772
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/PKSI-AT.hmm.h3p",
+        "path_type": "hardlink",
+        "sha256": "890b259f31e196283d753b29cf969eb1c5da23d05f276909de4281fd4edab1f9",
+        "sha256_in_prefix": "890b259f31e196283d753b29cf969eb1c5da23d05f276909de4281fd4edab1f9",
+        "size_in_bytes": 70051
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm",
+        "path_type": "hardlink",
+        "sha256": "cfcc7c84237983c468f5e1ba06779648e0a513a5e4c4ebe819717647f2f6bb65",
+        "sha256_in_prefix": "cfcc7c84237983c468f5e1ba06779648e0a513a5e4c4ebe819717647f2f6bb65",
+        "size_in_bytes": 113883
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3f",
+        "path_type": "hardlink",
+        "sha256": "9de7e73bccb02b5d14b7eb5272fe6b5acb234366a60ef2ecbf8b3e6b59994404",
+        "sha256_in_prefix": "9de7e73bccb02b5d14b7eb5272fe6b5acb234366a60ef2ecbf8b3e6b59994404",
+        "size_in_bytes": 22910
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3i",
+        "path_type": "hardlink",
+        "sha256": "c7fb6208ac40805555cd5cbc3e82bd7de9fb3ebb64e7d55fafeebfd45a5d1733",
+        "sha256_in_prefix": "c7fb6208ac40805555cd5cbc3e82bd7de9fb3ebb64e7d55fafeebfd45a5d1733",
+        "size_in_bytes": 154
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3m",
+        "path_type": "hardlink",
+        "sha256": "98cdb86d74d3af608102eb49fbfaab520c70bf6c452e894a29aa16ff8966d24b",
+        "sha256_in_prefix": "98cdb86d74d3af608102eb49fbfaab520c70bf6c452e894a29aa16ff8966d24b",
+        "size_in_bytes": 47215
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/Thioesterase.hmm.h3p",
+        "path_type": "hardlink",
+        "sha256": "e74b5883ab2e4acbdd01d18972d8ad54bc5a9288672428bbbc972d7db3e4ee7e",
+        "sha256_in_prefix": "e74b5883ab2e4acbdd01d18972d8ad54bc5a9288672428bbbc972d7db3e4ee7e",
+        "size_in_bytes": 55581
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm",
+        "path_type": "hardlink",
+        "sha256": "f499952ac0925e213f8fb1867a32b63ec768a9cf4822cceaa3086ecc5f512028",
+        "sha256_in_prefix": "f499952ac0925e213f8fb1867a32b63ec768a9cf4822cceaa3086ecc5f512028",
+        "size_in_bytes": 5895110
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3f",
+        "path_type": "hardlink",
+        "sha256": "d878b128c6d63c1d54581ab61c15a05f839150b7941c59f0d474c454a01abc45",
+        "sha256_in_prefix": "d878b128c6d63c1d54581ab61c15a05f839150b7941c59f0d474c454a01abc45",
+        "size_in_bytes": 1072122
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3i",
+        "path_type": "hardlink",
+        "sha256": "cc646fed8d7937ebfaeb961b2b0558259b9a11718e983230dd17d2a037a1d90b",
+        "sha256_in_prefix": "cc646fed8d7937ebfaeb961b2b0558259b9a11718e983230dd17d2a037a1d90b",
+        "size_in_bytes": 2148
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3m",
+        "path_type": "hardlink",
+        "sha256": "903c374d87004e37f914943cdda7e6e04c9d8902079cb72b47036e9010a070a7",
+        "sha256_in_prefix": "903c374d87004e37f914943cdda7e6e04c9d8902079cb72b47036e9010a070a7",
+        "size_in_bytes": 2442922
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/db/t2pks.hmm.h3p",
+        "path_type": "hardlink",
+        "sha256": "03941c99324a1e5be89bd426fba260f35c138155eace1c84aeb695a01f10eddf",
+        "sha256_in_prefix": "03941c99324a1e5be89bd426fba260f35c138155eace1c84aeb695a01f10eddf",
+        "size_in_bytes": 2874562
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/make.sh",
+        "path_type": "hardlink",
+        "sha256": "6828993362143b566024000448fd92e444b84fe3491f1035ad59b7e523aa6133",
+        "sha256_in_prefix": "6828993362143b566024000448fd92e444b84fe3491f1035ad59b7e523aa6133",
+        "size_in_bytes": 182
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/LuxC.hmm",
+        "path_type": "hardlink",
+        "sha256": "e7a4dd57c83fb17cc12640f20c4f02f126d8230b16d6c6ef596bf791c8075865",
+        "sha256_in_prefix": "e7a4dd57c83fb17cc12640f20c4f02f126d8230b16d6c6ef596bf791c8075865",
+        "size_in_bytes": 187123
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/PF02826.hmm",
+        "path_type": "hardlink",
+        "sha256": "b1906c33a8fdeecdfbd5b4cd7fd619de8c8fb965b7c5286be0f2a29c6929ab03",
+        "sha256_in_prefix": "b1906c33a8fdeecdfbd5b4cd7fd619de8c8fb965b7c5286be0f2a29c6929ab03",
+        "size_in_bytes": 83710
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/PKSI-AT.hmm",
+        "path_type": "hardlink",
+        "sha256": "cbd61e9b9b59b867bc1374dfdfc1802964522c761b6374d0514fca8795079c71",
+        "sha256_in_prefix": "cbd61e9b9b59b867bc1374dfdfc1802964522c761b6374d0514fca8795079c71",
+        "size_in_bytes": 144119
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/RF00001.hmm",
+        "path_type": "hardlink",
+        "sha256": "8a1b1f294db09a3bdfbb23c7c90371f423f1d666ca75e90ad9c1405f834ed83d",
+        "sha256_in_prefix": "8a1b1f294db09a3bdfbb23c7c90371f423f1d666ca75e90ad9c1405f834ed83d",
+        "size_in_bytes": 21695
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/Thioesterase.hmm",
+        "path_type": "hardlink",
+        "sha256": "cfcc7c84237983c468f5e1ba06779648e0a513a5e4c4ebe819717647f2f6bb65",
+        "sha256_in_prefix": "cfcc7c84237983c468f5e1ba06779648e0a513a5e4c4ebe819717647f2f6bb65",
+        "size_in_bytes": 113883
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/bmyD.hmm",
+        "path_type": "hardlink",
+        "sha256": "3ce4bf8ee993e5326c307dfedf896c92df68b6ff8261749f555317d6bc3bf3d4",
+        "sha256_in_prefix": "3ce4bf8ee993e5326c307dfedf896c92df68b6ff8261749f555317d6bc3bf3d4",
+        "size_in_bytes": 213515
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/laccase.hmm",
+        "path_type": "hardlink",
+        "sha256": "cc5405edda0b770a89650852051fc631d8b0572f82594bf014779fa7df6bc61e",
+        "sha256_in_prefix": "cc5405edda0b770a89650852051fc631d8b0572f82594bf014779fa7df6bc61e",
+        "size_in_bytes": 333950
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt/t2pks.hmm",
+        "path_type": "hardlink",
+        "sha256": "f499952ac0925e213f8fb1867a32b63ec768a9cf4822cceaa3086ecc5f512028",
+        "sha256_in_prefix": "f499952ac0925e213f8fb1867a32b63ec768a9cf4822cceaa3086ecc5f512028",
+        "size_in_bytes": 5895110
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/PF02826.hmm2",
+        "path_type": "hardlink",
+        "sha256": "283d7725e021aceb8845f83a46393614fea2f46f5839a784d4a9989be7328155",
+        "sha256_in_prefix": "283d7725e021aceb8845f83a46393614fea2f46f5839a784d4a9989be7328155",
+        "size_in_bytes": 67158
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/PKSI-AT.hmm2",
+        "path_type": "hardlink",
+        "sha256": "849d2ce61f9e89609048876d522ec37aea7e67e99371cd5e13fb674b09e55a03",
+        "sha256_in_prefix": "849d2ce61f9e89609048876d522ec37aea7e67e99371cd5e13fb674b09e55a03",
+        "size_in_bytes": 115607
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/Thioesterase.hmm2",
+        "path_type": "hardlink",
+        "sha256": "890c0d2e7c8f9e13d721a4ec23fee04f1fdad4ce79624e80a9c555b817b6969e",
+        "sha256_in_prefix": "890c0d2e7c8f9e13d721a4ec23fee04f1fdad4ce79624e80a9c555b817b6969e",
+        "size_in_bytes": 91351
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/hmms/txt2/t2pks.hmm2",
+        "path_type": "hardlink",
+        "sha256": "689cbf125e15946aa2a2ce23a3edd143c344a1949eebf6e081fd0de80c802ff5",
+        "sha256_in_prefix": "689cbf125e15946aa2a2ce23a3edd143c344a1949eebf6e081fd0de80c802ff5",
+        "size_in_bytes": 4728294
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-1.sto",
+        "path_type": "hardlink",
+        "sha256": "2db14b873db4a2c5bb10c7604bfa1e8406f1d0d7ee3a24f949716ef57f7ace14",
+        "sha256_in_prefix": "2db14b873db4a2c5bb10c7604bfa1e8406f1d0d7ee3a24f949716ef57f7ace14",
+        "size_in_bytes": 9492
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-1_bkup.sto",
+        "path_type": "hardlink",
+        "sha256": "2db14b873db4a2c5bb10c7604bfa1e8406f1d0d7ee3a24f949716ef57f7ace14",
+        "sha256_in_prefix": "2db14b873db4a2c5bb10c7604bfa1e8406f1d0d7ee3a24f949716ef57f7ace14",
+        "size_in_bytes": 9492
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-2.sto",
+        "path_type": "hardlink",
+        "sha256": "c42290d4b72f0a71ab553a5eccc44464d2c5b18ccfe1a46f2605f7e97ea6bfda",
+        "sha256_in_prefix": "c42290d4b72f0a71ab553a5eccc44464d2c5b18ccfe1a46f2605f7e97ea6bfda",
+        "size_in_bytes": 14864
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-3.sto",
+        "path_type": "hardlink",
+        "sha256": "2d831def2072c7544386229ea85edd77fe4c5cc74f93d2cbf277bd8755b0bcb9",
+        "sha256_in_prefix": "2d831def2072c7544386229ea85edd77fe4c5cc74f93d2cbf277bd8755b0bcb9",
+        "size_in_bytes": 16702
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-4.sto",
+        "path_type": "hardlink",
+        "sha256": "2f3852933b41e303c2097d7af73dc62194af72455a44d2bac3e80b03d6770c97",
+        "sha256_in_prefix": "2f3852933b41e303c2097d7af73dc62194af72455a44d2bac3e80b03d6770c97",
+        "size_in_bytes": 19526
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-5.sto",
+        "path_type": "hardlink",
+        "sha256": "12dd4a07bcc4221759e1945fe4b781f79a0147c17669099b7c847f3af787f2fb",
+        "sha256_in_prefix": "12dd4a07bcc4221759e1945fe4b781f79a0147c17669099b7c847f3af787f2fb",
+        "size_in_bytes": 22245
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/KR-6.sto",
+        "path_type": "hardlink",
+        "sha256": "4af0b10dbf4e5b330c0e66fac7828a3162e2c392a0c68ac46d8910ed8de00581",
+        "sha256_in_prefix": "4af0b10dbf4e5b330c0e66fac7828a3162e2c392a0c68ac46d8910ed8de00581",
+        "size_in_bytes": 22365
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/p12748-1.sto",
+        "path_type": "hardlink",
+        "sha256": "977321627fe84df0f5ceee13733957e1f5879b02df6e0043d568bf577d2ec5ad",
+        "sha256_in_prefix": "977321627fe84df0f5ceee13733957e1f5879b02df6e0043d568bf577d2ec5ad",
+        "size_in_bytes": 2879
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/p12748-2.sto",
+        "path_type": "hardlink",
+        "sha256": "9dba58af10d7e7efd474805769c3308ad4f596c328516f51271a72f0e225663f",
+        "sha256_in_prefix": "9dba58af10d7e7efd474805769c3308ad4f596c328516f51271a72f0e225663f",
+        "size_in_bytes": 4104
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/jackhmmer/p12748-3.sto",
+        "path_type": "hardlink",
+        "sha256": "7910f4ee3455a21e137b7b69413ac97c6412c633babe8deb0a73a5ced6f64c3c",
+        "sha256_in_prefix": "7910f4ee3455a21e137b7b69413ac97c6412c633babe8deb0a73a5ced6f64c3c",
+        "size_in_bytes": 4104
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/msa/LuxC.faa",
+        "path_type": "hardlink",
+        "sha256": "b8c6e5a6c2b05f8c7aa63cc012ebad16fb1d74b0f19628a16828c3d61e1e2698",
+        "sha256_in_prefix": "b8c6e5a6c2b05f8c7aa63cc012ebad16fb1d74b0f19628a16828c3d61e1e2698",
+        "size_in_bytes": 5993
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/msa/LuxC.hmmalign.sto",
+        "path_type": "hardlink",
+        "sha256": "d0a997a87b371b7348170176ca510cc7346d4fc3494b295d2da96ea9254ac4af",
+        "sha256_in_prefix": "d0a997a87b371b7348170176ca510cc7346d4fc3494b295d2da96ea9254ac4af",
+        "size_in_bytes": 15954
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/msa/LuxC.sto",
+        "path_type": "hardlink",
+        "sha256": "e2cf20e9c15473a9ee33634415327e64b2e77b482dd6e43f759123c22f2e0edc",
+        "sha256_in_prefix": "e2cf20e9c15473a9ee33634415327e64b2e77b482dd6e43f759123c22f2e0edc",
+        "size_in_bytes": 8548
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/msa/laccase.clw",
+        "path_type": "hardlink",
+        "sha256": "339f00cdaf2f89a00c8f0aa0a8fcf891c25dad566cd5a6eb3e66ab7b39def022",
+        "sha256_in_prefix": "339f00cdaf2f89a00c8f0aa0a8fcf891c25dad566cd5a6eb3e66ab7b39def022",
+        "size_in_bytes": 9269
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/938293.PRJEB85.HG003687.faa",
+        "path_type": "hardlink",
+        "sha256": "7190c967978a9921f69dadc710db2d826b41ec738894bf51c1d439106d0a4a08",
+        "sha256_in_prefix": "7190c967978a9921f69dadc710db2d826b41ec738894bf51c1d439106d0a4a08",
+        "size_in_bytes": 981540
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/BGC0001090.gbk",
+        "path_type": "hardlink",
+        "sha256": "cde746178dbe28ef261d46bb9eb224a42d14734449a38a8decde9a239dc0d81a",
+        "sha256_in_prefix": "cde746178dbe28ef261d46bb9eb224a42d14734449a38a8decde9a239dc0d81a",
+        "size_in_bytes": 200498
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/CP000560.2.fna",
+        "path_type": "hardlink",
+        "sha256": "98b08ef713aea38558cce05f2e012732c54c80d2323dee86af5f141bd36e33f7",
+        "sha256_in_prefix": "98b08ef713aea38558cce05f2e012732c54c80d2323dee86af5f141bd36e33f7",
+        "size_in_bytes": 3974661
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/CP040672.1.genes_100.fna",
+        "path_type": "hardlink",
+        "sha256": "c9763f8e21d5a31e1517d37d368ff545450abdd79525153f47cce7ba522d7e61",
+        "sha256_in_prefix": "c9763f8e21d5a31e1517d37d368ff545450abdd79525153f47cce7ba522d7e61",
+        "size_in_bytes": 108553
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/LuxC.faa",
+        "path_type": "hardlink",
+        "sha256": "7ce47aaed2c5e1eba1c683dc0be3efa11ee34038eb498cc09287c61c62b697d0",
+        "sha256_in_prefix": "7ce47aaed2c5e1eba1c683dc0be3efa11ee34038eb498cc09287c61c62b697d0",
+        "size_in_bytes": 7302
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/PKSI.faa",
+        "path_type": "hardlink",
+        "sha256": "c6c1415fe2ea9caf3db19f42faed2d424508f0993ece521a9904a10f47ef5a74",
+        "sha256_in_prefix": "c6c1415fe2ea9caf3db19f42faed2d424508f0993ece521a9904a10f47ef5a74",
+        "size_in_bytes": 17593
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/seqs/bmyD.fna",
+        "path_type": "hardlink",
+        "sha256": "036c60bc963b8d259d3d91fd21ba4711607552cb1dd73dcca676702a927f19e9",
+        "sha256_in_prefix": "036c60bc963b8d259d3d91fd21ba4711607552cb1dd73dcca676702a927f19e9",
+        "size_in_bytes": 1324
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/A0A089QRB9.domtbl",
+        "path_type": "hardlink",
+        "sha256": "33e01ce1ef3e5a92355045cebf275de52e088011713249eb1c8609371f2c63f5",
+        "sha256_in_prefix": "33e01ce1ef3e5a92355045cebf275de52e088011713249eb1c8609371f2c63f5",
+        "size_in_bytes": 6865
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/PF02826.domtbl",
+        "path_type": "hardlink",
+        "sha256": "a430d5325cbe67eb1f6807affe7979be0b16e40f0d25a0663490e860d5569e52",
+        "sha256_in_prefix": "a430d5325cbe67eb1f6807affe7979be0b16e40f0d25a0663490e860d5569e52",
+        "size_in_bytes": 12272
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/PF02826.tbl",
+        "path_type": "hardlink",
+        "sha256": "05c99dc25b1989c585dfc340f454a351e72c27e10fdd546340abd7fe9471e94b",
+        "sha256_in_prefix": "05c99dc25b1989c585dfc340f454a351e72c27e10fdd546340abd7fe9471e94b",
+        "size_in_bytes": 6620
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/bmyD1.tbl",
+        "path_type": "hardlink",
+        "sha256": "33b264d8e77604f4cf5c18d041babc1dcd0819a4a961dbeb4828640d90756944",
+        "sha256_in_prefix": "33b264d8e77604f4cf5c18d041babc1dcd0819a4a961dbeb4828640d90756944",
+        "size_in_bytes": 1147
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/bmyD2.tbl",
+        "path_type": "hardlink",
+        "sha256": "67c3935a1925409707b779eff6594f9f9d2af68e0410fa8f391a648d1fdc5bad",
+        "sha256_in_prefix": "67c3935a1925409707b779eff6594f9f9d2af68e0410fa8f391a648d1fdc5bad",
+        "size_in_bytes": 2094
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/bmyD3.tbl",
+        "path_type": "hardlink",
+        "sha256": "08c7d8a528b999a366f355f219c4de83ca17b866547a55b915ef85795eb08256",
+        "sha256_in_prefix": "08c7d8a528b999a366f355f219c4de83ca17b866547a55b915ef85795eb08256",
+        "size_in_bytes": 946
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/t2pks.domtbl",
+        "path_type": "hardlink",
+        "sha256": "2618a2c09a3b2576a27a85dd7015180b2e5bc07956260dd11deef4c99eaceddf",
+        "sha256_in_prefix": "2618a2c09a3b2576a27a85dd7015180b2e5bc07956260dd11deef4c99eaceddf",
+        "size_in_bytes": 44502
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/t2pks.scan.tbl",
+        "path_type": "hardlink",
+        "sha256": "00a1226f26430eb52977e03a5077874e3bba72f556a28e9df7f93dacbde1dd3c",
+        "sha256_in_prefix": "00a1226f26430eb52977e03a5077874e3bba72f556a28e9df7f93dacbde1dd3c",
+        "size_in_bytes": 9227
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/data/tables/t2pks.tbl",
+        "path_type": "hardlink",
+        "sha256": "775695101e174d266b7702ff8040263e6d24d009cda142405b28177ce555fd52",
+        "sha256_in_prefix": "775695101e174d266b7702ff8040263e6d24d009cda142405b28177ce555fd52",
+        "size_in_bytes": 26015
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/requirements.txt",
+        "path_type": "hardlink",
+        "sha256": "377f3efb84c7ff09b2fb37a66f7aeaf553d1dfb8a3bfdf4a8d2ea2dd25823792",
+        "sha256_in_prefix": "377f3efb84c7ff09b2fb37a66f7aeaf553d1dfb8a3bfdf4a8d2ea2dd25823792",
+        "size_in_bytes": 77
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_doctest.py",
+        "path_type": "hardlink",
+        "sha256": "0659288087396175e1c791a55b0fd52e22a53a4d1e9c9751ba3769226238b641",
+        "sha256_in_prefix": "0659288087396175e1c791a55b0fd52e22a53a4d1e9c9751ba3769226238b641",
+        "size_in_bytes": 4454
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d17d46d6b159e33bbbb5a5fadd59d6923ed4924d220b678eb9f8173b06c46778",
+        "sha256_in_prefix": "d17d46d6b159e33bbbb5a5fadd59d6923ed4924d220b678eb9f8173b06c46778",
+        "size_in_bytes": 1101
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "4f8e066cb0d0d2555b1c01194f01b3b5494ccfd96ea8250492881608569fc8ec",
+        "sha256_in_prefix": "4f8e066cb0d0d2555b1c01194f01b3b5494ccfd96ea8250492881608569fc8ec",
+        "size_in_bytes": 923
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_alphabet.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d416e78093481f527b87d7f2ca617837b53f200aa8fed350a9a2c472bb816c6e",
+        "sha256_in_prefix": "d416e78093481f527b87d7f2ca617837b53f200aa8fed350a9a2c472bb816c6e",
+        "size_in_bytes": 3402
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_bitfield.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "9ce530807df199f054a4346475457c4ca58db367d3a890a9bb5cd47f2dd0437e",
+        "sha256_in_prefix": "9ce530807df199f054a4346475457c4ca58db367d3a890a9bb5cd47f2dd0437e",
+        "size_in_bytes": 2708
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_block.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "9348a9e95eb1178b1c8e22ea721400a3a3374693d3b1a5b6ba4ca705d0274cc7",
+        "sha256_in_prefix": "9348a9e95eb1178b1c8e22ea721400a3a3374693d3b1a5b6ba4ca705d0274cc7",
+        "size_in_bytes": 10627
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_gencode.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "df7878f18a53f2d36d9647a631ce67f77007a5386af0b1d53e75ecf6b85feca7",
+        "sha256_in_prefix": "df7878f18a53f2d36d9647a631ce67f77007a5386af0b1d53e75ecf6b85feca7",
+        "size_in_bytes": 1832
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_keyhash.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "04cbf124873068c115f4e570e4f6aa28fec523351f63c180b9a37a2cece11764",
+        "sha256_in_prefix": "04cbf124873068c115f4e570e4f6aa28fec523351f63c180b9a37a2cece11764",
+        "size_in_bytes": 2486
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_matrix.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "1f12c4bee26b1b4ae2d76b353c09fc2cc46f349919d4236f6594c7c40b53541d",
+        "sha256_in_prefix": "1f12c4bee26b1b4ae2d76b353c09fc2cc46f349919d4236f6594c7c40b53541d",
+        "size_in_bytes": 11738
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_msa.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d02a630a36a5da6a50174e9bb1ac9fa029d647a8caecaa8d882999f4432e8c96",
+        "sha256_in_prefix": "d02a630a36a5da6a50174e9bb1ac9fa029d647a8caecaa8d882999f4432e8c96",
+        "size_in_bytes": 10862
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_msafile.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "86d0ff746dfc163564bca1a69836f7c1f9c8e3749ccfb62a33b5bcda6ae4940d",
+        "sha256_in_prefix": "86d0ff746dfc163564bca1a69836f7c1f9c8e3749ccfb62a33b5bcda6ae4940d",
+        "size_in_bytes": 10337
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_randomness.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "2cfcfb52bbe21753cfe7a535237f8b97550e64bcbf2040f6a268b15322d7c573",
+        "sha256_in_prefix": "2cfcfb52bbe21753cfe7a535237f8b97550e64bcbf2040f6a268b15322d7c573",
+        "size_in_bytes": 2278
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_sequence.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "b501362024a349fa55d436c027a80df610ac5911e0cfb1f2c1596dc4c1c3ecf4",
+        "sha256_in_prefix": "b501362024a349fa55d436c027a80df610ac5911e0cfb1f2c1596dc4c1c3ecf4",
+        "size_in_bytes": 9558
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_sequencefile.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "c2c5e5180c37bec91db6817c5a13086c80e3a60fe3d9b19d4ae2006857ac264f",
+        "sha256_in_prefix": "c2c5e5180c37bec91db6817c5a13086c80e3a60fe3d9b19d4ae2006857ac264f",
+        "size_in_bytes": 14609
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_ssi.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "984a858b36361b3d5e485cd2257c505ed9059fddab0150ffff3c38fe7f138191",
+        "sha256_in_prefix": "984a858b36361b3d5e485cd2257c505ed9059fddab0150ffff3c38fe7f138191",
+        "size_in_bytes": 3287
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/__pycache__/test_vector.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "99ed35188057814fa0909cca5cc44028bb29d8a16c15d757283ffd9cf13a7fce",
+        "sha256_in_prefix": "99ed35188057814fa0909cca5cc44028bb29d8a16c15d757283ffd9cf13a7fce",
+        "size_in_bytes": 13963
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_alphabet.py",
+        "path_type": "hardlink",
+        "sha256": "7b4be97945cffa91682173c8d3e11aa57f542024f723af06b688c2fddd772fa0",
+        "sha256_in_prefix": "7b4be97945cffa91682173c8d3e11aa57f542024f723af06b688c2fddd772fa0",
+        "size_in_bytes": 2707
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_bitfield.py",
+        "path_type": "hardlink",
+        "sha256": "1dad9c794450a48c2672407703e276a47dd61f84c2b093267657e6f9299da48b",
+        "sha256_in_prefix": "1dad9c794450a48c2672407703e276a47dd61f84c2b093267657e6f9299da48b",
+        "size_in_bytes": 2115
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_block.py",
+        "path_type": "hardlink",
+        "sha256": "422a6ab776b1b2c0bbceb2dd57527c83bba20ed12cb213ee5bc9ccd75872a6e6",
+        "sha256_in_prefix": "422a6ab776b1b2c0bbceb2dd57527c83bba20ed12cb213ee5bc9ccd75872a6e6",
+        "size_in_bytes": 11505
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_gencode.py",
+        "path_type": "hardlink",
+        "sha256": "a736ece9d6bb9022d7e1b5117d0d3a7a98b8ba2e24b372b58e812e573db2a868",
+        "sha256_in_prefix": "a736ece9d6bb9022d7e1b5117d0d3a7a98b8ba2e24b372b58e812e573db2a868",
+        "size_in_bytes": 1203
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_keyhash.py",
+        "path_type": "hardlink",
+        "sha256": "8a2a428b43ecc63f9c3774cc774e1ccdede3135c7dcf851e6585f51a77bd4702",
+        "sha256_in_prefix": "8a2a428b43ecc63f9c3774cc774e1ccdede3135c7dcf851e6585f51a77bd4702",
+        "size_in_bytes": 1864
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_matrix.py",
+        "path_type": "hardlink",
+        "sha256": "49639aaedfc89bc4193cc4b8742961a5b21ca2e581b88df0d8d0026cdb422086",
+        "sha256_in_prefix": "49639aaedfc89bc4193cc4b8742961a5b21ca2e581b88df0d8d0026cdb422086",
+        "size_in_bytes": 10354
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_msa.py",
+        "path_type": "hardlink",
+        "sha256": "afcf81b741866b20378c406e08b2a75b0c893c584c5c6e0f97605ee3d9a26b0a",
+        "sha256_in_prefix": "afcf81b741866b20378c406e08b2a75b0c893c584c5c6e0f97605ee3d9a26b0a",
+        "size_in_bytes": 11380
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_msafile.py",
+        "path_type": "hardlink",
+        "sha256": "f8c8f809975fc8cca7b87d141def224271e64a227e07b8a532eb849ca1b2cbe4",
+        "sha256_in_prefix": "f8c8f809975fc8cca7b87d141def224271e64a227e07b8a532eb849ca1b2cbe4",
+        "size_in_bytes": 10033
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_randomness.py",
+        "path_type": "hardlink",
+        "sha256": "915ae914a64500a14b720a348b460e87b4528044befd505310189610ef8d0a7d",
+        "sha256_in_prefix": "915ae914a64500a14b720a348b460e87b4528044befd505310189610ef8d0a7d",
+        "size_in_bytes": 1443
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_sequence.py",
+        "path_type": "hardlink",
+        "sha256": "410d9d483544b01a064432c046a12bfe6e391ba8bb21fa7bbe61cbe7eb7135ad",
+        "sha256_in_prefix": "410d9d483544b01a064432c046a12bfe6e391ba8bb21fa7bbe61cbe7eb7135ad",
+        "size_in_bytes": 8546
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_sequencefile.py",
+        "path_type": "hardlink",
+        "sha256": "449c157e3860ea72adb9cf5525e7a52798517c4745b3e5d11c486a6510e6400b",
+        "sha256_in_prefix": "449c157e3860ea72adb9cf5525e7a52798517c4745b3e5d11c486a6510e6400b",
+        "size_in_bytes": 16910
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_ssi.py",
+        "path_type": "hardlink",
+        "sha256": "63601bf077ec7f941be33a6048a28e8379dd1c3f34e823c4d027c2f0c15bad25",
+        "sha256_in_prefix": "63601bf077ec7f941be33a6048a28e8379dd1c3f34e823c4d027c2f0c15bad25",
+        "size_in_bytes": 2098
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_easel/test_vector.py",
+        "path_type": "hardlink",
+        "sha256": "2d1401a0ad9aeaed1c0ea3b66404d0e0066ca76e4b01ced645c3357de0c66cd5",
+        "sha256_in_prefix": "2d1401a0ad9aeaed1c0ea3b66404d0e0066ca76e4b01ced645c3357de0c66cd5",
+        "size_in_bytes": 13163
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_errors.py",
+        "path_type": "hardlink",
+        "sha256": "7ac4cb78004376facc29a6bd09bac6730323332ab30bae8b58f46eab923ffe65",
+        "sha256_in_prefix": "7ac4cb78004376facc29a6bd09bac6730323332ab30bae8b58f46eab923ffe65",
+        "size_in_bytes": 2214
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_hmmer.py",
+        "path_type": "hardlink",
+        "sha256": "b4330e5248354abb664fe6e2fdf063a9ca8e6cce53c47e0a323abb065e8bccfb",
+        "sha256_in_prefix": "b4330e5248354abb664fe6e2fdf063a9ca8e6cce53c47e0a323abb065e8bccfb",
+        "size_in_bytes": 36518
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6211e785e9cae267f324c7182c5d557280cd3ff3bc4fcce80a991eb1035e0d7c",
+        "sha256_in_prefix": "6211e785e9cae267f324c7182c5d557280cd3ff3bc4fcce80a991eb1035e0d7c",
+        "size_in_bytes": 1121
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "f55afd8bb84a39f271db8072b9c44715e61ee677d03de91c964681c7dd08d88b",
+        "sha256_in_prefix": "f55afd8bb84a39f271db8072b9c44715e61ee677d03de91c964681c7dd08d88b",
+        "size_in_bytes": 933
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_alignment.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "2bfd10e9a1381ae49a59d812cab05ba870124dddde56a07448e3d43a8e83f0d8",
+        "sha256_in_prefix": "2bfd10e9a1381ae49a59d812cab05ba870124dddde56a07448e3d43a8e83f0d8",
+        "size_in_bytes": 2299
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_background.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "c333cfdbd1bc7dc1ea452e109eda2c6327d1886dfae69758a2b7e6d5d98a9d7a",
+        "sha256_in_prefix": "c333cfdbd1bc7dc1ea452e109eda2c6327d1886dfae69758a2b7e6d5d98a9d7a",
+        "size_in_bytes": 1832
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_block.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "da351f5b62b155150e9e94dd4cb8ea2c4583c581089b3e04589c77d1027cfcaf",
+        "sha256_in_prefix": "da351f5b62b155150e9e94dd4cb8ea2c4583c581089b3e04589c77d1027cfcaf",
+        "size_in_bytes": 7464
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_builder.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "30a0403f3d1f082663acf742e4cfeec39c70dfaa3afb1daef686e744ad3d4ba7",
+        "sha256_in_prefix": "30a0403f3d1f082663acf742e4cfeec39c70dfaa3afb1daef686e744ad3d4ba7",
+        "size_in_bytes": 8457
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_hit.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "53080158d92bf230c30bb023376b4993b43aed4d1a1a2f836b8b36576e8394d8",
+        "sha256_in_prefix": "53080158d92bf230c30bb023376b4993b43aed4d1a1a2f836b8b36576e8394d8",
+        "size_in_bytes": 4203
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_hmm.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e83033f11e80b1bbb9bc5043309c6bf0a99f626284c2879553ac4c79558393eb",
+        "sha256_in_prefix": "e83033f11e80b1bbb9bc5043309c6bf0a99f626284c2879553ac4c79558393eb",
+        "size_in_bytes": 10726
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_hmmfile.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "11576d458f1d7abdfd19a6542f312c6f8c2f91bdec13199790555a014312fb68",
+        "sha256_in_prefix": "11576d458f1d7abdfd19a6542f312c6f8c2f91bdec13199790555a014312fb68",
+        "size_in_bytes": 6674
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_optimizedprofile.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "efe15f94e01875590793e7dfa046dd5de1526f559c859d256b315f0ab0337c90",
+        "sha256_in_prefix": "efe15f94e01875590793e7dfa046dd5de1526f559c859d256b315f0ab0337c90",
+        "size_in_bytes": 4156
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_pipeline.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d7dde0c59f0e46152096b06098e37b8829b6dad539e48cddb3aafc72b571cdff",
+        "sha256_in_prefix": "d7dde0c59f0e46152096b06098e37b8829b6dad539e48cddb3aafc72b571cdff",
+        "size_in_bytes": 13784
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_profile.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "cb277c0873db62e835dbc3d2d5b1322c36968350c8876db30fb9cc56d33c9bf9",
+        "sha256_in_prefix": "cb277c0873db62e835dbc3d2d5b1322c36968350c8876db30fb9cc56d33c9bf9",
+        "size_in_bytes": 3894
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_tophits.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "364a64f14752cb7d98258fe911257f9aad3a48e3e4c6eb134380beada248ac2a",
+        "sha256_in_prefix": "364a64f14752cb7d98258fe911257f9aad3a48e3e4c6eb134380beada248ac2a",
+        "size_in_bytes": 14458
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_tracealigner.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "9589e633fb8b061d666eca57e3c5b278738100d86fda8612715a52fe2744554e",
+        "sha256_in_prefix": "9589e633fb8b061d666eca57e3c5b278738100d86fda8612715a52fe2744554e",
+        "size_in_bytes": 2725
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/__pycache__/test_traces.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "6b865d877750d308f59d1bb8a2239a59320d4b5f7a0b146ffbcd8ca2f736cdc4",
+        "sha256_in_prefix": "6b865d877750d308f59d1bb8a2239a59320d4b5f7a0b146ffbcd8ca2f736cdc4",
+        "size_in_bytes": 2803
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_alignment.py",
+        "path_type": "hardlink",
+        "sha256": "08dc15705db8e51b8aab0b96b37a3d97fe5e5c426b61720214f30fba96123982",
+        "sha256_in_prefix": "08dc15705db8e51b8aab0b96b37a3d97fe5e5c426b61720214f30fba96123982",
+        "size_in_bytes": 1616
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_background.py",
+        "path_type": "hardlink",
+        "sha256": "6e99ba446ddf98825cc38ac3c057d532b8989c67cb6d023587a237b173dcf7c0",
+        "sha256_in_prefix": "6e99ba446ddf98825cc38ac3c057d532b8989c67cb6d023587a237b173dcf7c0",
+        "size_in_bytes": 1547
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_block.py",
+        "path_type": "hardlink",
+        "sha256": "8db8d661bbd0ea2fab58234bd8170c4aa64981aed1089cc2b7939a0099418931",
+        "sha256_in_prefix": "8db8d661bbd0ea2fab58234bd8170c4aa64981aed1089cc2b7939a0099418931",
+        "size_in_bytes": 8610
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_builder.py",
+        "path_type": "hardlink",
+        "sha256": "1c4a02792e64e7c33e0caca7d041f3fce6a606258ddd32898bce39348c94cdd1",
+        "sha256_in_prefix": "1c4a02792e64e7c33e0caca7d041f3fce6a606258ddd32898bce39348c94cdd1",
+        "size_in_bytes": 9429
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_hit.py",
+        "path_type": "hardlink",
+        "sha256": "277b68738ed0ecd1adfcaf96f8aa290c3d5a8f846a8da22520e575f95d7ef7fe",
+        "sha256_in_prefix": "277b68738ed0ecd1adfcaf96f8aa290c3d5a8f846a8da22520e575f95d7ef7fe",
+        "size_in_bytes": 5150
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_hmm.py",
+        "path_type": "hardlink",
+        "sha256": "3bb3f6cb471352a940dc9806d1e49d8bf33ae4acd251d6de5d4247863adccb0b",
+        "sha256_in_prefix": "3bb3f6cb471352a940dc9806d1e49d8bf33ae4acd251d6de5d4247863adccb0b",
+        "size_in_bytes": 13148
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_hmmfile.py",
+        "path_type": "hardlink",
+        "sha256": "d68cb4491ab39aac265ef42fbc270fcecdebefa86928fa17b0b2c55c36f01ed3",
+        "sha256_in_prefix": "d68cb4491ab39aac265ef42fbc270fcecdebefa86928fa17b0b2c55c36f01ed3",
+        "size_in_bytes": 5330
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_optimizedprofile.py",
+        "path_type": "hardlink",
+        "sha256": "75ea02d43f7690d11ce28067ade98023a7d4238ea75c1ea45c7d4697005b2560",
+        "sha256_in_prefix": "75ea02d43f7690d11ce28067ade98023a7d4238ea75c1ea45c7d4697005b2560",
+        "size_in_bytes": 3280
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_pipeline.py",
+        "path_type": "hardlink",
+        "sha256": "fb9e2efba021185bac9453059fb6e75c4899dbdf9f4a3266004e6a3049e98603",
+        "sha256_in_prefix": "fb9e2efba021185bac9453059fb6e75c4899dbdf9f4a3266004e6a3049e98603",
+        "size_in_bytes": 16443
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_profile.py",
+        "path_type": "hardlink",
+        "sha256": "035cd3699bf695a20653443084f6fa4606a34864a6a3ac4d4a97a671d9c5ac91",
+        "sha256_in_prefix": "035cd3699bf695a20653443084f6fa4606a34864a6a3ac4d4a97a671d9c5ac91",
+        "size_in_bytes": 3339
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_tophits.py",
+        "path_type": "hardlink",
+        "sha256": "0fbe116661823a147bc5c948bb499e0a2602355ea1e039d930a2a592453df367",
+        "sha256_in_prefix": "0fbe116661823a147bc5c948bb499e0a2602355ea1e039d930a2a592453df367",
+        "size_in_bytes": 17085
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_tracealigner.py",
+        "path_type": "hardlink",
+        "sha256": "f89871b292ccbcb766f096042dbd5c39ac16196a813c8a188f2a198a03622421",
+        "sha256_in_prefix": "f89871b292ccbcb766f096042dbd5c39ac16196a813c8a188f2a198a03622421",
+        "size_in_bytes": 2443
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/test_plan7/test_traces.py",
+        "path_type": "hardlink",
+        "sha256": "c0ee61585076847f358b5103e1bace4112c072b7a38d68569fc0841cb3536e89",
+        "sha256_in_prefix": "c0ee61585076847f358b5103e1bace4112c072b7a38d68569fc0841cb3536e89",
+        "size_in_bytes": 1931
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/tests/utils.py",
+        "path_type": "hardlink",
+        "sha256": "9b3cd55bd116bafbf2d66ef5bf70f9ae687a4a2a437e7c9337726af6ddd263e4",
+        "sha256_in_prefix": "9b3cd55bd116bafbf2d66ef5bf70f9ae687a4a2a437e7c9337726af6ddd263e4",
+        "size_in_bytes": 563
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pyhmmer/utils.py",
+        "path_type": "hardlink",
+        "sha256": "5f6d6c3600c858510388e4d315ea1dbd3b6a36ad176c2cd502a6dc4dfa0ed196",
+        "sha256_in_prefix": "5f6d6c3600c858510388e4d315ea1dbd3b6a36ad176c2cd502a6dc4dfa0ed196",
+        "size_in_bytes": 3458
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "5b5a370db5d53ace5dbf4038edc3115901608b752df36203a7d7967579e3b22b",
+  "size": 10129355,
+  "subdir": "osx-64",
+  "timestamp": 1709686976879,
+  "url": "https://conda.anaconda.org/bioconda/osx-64/pyhmmer-0.10.8-py310he07d9a1_0.tar.bz2",
+  "version": "0.10.8"
+}

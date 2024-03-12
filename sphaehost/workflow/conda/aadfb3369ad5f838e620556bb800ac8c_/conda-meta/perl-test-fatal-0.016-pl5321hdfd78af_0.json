@@ -1,0 +1,64 @@
+{
+  "build": "pl5321hdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "perl >=5.32.1,<6.0a0 *_perl5",
+    "perl-carp",
+    "perl-exporter",
+    "perl-try-tiny"
+  ],
+  "extracted_package_dir": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-test-fatal-0.016-pl5321hdfd78af_0",
+  "files": [
+    "lib/perl5/5.32/site_perl/auto/Test/Fatal/.packlist",
+    "lib/perl5/site_perl/Test/Fatal.pm",
+    "man/man3/Test::Fatal.3"
+  ],
+  "fn": "perl-test-fatal-0.016-pl5321hdfd78af_0.tar.bz2",
+  "license": "perl_5",
+  "link": {
+    "source": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-test-fatal-0.016-pl5321hdfd78af_0",
+    "type": 1
+  },
+  "md5": "c67cdcdcfd2d0ae252c9d17f40da798d",
+  "name": "perl-test-fatal",
+  "noarch": "generic",
+  "package_tarball_full_path": "/Users/bhavyapapudeshi/miniconda3/pkgs/perl-test-fatal-0.016-pl5321hdfd78af_0.tar.bz2",
+  "package_type": "noarch_generic",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/perl5/5.32/site_perl/auto/Test/Fatal/.packlist",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/opt/conda/conda-bld/perl-test-fatal_1644831892332/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "1a8ffcbb3f0485e1eda4bced985da7e3be0c3731f9cd9c459806a17b8d1140fb",
+        "sha256_in_prefix": "aaffc63659db702c29f2bee0b99963cefcf699ce8cc38767f16b3f6e800fa3b3",
+        "size_in_bytes": 676
+      },
+      {
+        "_path": "lib/perl5/site_perl/Test/Fatal.pm",
+        "path_type": "hardlink",
+        "sha256": "510dba52c119aefb779274da2e04a47f852cb498bc82419903d68a796be95561",
+        "sha256_in_prefix": "510dba52c119aefb779274da2e04a47f852cb498bc82419903d68a796be95561",
+        "size_in_bytes": 14864
+      },
+      {
+        "_path": "man/man3/Test::Fatal.3",
+        "path_type": "hardlink",
+        "sha256": "26b585bdba7716e09fd45fac8b684a6ca0abecc8d69ae04a576a6bc82938d714",
+        "sha256_in_prefix": "26b585bdba7716e09fd45fac8b684a6ca0abecc8d69ae04a576a6bc82938d714",
+        "size_in_bytes": 9141
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "fdf89a3e8481aa1068626b0ff11e5b7b320570fd41b11d0a45e43b100b903ec2",
+  "size": 13142,
+  "subdir": "noarch",
+  "timestamp": 1644832115812,
+  "url": "https://conda.anaconda.org/bioconda/noarch/perl-test-fatal-0.016-pl5321hdfd78af_0.tar.bz2",
+  "version": "0.016"
+}
