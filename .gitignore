@@ -1,7 +1,9 @@
-databases
-sphaehost.egg-info
+example2/
+databases/
+sphaehost.egg-info/
 sphaehost/workflow/conda
-
+sphaehost/__pycache__
+.snakemake
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -5,4 +5,5 @@ sphaehost:
         output:
         db_dir:
         temp_dir:
+        sequencing:
     # Add customisable config here

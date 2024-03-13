@@ -155,7 +155,7 @@ def install(**kwargs):
     ),
 )
 @click.option("--input", "_input", help="Input file/directory", type=str, required=True)
-@click.option('--sequencing', help="sequencing method", default='paired', show_default=True,
+@click.option('--sequencing', "sequencing", help="sequencing method", default='paired', show_default=True,
                 type=click.Choice(['paired', 'longread']))
 @common_options
 def run(**kwargs):
