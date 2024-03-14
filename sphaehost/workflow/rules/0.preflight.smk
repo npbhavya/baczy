@@ -65,10 +65,12 @@ dir_script = os.path.join(workflow.basedir, "scripts")
 dir_fastp_short = os.path.join(dir_out, 'PROCESSING', 'fastp-short')
 dir_megahit = os.path.join(dir_out, 'PROCESSING', 'megahit')
 dir_bakta_short = os.path.join(dir_out, 'PROCESSING','bakta-short')
+dir_summary_short = os.path.join(dir_out, 'RESULTS')
 
 #long reads
 dir_hybracter = os.path.join(dir_out, 'PROCESSING', 'hybracter')
 dir_bakta_long = os.path.join(dir_out, 'PROCESSING','bakta-long')
+dir_summary_long = os.path.join(dir_out, 'RESULTS')
 
 """ONSTART/END/ERROR
 Tasks to perform at various stages the start and end of a run.

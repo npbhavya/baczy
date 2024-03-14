@@ -13,7 +13,9 @@ include: os.path.join("rules", "1.fastp.smk")
 include: os.path.join("rules", "2.hybracter.smk")
 include: os.path.join("rules", "2.megahit.smk")
 include: os.path.join("rules", "3.bakta.smk")
+include: os.path.join("rules", "4.amrfinder.smk")
 include: os.path.join("rules", "4.phispy.smk")
+include: os.path.join("rules", "5.summary.smk") 
 
 """TARGETS"""
 include: os.path.join("rules", "99.targets.smk")

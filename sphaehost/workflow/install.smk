@@ -32,7 +32,6 @@ targets.db = []
 targets.db.append(os.path.join(databaseDir, 'db-light', 'version.json'))
 targets.db.append(os.path.join(databaseDir, 'hybracterDB', 'plsdb_2023_11_03_v2.msh'))
 
-
 """RUN SNAKEMAKE"""
 rule all:
     input:

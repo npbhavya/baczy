@@ -2,7 +2,11 @@ rule bakta_short:
     input:
         os.path.join(dir_megahit, "{sample}-pr", "final.contigs.fa")
     output:
-        os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.gbff")
+        faa = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.faa"), 
+        fna = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.fna"),
+        gbff = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.gbff"),
+        gff3 = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.gff3"),
+        txt = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.txt")
     params:
         bakta = os.path.join(dir_bakta_short, "{sample}_bakta"),
         db = os.path.join(databaseDir, "db-light"),
@@ -21,7 +25,11 @@ rule bakta_long:
     input:
         os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta")
     output:
-        os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.gbff")
+        faa = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.faa"), 
+        fna = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.fna"),
+        gbff = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.gbff"),
+        gff3 = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.gff3"),
+        txt = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.txt"),
     params:
         bakta = os.path.join(dir_bakta_long, "{sample}_bakta"),
         db = os.path.join(databaseDir, "db-light"),
