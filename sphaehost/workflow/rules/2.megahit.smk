@@ -58,4 +58,3 @@ rule fastg:
             touch {output.graph}
         fi
         """
-        

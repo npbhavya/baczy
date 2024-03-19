@@ -1,0 +1,6 @@
+name: fastp
+channels:
+    - defaults
+    - bioconda
+dependencies:
+    - dnaapler>=0.7.0
