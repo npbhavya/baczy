@@ -33,3 +33,10 @@ elif config['sphaehost']['args']['sequencing'] == 'longread':
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_phispy.log"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_summary_long, "{sample}", "{sample}_log"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_summary_long, "{sample}", "{sample}.gff3"), sample=sample_names))
+
+if config['sphaehost']['args']['sequencing'] == 'paired':
+    targets['pan'].append(os.path.join(dir_panaroo_short, "summary_statistics.txt"))
+    targets['pan'].append(os.path.join(dir_panaroo_short, "gene_presence_absence.csv"))
+elif config['sphaehost']['args']['sequencing'] == 'longread':
+    targets['pan'].append(os.path.join(dir_panaroo_long, "summary_statistics.txt"))
+    targets['pan'].append(os.path.join(dir_panaroo_long, "gene_presence_absence.csv"))

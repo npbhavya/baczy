@@ -16,10 +16,20 @@ include: os.path.join("rules", "3.bakta.smk")
 include: os.path.join("rules", "4.amrfinder.smk")
 include: os.path.join("rules", "4.phispy.smk")
 include: os.path.join("rules", "5.summary.smk") 
+include: os.path.join("rules", "6.panaroo.smk")
 
 """TARGETS"""
 include: os.path.join("rules", "99.targets.smk")
 
 rule all:
     input:
+        targets['asan'],
+        targets['pan']
+
+rule asan:
+    input:
         targets['asan']
+
+rule pan:
+    input:
+        targets['pan']
