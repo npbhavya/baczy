@@ -1,6 +1,6 @@
 # Target rules
 
-targets = {'asan': [], 'pan'=[]}
+targets = {'asan': [], 'pan': []}
 
 if config['sphaehost']['args']['sequencing'] == 'paired':
     print ("Entering paired targets")
@@ -17,6 +17,7 @@ if config['sphaehost']['args']['sequencing'] == 'paired':
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_phispy.log"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_summary_short, "{sample}", "{sample}_logs"), sample=sample_names))
+    targets['asan'].append(expand(os.path.join(dir_summary_short, "{sample}", "{sample}.gff3"), sample=sample_names))
 elif config['sphaehost']['args']['sequencing'] == 'longread':
     print ("entering nanopore targets")
     targets['asan'].append(os.path.join(dir_hybracter, "hybracter.out", "FINAL_OUTPUT", "hybracter_summary.tsv"))
@@ -31,3 +32,4 @@ elif config['sphaehost']['args']['sequencing'] == 'longread':
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_phispy.log"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_summary_long, "{sample}", "{sample}_log"), sample=sample_names))
+    targets['asan'].append(expand(os.path.join(dir_summary_long, "{sample}", "{sample}.gff3"), sample=sample_names))

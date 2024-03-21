@@ -22,4 +22,4 @@ include: os.path.join("rules", "99.targets.smk")
 
 rule all:
     input:
-        targets['all']
+        targets['asan']

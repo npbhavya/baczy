@@ -1,8 +1,8 @@
 #quality control rules here
 rule fastp_short:
     input:
-        r1 = os.path.join(input_dir, "{sample}_1.fastq"),
-        r2 = os.path.join(input_dir, "{sample}_2.fastq")
+        r1 = os.path.join(input_dir, PATTERN_R1),
+        r2 = os.path.join(input_dir, PATTERN_R2)
     output:
         r1 = os.path.join(dir_fastp_short,"{sample}_R1.fastq.gz"),
         r2 = os.path.join(dir_fastp_short,"{sample}_R2.fastq.gz"),

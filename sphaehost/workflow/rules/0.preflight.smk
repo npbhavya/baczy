@@ -32,11 +32,13 @@ input_dir = config_data.get('sphaehost', {}).get('args', {}).get('_input')
 
 # List of file paths matching the pattern
 if config['sphaehost']['args']['sequencing'] == 'paired':
-    file_paths = glob.glob(os.path.join(input_dir, '*1.fastq*'))
-    sample_names = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_1', 1)[0] for file_path in file_paths]
+    file_paths = glob.glob(os.path.join(input_dir, '*R1*.fastq*'))
+    sample_names = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[0] for file_path in file_paths]
+    extn = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[1] + os.path.splitext(os.path.basename(file_path))[1] for file_path in file_paths]
 elif config['sphaehost']['args']['sequencing'] == 'longread':
     file_paths = glob.glob(os.path.join(input_dir, '*.fastq*'))
     sample_names = [os.path.splitext(os.path.basename(file_path))[0].rsplit('.', 1)[0] for file_path in file_paths]
+    extn = [os.path.splitext(os.path.basename(file_path))[0].rsplit('.', 1)[1] + os.path.splitext(os.path.basename(file_path))[1] for file_path in file_paths]
 
 try:
     if config['db_dir'] is None:
@@ -51,7 +53,19 @@ if len(sample_names) == 0:
 	sys.stderr.write(f"We did not find any fastq files in {sample_names}. Is this the right read dir?\n")
 	sys.exit(0)
 
+unique_strings = set(extn)
+if len(unique_strings)>2:
+    print ("There are multiple extensions, pick one")
+    sys.exit(0)
+
 print(f"Samples are {sample_names}")
+print(f"Extensions are {extn}")
+
+FQEXTN = extn[0]
+PATTERN_R1 = '{sample}_R1' + FQEXTN
+PATTERN_R2 = '{sample}_R2' + FQEXTN
+
+
 
 # Set default database directory
 default_db_dir = os.path.join(workflow.basedir, 'databases')
@@ -65,12 +79,14 @@ dir_script = os.path.join(workflow.basedir, "scripts")
 dir_fastp_short = os.path.join(dir_out, 'PROCESSING', 'fastp-short')
 dir_megahit = os.path.join(dir_out, 'PROCESSING', 'megahit')
 dir_bakta_short = os.path.join(dir_out, 'PROCESSING','bakta-short')
-dir_summary_short = os.path.join(dir_out, 'RESULTS')
+dir_summary_short = os.path.join(dir_out, 'RESULTS-short')
+dir_panaroo_short = os.path.join(dir_out, 'RESULTS-short', 'panaroo')
 
 #long reads
 dir_hybracter = os.path.join(dir_out, 'PROCESSING', 'hybracter')
 dir_bakta_long = os.path.join(dir_out, 'PROCESSING','bakta-long')
-dir_summary_long = os.path.join(dir_out, 'RESULTS')
+dir_summary_long = os.path.join(dir_out, 'RESULTS-long')
+dir_panaroo_long = os.path.join(dir_out, 'RESULTS-long', 'panaroo')
 
 """ONSTART/END/ERROR
 Tasks to perform at various stages the start and end of a run.
