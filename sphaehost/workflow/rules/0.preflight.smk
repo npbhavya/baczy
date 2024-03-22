@@ -32,7 +32,7 @@ input_dir = config_data.get('sphaehost', {}).get('args', {}).get('_input')
 
 # List of file paths matching the pattern
 if config['sphaehost']['args']['sequencing'] == 'paired':
-    file_paths = glob.glob(os.path.join(input_dir, '*R1*.fastq*'))
+    file_paths = glob.glob(os.path.join(input_dir, '*_R1*.fastq*'))
     sample_names = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[0] for file_path in file_paths]
     extn = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[1] + os.path.splitext(os.path.basename(file_path))[1] for file_path in file_paths]
 elif config['sphaehost']['args']['sequencing'] == 'longread':

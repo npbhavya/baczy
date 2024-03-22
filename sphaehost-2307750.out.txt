@@ -1,0 +1,270 @@
+
+parse genome sequences...
+	imported: 14
+	filtered & revised: 14
+	contigs: 14
+
+start annotation...
+predict tRNAs...
+	found: 0
+predict tmRNAs...
+	found: 0
+predict rRNAs...
+	found: 0
+predict ncRNAs...
+	found: 0
+predict ncRNA regions...
+	found: 0
+predict CRISPR arrays...
+	found: 0
+predict & annotate CDSs...
+	predicted: 10 
+	discarded spurious: 0
+	revised translational exceptions: 0
+	detected IPSs: 0
+	found PSCCs: 8
+	lookup annotations...
+	conduct expert systems...
+		amrfinder: 0
+		protein sequences: 0
+	combine annotations and mark hypotheticals...
+analyze hypothetical proteins: 2
+	detected Pfam hits: 0 
+	calculated proteins statistics
+	revise special cases...
+extract sORF...
+	potential: 151
+	discarded due to overlaps: 90
+	discarded spurious: 1
+	detected IPSs: 0
+	found PSCCs: 0
+	lookup annotations...
+	filter and combine annotations...
+	filtered sORFs: 0
+detect gaps...
+	found: 0
+detect oriCs/oriVs...
+	found: 0
+detect oriTs...
+	found: 0
+apply feature overlap filters...
+select features and create locus tags...
+selected: 10
+improve annotations...
+	revised gene symbols: 0
+
+genome statistics:
+	Genome size: 11,946 bp
+	Contigs/replicons: 14
+	GC: 48.3 %
+	N50: 1,325
+	N ratio: 0.0 %
+	coding density: 56.9 %
+
+annotation summary:
+	tRNAs: 0
+	tmRNAs: 0
+	rRNAs: 0
+	ncRNAs: 0
+	ncRNA regions: 0
+	CRISPR arrays: 0
+	CDSs: 10
+		hypotheticals: 2
+		pseudogenes: 0
+		signal peptides: 0
+	sORFs: 0
+	gaps: 0
+	oriCs/oriVs: 0
+	oriTs: 0
+
+export annotation results to: /scratch/user/nala0006/sphaehost/sphaehost.out/PROCESSING/bakta-short/SRR1237783_bakta
+	human readable TSV...
+	GFF3...
+	INSDC GenBank & EMBL...
+	genome sequences...
+	feature nucleotide sequences...
+	translated CDS sequences...
+	circular genome plot...
+	hypothetical TSV...
+	translated hypothetical CDS sequences...
+	machine readable JSON...
+	genome and annotation summary...
+
+If you use these results please cite Bakta: https://doi.org/10.1099/mgen.0.000685
+Annotation successfully finished in 0:24 [mm:ss].
+
+parse genome sequences...
+	imported: 9
+	filtered & revised: 9
+	contigs: 9
+
+start annotation...
+predict tRNAs...
+	found: 0
+predict tmRNAs...
+	found: 0
+predict rRNAs...
+	found: 0
+predict ncRNAs...
+	found: 0
+predict ncRNA regions...
+	found: 0
+predict CRISPR arrays...
+	found: 0
+predict & annotate CDSs...
+	predicted: 9 
+	discarded spurious: 0
+	revised translational exceptions: 0
+	detected IPSs: 0
+	found PSCCs: 7
+	lookup annotations...
+	conduct expert systems...
+		amrfinder: 0
+		protein sequences: 0
+	combine annotations and mark hypotheticals...
+analyze hypothetical proteins: 2
+	detected Pfam hits: 0 
+	calculated proteins statistics
+	revise special cases...
+extract sORF...
+	potential: 82
+	discarded due to overlaps: 67
+	discarded spurious: 1
+	detected IPSs: 0
+	found PSCCs: 0
+	lookup annotations...
+	filter and combine annotations...
+	filtered sORFs: 0
+detect gaps...
+	found: 0
+detect oriCs/oriVs...
+	found: 0
+detect oriTs...
+	found: 0
+apply feature overlap filters...
+select features and create locus tags...
+selected: 9
+improve annotations...
+	revised gene symbols: 0
+
+genome statistics:
+	Genome size: 7,795 bp
+	Contigs/replicons: 9
+	GC: 48.3 %
+	N50: 5,393
+	N ratio: 0.0 %
+	coding density: 70.8 %
+
+annotation summary:
+	tRNAs: 0
+	tmRNAs: 0
+	rRNAs: 0
+	ncRNAs: 0
+	ncRNA regions: 0
+	CRISPR arrays: 0
+	CDSs: 9
+		hypotheticals: 2
+		pseudogenes: 0
+		signal peptides: 0
+	sORFs: 0
+	gaps: 0
+	oriCs/oriVs: 0
+	oriTs: 0
+
+export annotation results to: /scratch/user/nala0006/sphaehost/sphaehost.out/PROCESSING/bakta-short/SRR1237782_bakta
+	human readable TSV...
+	GFF3...
+	INSDC GenBank & EMBL...
+	genome sequences...
+	feature nucleotide sequences...
+	translated CDS sequences...
+	circular genome plot...
+	hypothetical TSV...
+	translated hypothetical CDS sequences...
+	machine readable JSON...
+	genome and annotation summary...
+
+If you use these results please cite Bakta: https://doi.org/10.1099/mgen.0.000685
+Annotation successfully finished in 0:17 [mm:ss].
+pre-processing gff3 files...
+================================================================
+Program: CD-HIT, V4.8.1 (+OpenMP), May 15 2023, 22:49:31
+Command: cd-hit -T 32 -i
+         sphaehost.out/RESULTS-short/panaroo/combined_protein_CDS.fasta
+         -o
+         sphaehost.out/RESULTS-short/panaroo/combined_protein_cdhit_out.txt
+         -c 0.98 -s 0.98 -aL 0.0 -AL 99999999 -aS 0.0 -AS
+         99999999 -M 0 -d 999 -g 1 -n 2
+
+Started: Fri Mar 22 13:05:36 2024
+================================================================
+                            Output                              
+----------------------------------------------------------------
+Your word length is 2, using 5 may be faster!
+total seq: 19
+longest and shortest : 513 and 38
+Total letters: 4086
+Sequences have been sorted
+
+Approximated minimal memory consumption:
+Sequence        : 0M
+Buffer          : 32 X 16M = 515M
+Table           : 2 X 0M = 0M
+Miscellaneous   : 0M
+Total           : 515M
+
+Table limit with the given memory limit:
+Max number of representatives: 416053
+Max number of word counting entries: 23845736
+
+# comparing sequences from          0  to         19
+---------- new table with       14 representatives
+
+       19  finished         14  clusters
+
+Approximated maximum memory consumption: 515M
+writing new database
+writing clustering information
+program completed !
+
+Total CPU time 0.66
+running cmd: cd-hit -T 32 -i sphaehost.out/RESULTS-short/panaroo/combined_protein_CDS.fasta -o sphaehost.out/RESULTS-short/panaroo/combined_protein_cdhit_out.txt -c 0.98 -s 0.98 -aL 0.0 -AL 99999999 -aS 0.0 -AS 99999999 -M 0 -d 999 -g 1 -n 2
+generating initial network...
+Processing paralogs...
+collapse mistranslations...
+Processing depth:  1
+Iteration:  1
+Iteration:  2
+Processing depth:  2
+Iteration:  1
+Processing depth:  3
+Iteration:  1
+collapse gene families...
+Processing depth:  1
+Iteration:  1
+Processing depth:  2
+Iteration:  1
+Processing depth:  3
+Iteration:  1
+trimming contig ends...
+refinding genes...
+Number of searches to perform:  0
+Searching...
+translating hits...
+removing by consensus...
+Updating output...
+Number of refound genes:  0
+collapse gene families with refound genes...
+Processing depth:  1
+Iteration:  1
+Processing depth:  2
+Iteration:  1
+Processing depth:  3
+Iteration:  1
+writing output...
+generating core genome MSAs...
+Entropy threshold automatically set to 0.020770677499655894.
+6.0 out of 7 genes kept in filtered core genome
+Samples are ['SRR1237782', 'SRR1237783']
+Extensions are ['.fastq.gz', '.fastq.gz']
+Entering paired targets
