@@ -10,5 +10,5 @@
 #SBATCH --partition=high-capacity
 #SBATCH --qos=hc-concurrent-jobs
 
-sphaehost run --input sample-data/illumina --cores 32 
-#sphaehost run --input sample-data/nanopore --sequencing longread --cores 32
+#sphaehost run --input sample-data/illumina --cores 32 
+sphaehost run --input sample-data/nanopore --sequencing longread --cores 32
