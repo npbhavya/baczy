@@ -1,10 +1,12 @@
 sphaehost.out
-example2/
-databases/
+sphaehost/workflow/databases/
 sphaehost.egg-info/
 sphaehost/workflow/conda
 sphaehost/__pycache__
 .snakemake
+*.err.txt
+*.out.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

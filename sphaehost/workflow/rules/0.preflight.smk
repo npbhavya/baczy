@@ -37,16 +37,18 @@ if config['sphaehost']['args']['sequencing'] == 'paired':
     extn = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[1] + os.path.splitext(os.path.basename(file_path))[1] for file_path in file_paths]
 elif config['sphaehost']['args']['sequencing'] == 'longread':
     file_paths = glob.glob(os.path.join(input_dir, '*.fastq*'))
-    sample_names = [os.path.splitext(os.path.basename(file_path))[0].rsplit('.', 1)[0] for file_path in file_paths]
-    extn = [os.path.splitext(os.path.basename(file_path))[0].rsplit('.', 1)[1] + os.path.splitext(os.path.basename(file_path))[1] for file_path in file_paths]
+    sample_names, extn = zip(*(os.path.splitext(os.path.basename(file_path)) if '.' in os.path.basename(file_path) else (os.path.basename(file_path), '') for file_path in file_paths))
+    
+print(f"Samples are {sample_names}")
+print(f"Extensions are {extn}")
 
 try:
     if config['db_dir'] is None:
-        databaseDir = os.path.join('databases')
+        databaseDir = os.path.join(workflow.basedir, 'databases')
     else:
         databaseDir = config['db_dir']
 except KeyError:
-    databaseDir = os.path.join(dir_out, 'databases')
+    databaseDir = os.path.join(workflow.basedir, 'databases')
 
 
 if len(sample_names) == 0:
@@ -58,8 +60,6 @@ if len(unique_strings)>2:
     print ("There are multiple extensions, pick one")
     sys.exit(0)
 
-print(f"Samples are {sample_names}")
-print(f"Extensions are {extn}")
 
 FQEXTN = extn[0]
 PATTERN_R1 = '{sample}_R1' + FQEXTN

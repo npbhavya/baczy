@@ -1,5 +1,6 @@
 """Parse config"""
 configfile: os.path.join(workflow.basedir, "..", "config", "config.yaml")
+#print (workflow.basedir)
 
 dir ={}
 # output dir
@@ -14,11 +15,11 @@ except KeyError:
 """Check if database path exists"""
 try:
     if config['db_dir'] is None:
-        databaseDir = os.path.join('databases')
+        databaseDir = os.path.join(workflow.basedir, 'databases')
     else:
         databaseDir = config['db_dir']
 except KeyError:
-    databaseDir = os.path.join(dir_out, 'databases')
+    databaseDir = os.path.join(workflow.basedir, 'databases')
 
 default_temp_dir = os.path.join(dir_out, "temp")
 dir_env = os.path.join(workflow.basedir, "envs")
