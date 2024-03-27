@@ -20,7 +20,11 @@ rule amrfinderplus_long:
         os.path.join(dir_env, "amrfinderplus.yaml")
     shell:
         """
+        if [ -z "{input}" ]; then
+            touch {output}
+        else 
             amrfinder -u
             amrfinder -p {input} -o {output} --plus
+        fi
         """
 

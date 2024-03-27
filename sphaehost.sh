@@ -11,4 +11,4 @@
 #SBATCH --qos=hc-concurrent-jobs
 
 #sphaehost run --input sample-data/illumina --cores 32 
-sphaehost run --input /home/nala0006/scratch/Achromobacter/bacteria/reads --sequencing longread --cores 32 --output /home/nala0006/scratch/Achromobacter/bacteria/sphaehost-out
+sphaehost run --input /home/nala0006/scratch/Achromobacter/bacteria/reads --sequencing longread --cores 32 --output /home/nala0006/scratch/Achromobacter/bacteria/sphaehost-out -k

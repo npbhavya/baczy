@@ -24,7 +24,8 @@ rule hybracter:
     threads: 16
     shell:
         """
-        hybracter long -i {input} -o {params.o} --threads {threads} -d {params.db} --verbose 2>{log}
+        hybracter long -i {input} -o {params.o} --threads {threads} -d {params.db} --verbose -k 2>{log} || \
+        (echo "Error: Command failed" && touch {output.fasta} && touch {log})
         """
 
 rule hybracter_genome_dir:

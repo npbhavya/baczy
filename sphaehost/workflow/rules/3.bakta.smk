@@ -41,5 +41,11 @@ rule bakta_long:
     threads: 32
     shell:
         """
-        bakta --db {params.db} --output {params.bakta} --prefix {params.sample} --force --threads {threads} {input}
+        if [ -z "{input}" ]; then
+            # Input is empty, touch the output files
+            touch {output.faa} {output.fna} {output.gbff} {output.gff3} {output.txt}
+        else
+            # Input is not empty, run the bakta command
+            bakta --db {params.db} --output {params.bakta} --prefix {params.sample} --force --threads {threads} {input}
+        fi        
         """

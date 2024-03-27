@@ -15,9 +15,13 @@ rule phispy_short:
     shell:
         """
         if PhiSpy.py -o {params.out} -p {params.s} {input} 2>{log} ; then
-            touch {output}
+            touch {output.log}
+            touch {output.pp_coord}
+            touch {output.pp_gbff}
         else
-            touch {output}
+            touch {output.log}
+            touch {output.pp_coord}
+            touch {output.pp_gbff}
         fi
         """
     
