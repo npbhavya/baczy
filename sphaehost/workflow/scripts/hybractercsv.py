@@ -5,7 +5,7 @@ import sys
 
 # Directory containing the FASTQ files
 directory = snakemake.input.fastp
-genome_size = 50000
+genome_size = snakemake.params.gensize
 
 # Get all files in the directory
 files = os.listdir(directory)

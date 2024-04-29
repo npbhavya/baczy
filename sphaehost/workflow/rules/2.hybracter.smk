@@ -2,7 +2,7 @@ rule generate_csv:
     input:
         fastp = os.path.join(input_dir)
     params:
-        gensize = 6000000,
+        gensize = config['sphaehost']['args']['gen_size']
     output:
         csv = os.path.join(input_dir, "hybracter.csv")
     localrule: True
@@ -25,7 +25,7 @@ rule hybracter:
     shell:
         """
         hybracter long -i {input} -o {params.o} --threads {threads} -d {params.db} --verbose -k 2>{log} || \
-        (echo "Error: Command failed" && touch {output.fasta} && touch {log})
+        (echo "ERROR: Snakemake failed" && touch {output.fasta} && touch {log})2>/dev/null
         """
 
 rule hybracter_genome_dir:
@@ -36,8 +36,10 @@ rule hybracter_genome_dir:
         final=os.path.join(dir_hybracter, "hybracter.out", "final_assemblies")
     output:
         actual = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"),
-    shell:
-        """
-        cp {params.out}/*/*_final.fasta {params.final}
-        """
+    run:
+        if os.path.exists(params.out):
+            shell("cp {params.out}/*/*_final.fasta {params.final}")
+        else:
+            shell("touch {output.actual}")
+        
     

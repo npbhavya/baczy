@@ -9,7 +9,9 @@ rule paired:
         txt = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.txt"),
         amr = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_amrfinderplus"),
         pp_coord = os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"),
-        pp_gbff = os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_{sample}.gbff")
+        pp_gbff = os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"),
+        png = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.png"),
+        svg = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.svg")
     output:
         l= os.path.join(dir_summary_short, "{sample}", "{sample}_logs"),
         gff = os.path.join(dir_summary_short, "{sample}", "{sample}.gff3")
@@ -26,11 +28,14 @@ rule paired:
         cp {input.amr} {params.summary_dir}
         cp {input.pp_coord} {params.summary_dir}
         cp {input.pp_gbff} {params.summary_dir}
+        cp {input.png} {params.summary_dir}
+        cp {input.svg} {params.summary_dir}
         echo "DONE-GREAT-WORK" >{output.l}
         """
 
 rule longreads:
     input:
+        p = os.path.join(dir_hybracter, "hybracter.out", "FINAL_OUTPUT", "hybracter_summary.tsv"),
         assembly = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"),
         faa = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.faa"), 
         fna = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.fna"),
@@ -39,7 +44,9 @@ rule longreads:
         txt = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.txt"),
         amr = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_amrfinderplus"),
         pp_coord = os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"),
-        pp_gbff = os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_{sample}.gbff")
+        pp_gbff = os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"),
+        png = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.png"),
+        svg = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.svg")
     output:
         l = os.path.join(dir_summary_long, "{sample}", "{sample}_log"),
         gff = os.path.join(dir_summary_long, "{sample}", "{sample}.gff3")
@@ -47,6 +54,7 @@ rule longreads:
         summary_dir = os.path.join(dir_summary_long, "{sample}")
     shell:
         """
+        cp {input.p} {params.summary_dir}
         cp {input.assembly} {params.summary_dir}
         cp {input.faa} {params.summary_dir}
         cp {input.fna} {params.summary_dir}
@@ -56,5 +64,7 @@ rule longreads:
         cp {input.amr} {params.summary_dir}
         cp {input.pp_coord} {params.summary_dir}
         cp {input.pp_gbff} {params.summary_dir}
+        cp {input.png} {params.summary_dir}
+        cp {input.svg} {params.summary_dir}
         echo "DONE-GREAT-WORK" >{output.l}
         """
