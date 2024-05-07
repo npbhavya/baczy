@@ -5,6 +5,10 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/npbhavya/spaehost/main)
 
 # sphaehost
+<p align="center">
+  <img src="sphaehostlogo.png#gh-light-mode-only" width="300">
+  <img src="sphaehostlogo.png#gh-dark-mode-only" width="300">
+</p>
 
 ## Bacterial asembly and annotation
 
