@@ -32,13 +32,6 @@ pip install -e .
 sphaehost --help
 ```
 
-### Installing databases
-Run command,
-
-```bash
-sphaehost install
-```
-
 ### Running the workflow
 
 The command `sphaehost run` will run QC, assembly and annotation
