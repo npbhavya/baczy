@@ -8,8 +8,8 @@ rule fastp_short:
         r2 = os.path.join(dir_fastp_short,"{sample}_R2.fastq.gz"),
         stats = os.path.join(dir_fastp_short,"{sample}.stats.json"),
         html = os.path.join(dir_fastp_short,"{sample}.stats.html")
-    conda:
-        os.path.join(dir_env, "fastp.yaml")
+    container:
+        "docker://biocontainers/fastp:v0.20.1_cv1"
     log:
         os.path.join(dir["log"],"fastp.{sample}.log")
     threads: 16

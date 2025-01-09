@@ -65,8 +65,14 @@ def common_options(func):
         ),
         click.option(
             "--use-conda/--no-use-conda",
-            default=True,
+            default=False,
             help="Use conda for Snakemake rules",
+            show_default=True,
+        ),
+        click.option(
+            "--use-singularity/--no-use-singularity",
+            default=True,
+            help="Use containers for Snakemake rules",
             show_default=True,
         ),
         click.option(
@@ -136,7 +142,7 @@ https://snakemake.readthedocs.io/en/stable/executing/cli.html#profiles
 def install(**kwargs):
     """The install function for databases"""
     merge_config = {
-        'sphae': {
+        'sphaehost': {
             'args': kwargs   
         }
     }
@@ -190,7 +196,6 @@ def citation(**kwargs):
 
 
 cli.add_command(run)
-cli.add_command(install)
 cli.add_command(config)
 cli.add_command(citation)
 

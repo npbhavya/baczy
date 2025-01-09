@@ -18,3 +18,5 @@ sphaehost:
         #Staphylococcus_aureus, Staphylococcus_pseudintermedius, Streptococcus_agalactiae, Streptococcus_pneumoniae, Streptococcus_pyogenes, 
         #Vibrio_cholerae, Vibrio_parahaemolyticus, Vibrio_vulnificus
         organism: ""
+
+singularity: true

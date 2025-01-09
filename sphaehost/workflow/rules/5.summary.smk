@@ -10,12 +10,12 @@ rule paired:
         amr = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_amrfinderplus"),
         pp_coord = os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"),
         pp_gbff = os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"),
-        png = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.png"),
-        svg = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.svg")
     output:
         l= os.path.join(dir_summary_short, "{sample}", "{sample}_logs"),
         gff = os.path.join(dir_summary_short, "{sample}", "{sample}.gff3")
     params:
+        png = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.png"),
+        svg = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.svg"),
         summary_dir = os.path.join(dir_summary_short, "{sample}")
     shell:
         """
@@ -28,8 +28,8 @@ rule paired:
         cp {input.amr} {params.summary_dir}
         cp {input.pp_coord} {params.summary_dir}
         cp {input.pp_gbff} {params.summary_dir}
-        cp {input.png} {params.summary_dir}
-        cp {input.svg} {params.summary_dir}
+        cp {params.png} {params.summary_dir}
+        cp {params.svg} {params.summary_dir}
         echo "DONE-GREAT-WORK" >{output.l}
         """
 
@@ -45,13 +45,13 @@ rule longreads:
         amr = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_amrfinderplus"),
         pp_coord = os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"),
         pp_gbff = os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"),
-        png = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.png"),
-        svg = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.svg")
     output:
         l = os.path.join(dir_summary_long, "{sample}", "{sample}_log"),
         gff = os.path.join(dir_summary_long, "{sample}", "{sample}.gff3")
     params:
-        summary_dir = os.path.join(dir_summary_long, "{sample}")
+        summary_dir = os.path.join(dir_summary_long, "{sample}"),
+        png = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.png"),
+        svg = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.svg")
     shell:
         """
         cp {input.p} {params.summary_dir}
@@ -64,7 +64,7 @@ rule longreads:
         cp {input.amr} {params.summary_dir}
         cp {input.pp_coord} {params.summary_dir}
         cp {input.pp_gbff} {params.summary_dir}
-        cp {input.png} {params.summary_dir}
-        cp {input.svg} {params.summary_dir}
+        cp {params.png} {params.summary_dir}
+        cp {params.svg} {params.summary_dir}
         echo "DONE-GREAT-WORK" >{output.l}
         """

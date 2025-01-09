@@ -1,6 +1,0 @@
-name: amrfinderplus
-channels:
-    - defaults
-    - bioconda
-dependencies:
-    - ncbi-amrfinderplus>=3.12.8

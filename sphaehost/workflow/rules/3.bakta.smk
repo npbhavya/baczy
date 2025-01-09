@@ -9,16 +9,15 @@ rule bakta_short:
         txt = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.txt")
     params:
         bakta = os.path.join(dir_bakta_short, "{sample}_bakta"),
-        db = os.path.join(databaseDir, "db-light"),
         smp = "{sample}"
-    conda:
-        os.path.join(dir_env, "bakta.yaml")
+    container:
+        "docker://staphb/bakta:1.10.3-5.1-light"
     log:
         os.path.join(dir["log"], "bakta.{sample}.log")
     threads: 32
     shell:
         """
-        bakta --db {params.db} --output {params.bakta} --prefix {params.smp} --force --threads {threads} {input}
+        bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --force
         """
 
 rule bakta_long:
@@ -32,20 +31,13 @@ rule bakta_long:
         txt = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.txt"),
     params:
         bakta = os.path.join(dir_bakta_long, "{sample}_bakta"),
-        db = os.path.join(databaseDir, "db-light"),
-        sample = "{sample}"
-    conda:
-        os.path.join(dir_env, "bakta.yaml")
+        smp = "{sample}"
+    container:
+        "docker://staphb/bakta:1.10.3-5.1-light"
     log:
         os.path.join(dir["log"], "bakta-long.{sample}.log")
     threads: 32
     shell:
         """
-        if [ -z "{input}" ]; then
-            # Input is empty, touch the output files
-            touch {output.faa} {output.fna} {output.gbff} {output.gff3} {output.txt}
-        else
-            # Input is not empty, run the bakta command
-            bakta --db {params.db} --output {params.bakta} --prefix {params.sample} --force --threads {threads} {input}
-        fi        
+        bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --force
         """

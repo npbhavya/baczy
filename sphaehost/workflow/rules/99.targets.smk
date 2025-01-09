@@ -12,8 +12,6 @@ if config['sphaehost']['args']['sequencing'] == 'paired':
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.fna"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.gff3"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.txt"), sample=sample_names))
-    targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.png"), sample=sample_names))
-    targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.svg"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_amrfinderplus"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"), sample=sample_names))
@@ -29,8 +27,6 @@ elif config['sphaehost']['args']['sequencing'] == 'longread':
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.fna"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.gff3"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.txt"), sample=sample_names))
-    targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.png"), sample=sample_names))
-    targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.svg"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_amrfinderplus"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"), sample=sample_names))
@@ -38,9 +34,9 @@ elif config['sphaehost']['args']['sequencing'] == 'longread':
     targets['asan'].append(expand(os.path.join(dir_summary_long, "{sample}", "{sample}_log"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_summary_long, "{sample}", "{sample}.gff3"), sample=sample_names))
 
-if config['sphaehost']['args']['sequencing'] == 'paired':
-    targets['pan'].append(os.path.join(dir_panaroo_short, "summary_statistics.txt"))
-    targets['pan'].append(os.path.join(dir_panaroo_short, "gene_presence_absence.csv"))
-elif config['sphaehost']['args']['sequencing'] == 'longread':
-    targets['pan'].append(os.path.join(dir_panaroo_long, "summary_statistics.txt"))
-    targets['pan'].append(os.path.join(dir_panaroo_long, "gene_presence_absence.csv"))
+#if config['sphaehost']['args']['sequencing'] == 'paired':
+#    targets['pan'].append(os.path.join(dir_panaroo_short, "summary_statistics.txt"))
+#    targets['pan'].append(os.path.join(dir_panaroo_short, "gene_presence_absence.csv"))
+#elif config['sphaehost']['args']['sequencing'] == 'longread':
+#    targets['pan'].append(os.path.join(dir_panaroo_long, "summary_statistics.txt"))
+#    targets['pan'].append(os.path.join(dir_panaroo_long, "gene_presence_absence.csv"))

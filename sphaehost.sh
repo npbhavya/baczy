@@ -10,5 +10,5 @@
 #SBATCH --partition=high-capacity
 #SBATCH --qos=hc-concurrent-jobs
 
-#sphaehost run --input sample-data/illumina --cores 32 
-sphaehost run --input /home/nala0006/scratch/Achromobacter/bacteria/reads --sequencing longread --cores 32 --output ../Achromobacter/bacteria/sphaehost-out -k
+#sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer
+sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer

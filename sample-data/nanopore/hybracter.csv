@@ -1,2 +1,2 @@
-SRR28370645,sample-data/nanopore/SRR28370645.fastq.gz,50000
-SRR28370636,sample-data/nanopore/SRR28370636.fastq.gz,50000
+test_long_reads.fastq,sample-data/nanopore/test_long_reads.fastq.gz,5000000
+test_long_reads_subsampled.fastq,sample-data/nanopore/test_long_reads_subsampled.fastq.gz,5000000
