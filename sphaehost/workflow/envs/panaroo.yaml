@@ -1,6 +1,0 @@
-name: bakta
-channels:
-    - defaults
-    - bioconda
-dependencies:
-    - panaroo>=1.4.2

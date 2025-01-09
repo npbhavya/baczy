@@ -18,6 +18,7 @@ data = []
 for fastq_file in fastq_files:
     # Extract the sample name (text before ".fastq")
     sample_name = fastq_file.split(".fastq")[0]
+    sample_name += ".fastq"
     filepath = os.path.join(directory, fastq_file)
     # Append data to the list
     data.append((sample_name, filepath, genome_size))

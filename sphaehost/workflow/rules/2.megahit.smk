@@ -9,8 +9,8 @@ rule megahit:
         log = os.path.join(dir_megahit, "{sample}-pr", "log")
     params:
         os.path.join(dir_megahit, "{sample}-pr")
-    conda:
-        os.path.join(dir_env, "megahit.yaml")
+    container:
+        "docker://biocontainers/megahit:1.2.9_cv1"
     log:
         os.path.join(dir["log"], "megahit.{sample}.log")
     threads: 32
@@ -41,8 +41,8 @@ rule fastg:
     output:
         fastg=os.path.join(dir_megahit, "{sample}-pr", "final.fastg"),
         graph=os.path.join(dir_megahit, "{sample}-pr", "final.gfa")
-    conda:
-        os.path.join(dir_env, "megahit.yaml")
+    container:
+        "docker://biocontainers/megahit:1.2.9_cv1"
     log:
         os.path.join(dir["log"], "fastg.{sample}.log")
     shell:

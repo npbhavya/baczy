@@ -5,8 +5,8 @@ rule amrfinderplus_paired:
         contigs = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.fna")
     output:
         os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_amrfinderplus")
-    conda:
-        os.path.join(dir_env, "amrfinderplus.yaml")
+    container:
+        "docker://staphb/ncbi-amrfinderplus:4.0.3-2024-10-22.1"
     params:
         organism = config['sphaehost']['args']['organism'],
     shell:
@@ -26,8 +26,8 @@ rule amrfinderplus_long:
         contigs = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.fna") 
     output:
         os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_amrfinderplus")
-    conda:
-        os.path.join(dir_env, "amrfinderplus.yaml")
+    container:
+        "docker://staphb/ncbi-amrfinderplus:4.0.3-2024-10-22.1"
     params:
         organism = config['sphaehost']['args']['organism'],
     shell:

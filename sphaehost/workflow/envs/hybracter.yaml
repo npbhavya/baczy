@@ -1,9 +1,0 @@
-name: hybracter
-channels:
-    - bioconda
-    - defaults
-dependencies:
-    - python==3.12.2
-    - pip
-    - pip:
-        - hybracter>=0.7.0
