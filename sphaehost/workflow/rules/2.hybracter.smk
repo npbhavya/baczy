@@ -61,7 +61,6 @@ rule checkm2_hybracter:
         final = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies"),
         out = os.path.join(dir_hybracter, "checkm2"),
         db= os.path.join(databaseDir),
-        #container = os.path.join(databaseDir, "..", "envs", "checkm2_1.0.2.sif")
         container="docker://staphb/checkm2:1.0.2"
     threads: 32
     shell:

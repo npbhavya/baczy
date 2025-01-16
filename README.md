@@ -35,9 +35,8 @@ sphaehost --help
 - Install singularity
   On deepthought run `module load apptainer`
 
-- Download checkm2 container and the database
-  Haven't figured how to add the image to the repo since its a large file
-  save the checkm2 container to `sphaehost/workflow/envs/.` and save the CheckM2_database to `sphaehost/workflow/databases`
+- Download checkm2 database and save to databases
+  CheckM2_database to `sphaehost/workflow/databases`
 
 ### Running the workflow
 

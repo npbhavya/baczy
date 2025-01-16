@@ -91,11 +91,13 @@ rule checkm2_short:
     params:
         out=os.path.join(dir_megahit, "checkm2"),  # Output directory for CheckM2 results
         db=os.path.join(databaseDir),
-        container=os.path.join(databaseDir, "..", "envs", "checkm2_1.0.2.sif"),
-        fin=os.path.join(dir_megahit, "processed_assemblies")
+        fin=os.path.join(dir_megahit, "processed_assemblies"),
+        container="docker://staphb/checkm2:1.0.2"
     threads: 32
     shell:
         """
-        apptainer exec -B {params.fin}:/data,{params.out}:/out,{params.db}:/database {params.container} \
+        apptainer pull -F {params.container}
+
+        apptainer exec -B {params.fin}:/data,{params.out}:/out,{params.db}:/database checkm2_1.0.2.sif \
             checkm2 predict -t {threads} -x fa -i /data -o /out --database_path /database/CheckM2_database/uniref100.KO.1.dmnd --force
         """
