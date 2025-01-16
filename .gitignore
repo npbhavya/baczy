@@ -1,5 +1,9 @@
 .conda 
+.cache
+.config
+.macsyfinder
 sphaehost.out
+sphaehost/workflow/envs/checkm2\:1.0.2--pyh7cba7a3_0
 sphaehost/workflow/databases/
 sphaehost.egg-info/
 sphaehost/workflow/conda
@@ -7,7 +11,7 @@ sphaehost/__pycache__
 .snakemake
 *.err.txt
 *.out.txt
-~/.singularity/
+test
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

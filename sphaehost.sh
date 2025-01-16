@@ -14,5 +14,5 @@
 module load singularity
 
 #test datasets
-#sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test 
+sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test 
 sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test

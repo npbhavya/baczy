@@ -90,10 +90,12 @@ rule checkm2_short:
         report = os.path.join(dir_megahit, "checkm2", "quality_report.tsv")  # CheckM2 quality report
     params:
         out = os.path.join(dir_megahit, "checkm2"),  # Output directory for CheckM2 results
-    container:
-        "docker://staphb/checkm2:1.0.2"  # Container for CheckM2
+        db= os.path.join(databaseDir),
+        container = os.path.join(databaseDir, "..", "envs", "checkm2:1.0.2--pyh7cba7a3_0"),
+        final=os.path.join(dir_megahit, "processed_assemblies")
     threads: 32
     shell:
         """
-        checkm2 predict -t {threads} -x fasta -i {input.fasta} -o {params.out} --database_path sphaehost/workflow/databases/CheckM2_database/uniref100.KO.1.dmnd --force
+        apptainer exec -B {params.final}:/data,{params.out}:/out,{params.db}:/database {params.container} \
+            checkm2 predict -t {threads} -x fasta -i /data -o /out --database_path /database/CheckM2_database/uniref100.KO.1.dmnd --force
         """
