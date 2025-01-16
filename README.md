@@ -40,7 +40,6 @@ sphaehost --help
   CheckM2_database to `sphaehost/workflow/databases`
 
 =======
->>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
 ### Running the workflow
 
 The command `sphaehost run` will run QC, assembly and annotation
@@ -69,7 +68,6 @@ Saved to `sphae.out/PROCESSING`
 Saved to `sphae.out/RESULTS` 
 
 A folder should be generated for each sample. This samples should have
-  - 
-=======
-Need to generate the results folder
->>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
+ - {sample}_final.fasta: Final assembly file
+ - bakta annotations
+ - defensefinder results
