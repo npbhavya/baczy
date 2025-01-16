@@ -35,9 +35,12 @@ sphaehost --help
 - Install singularity
   On deepthought run `module load apptainer`
 
+<<<<<<< HEAD
 - Download checkm2 database and save to databases
   CheckM2_database to `sphaehost/workflow/databases`
 
+=======
+>>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
 ### Running the workflow
 
 The command `sphaehost run` will run QC, assembly and annotation
@@ -61,8 +64,12 @@ sphaehost run --input sample-data/illumina --preprocess longread --output exampl
 ### Intermediate files 
 Saved to `sphae.out/PROCESSING`
 
+<<<<<<< HEAD
 ### Output
 Saved to `sphae.out/RESULTS` 
 
 A folder should be generated for each sample. This samples should have
   - 
+=======
+Need to generate the results folder
+>>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
