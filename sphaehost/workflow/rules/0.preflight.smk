@@ -80,13 +80,13 @@ dir_fastp_short = os.path.join(dir_out, 'PROCESSING', 'fastp-short')
 dir_megahit = os.path.join(dir_out, 'PROCESSING', 'megahit')
 dir_bakta_short = os.path.join(dir_out, 'PROCESSING','bakta-short')
 dir_summary_short = os.path.join(dir_out, 'RESULTS-short')
-dir_panaroo_short = os.path.join(dir_out, 'RESULTS-short', 'panaroo')
+#dir_panaroo_short = os.path.join(dir_out, 'RESULTS-short', 'panaroo')
 
 #long reads
 dir_hybracter = os.path.join(dir_out, 'PROCESSING', 'hybracter')
 dir_bakta_long = os.path.join(dir_out, 'PROCESSING','bakta-long')
 dir_summary_long = os.path.join(dir_out, 'RESULTS-long')
-dir_panaroo_long = os.path.join(dir_out, 'RESULTS-long', 'panaroo')
+#dir_panaroo_long = os.path.join(dir_out, 'RESULTS-long', 'panaroo')
 
 """ONSTART/END/ERROR
 Tasks to perform at various stages the start and end of a run.

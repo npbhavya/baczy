@@ -59,13 +59,12 @@ rule checkm2_hybracter:
         report = os.path.join(dir_hybracter, "checkm2", "quality_report.tsv")
     params:
         final = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies"),
-        out = os.path.join(dir_hybracter, "checkm2")
-    container:
-        "docker://staphb/checkm2:1.0.2"
+        out = os.path.join(dir_hybracter, "checkm2"),
+        db= os.path.join(databaseDir),
+        container = os.path.join(databaseDir, "..", "envs", "checkm2:1.0.2--pyh7cba7a3_0")
     threads: 32
     shell:
         """
-        #database for checkm2 v1.0.2 has to be downloaded separately and saved to the path 
-        #sphaehost/workflow/databases/CheckM2_database/
-        checkm2 predict -t {threads} -x fasta -i {input.fi} -o {params.out} --database_path sphaehost/workflow/databases/CheckM2_database/uniref100.KO.1.dmnd --force
+        apptainer exec -B {params.final}:/data,{params.out}:/out,{params.db}:/database {params.container} \
+            checkm2 predict -t {threads} -x fasta -i /data -o /out --database_path /database/CheckM2_database/uniref100.KO.1.dmnd --force
         """
