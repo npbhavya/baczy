@@ -38,6 +38,7 @@ sphaehost --help
 - Download checkm2 database and save to databases
   CheckM2_database to `sphaehost/workflow/databases`
 
+=======
 ### Running the workflow
 
 The command `sphaehost run` will run QC, assembly and annotation
