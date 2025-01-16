@@ -43,13 +43,9 @@ rule hybracter_genome_dir:
         actual = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"),
     shell:
         """
-        if [ -f {params.out}/incomplete/{params.s}_final.fasta ]; then
-            cp {params.out}/incomplete/{params.s}_final.fasta {params.final}/.
-            echo "{params.s}" >> {params.fi}
-        else
-            cp {params.out}/complete/{params.s}_final.fasta {params.final}/.
-            echo "{params.s}" >> {params.fi}
-        fi
+        cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual} || \
+        cp {params.out}/complete/{params.s}.fastq_final.fasta {output.actual}
+        echo "{params.s}" >> {params.fi}
         """
 
 rule checkm2_hybracter:
