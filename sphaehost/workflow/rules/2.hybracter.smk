@@ -61,10 +61,13 @@ rule checkm2_hybracter:
         final = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies"),
         out = os.path.join(dir_hybracter, "checkm2"),
         db= os.path.join(databaseDir),
-        container = os.path.join(databaseDir, "..", "envs", "checkm2_1.0.2.sif")
+        #container = os.path.join(databaseDir, "..", "envs", "checkm2_1.0.2.sif")
+        container="docker://staphb/checkm2:1.0.2"
     threads: 32
     shell:
         """
-        apptainer exec -B {params.final}:/data,{params.out}:/out,{params.db}:/database {params.container} \
+        apptainer pull -F {params.container}
+
+        apptainer exec -B {params.final}:/data,{params.out}:/out,{params.db}:/database checkm2_1.0.2.sif \
             checkm2 predict -t {threads} -x fasta -i /data -o /out --database_path /database/CheckM2_database/uniref100.KO.1.dmnd --force
         """
