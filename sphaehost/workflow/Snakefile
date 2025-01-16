@@ -16,13 +16,8 @@ include: os.path.join("rules", "3.bakta.smk")
 include: os.path.join("rules", "4.amrfinder.smk")
 include: os.path.join("rules", "4.phispy.smk")
 include: os.path.join("rules", "5.defensefinder.smk")
-<<<<<<< HEAD
 include: os.path.join("rules", "6.summary.smk") 
 #include: os.path.join("rules", "7.panaroo.smk")
-=======
-#include: os.path.join("rules", "6.summary.smk") 
-#include: os.path.join("rules", "6.panaroo.smk")
->>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
 
 """TARGETS"""
 include: os.path.join("rules", "99.targets.smk")

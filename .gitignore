@@ -3,11 +3,7 @@
 .config
 .macsyfinder
 sphaehost.out
-<<<<<<< HEAD
 checkm2_1.0.2.sif
-=======
-sphaehost/workflow/envs/checkm2\:1.0.2--pyh7cba7a3_0
->>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
 sphaehost/workflow/databases/
 sphaehost.egg-info/
 sphaehost/workflow/conda

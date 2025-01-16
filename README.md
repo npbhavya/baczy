@@ -35,12 +35,9 @@ sphaehost --help
 - Install singularity
   On deepthought run `module load apptainer`
 
-<<<<<<< HEAD
 - Download checkm2 database and save to databases
   CheckM2_database to `sphaehost/workflow/databases`
 
-=======
->>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
 ### Running the workflow
 
 The command `sphaehost run` will run QC, assembly and annotation
@@ -55,21 +52,15 @@ sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm ap
 
 #For nanopore reads, place the reads, one file per sample in a directory
 sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k 
-
-#To run either of the commands on the cluster, add --profile slurm to the command. For instance here is the command for longreads/nanopore reads 
-#Before running this below command, make sure have slurm config files setup, here is a tutorial, https://fame.flinders.edu.au/blog/2021/08/02/snakemake-profiles-updated 
-sphaehost run --input sample-data/illumina --preprocess longread --output example --profile slurm -k
 ```
 
 ### Intermediate files 
 Saved to `sphae.out/PROCESSING`
 
-<<<<<<< HEAD
 ### Output
 Saved to `sphae.out/RESULTS` 
 
 A folder should be generated for each sample. This samples should have
-  - 
-=======
-Need to generate the results folder
->>>>>>> 4dc006d40bc2610d868781407d1c32f25eee0220
+  - Final assembly saved in file ending with {sample}*_final.fasta
+  - bakta annotations 
+  - defensefinder annotations
