@@ -2,6 +2,7 @@
 rule paired:
     input:
         assembly = os.path.join(dir_megahit, "{sample}-pr", "final.contigs.fa"),
+        assemblies = os.path.join(dir_megahit, "processed_assemblies", "{sample}_contigs.fa"),
         faa = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.faa"), 
         fna = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.fna"),
         gbff = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.gbff"),
@@ -10,7 +11,8 @@ rule paired:
         amr = os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_amrfinderplus"),
         pp_coord = os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"),
         pp_gbff = os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"),
-        defenesefinder=os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_defense_finder_systems.tsv")
+        defenesefinder=os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_defense_finder_systems.tsv"),
+        checkm2=os.path.join(dir_megahit, "classify", "gtdbtk.bac120.summary.tsv"),
     output:
         l= os.path.join(dir_summary_short, "{sample}", "{sample}_logs"),
     params:
@@ -22,6 +24,7 @@ rule paired:
         cp -r {params.bakta_dir}/* {params.summary_dir}/.
         cp {input.pp_coord} {params.summary_dir}/.
         cp {input.pp_gbff} {params.summary_dir}/.
+        cp {input.checkm2} {params.summary_dir}/.
         touch {output.l}
         """
 
@@ -37,7 +40,8 @@ rule longreads:
         amr = os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_amrfinderplus"),
         pp_coord = os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_prophage_coordinates.tsv"),
         pp_gbff = os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"),
-        defensefinder=os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_defense_finder_systems.tsv")
+        defensefinder=os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_defense_finder_systems.tsv"),
+        checkm2=os.path.join(dir_hybracter, "classify", "gtdbtk.bac120.summary.tsv"),
     output:
         l = os.path.join(dir_summary_long, "{sample}", "{sample}_log"),
     params:
@@ -49,5 +53,6 @@ rule longreads:
         cp {params.bakta_dir}/* {params.summary_dir}/.
         cp {input.pp_coord} {params.summary_dir}/.
         cp {input.pp_gbff} {params.summary_dir}/.
+        cp {input.checkm2} {params.summary_dir}/.
         touch {output.l}
         """

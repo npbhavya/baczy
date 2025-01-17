@@ -35,10 +35,12 @@ sphaehost --help
 - Install singularity
   On deepthought run `module load apptainer`
 
-- Download checkm2 database and save to databases
-  CheckM2_database to `sphaehost/workflow/databases`
+### Install databases 
 
-=======
+Download the following databases to `sphaehost/workflow/databases`
+  - CheckM2_database
+  - GTDBTK database
+
 ### Running the workflow
 
 The command `sphaehost run` will run QC, assembly and annotation
@@ -49,10 +51,10 @@ Only one command needs to be submitted to run all the above steps: QC, assembly 
 
 ```bash
 #For illumina reads, place the reads both forward and reverse reads to one directory
-sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k 
+sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda
 
 #For nanopore reads, place the reads, one file per sample in a directory
-sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k 
+sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda
 ```
 
 ### Intermediate files 

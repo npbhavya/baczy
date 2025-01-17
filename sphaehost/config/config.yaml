@@ -20,3 +20,4 @@ sphaehost:
         organism: ""
 
 singularity: true
+useconda: true
