@@ -197,6 +197,7 @@ def citation(**kwargs):
 
 cli.add_command(run)
 cli.add_command(config)
+cli.add_command(install)
 cli.add_command(citation)
 
 
