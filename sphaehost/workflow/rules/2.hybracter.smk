@@ -43,8 +43,9 @@ rule hybracter_genome_dir:
         actual = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"),
     shell:
         """
-        cp {params.out}/incomplete/{params.s}_final.fasta {output.actual} 2>/dev/null || \
-        cp {params.out}/complete/{params.s}_final.fasta {output.actual}
+        echo "{params.s}"
+        cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual} 2>/dev/null || \
+        cp {params.out}/complete/{params.s}.fastq_final.fasta {output.actual}
         echo "{params.s}" >> {params.fi}
         """
 

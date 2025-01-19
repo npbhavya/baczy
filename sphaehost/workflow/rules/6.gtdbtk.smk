@@ -1,4 +1,4 @@
-rule gtdbtk_long:
+rule gtdbtk_long_identify:
     input:
         fi= os.path.join(dir_hybracter, "checkm2", "quality_report.tsv")
     output:
