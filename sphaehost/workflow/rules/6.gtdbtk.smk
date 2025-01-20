@@ -37,11 +37,11 @@ rule gtdbtk_short:
         apptainer pull -F {params.container}
 
         apptainer exec -B {params.files}:/data,{params.db}:/refdata gtdbtk_2.1.1.sif \
-            gtdbtk identify --genome_dir /data/processed_assemblies --cpus {threads} --out_dir /data -x fasta
+            gtdbtk identify --genome_dir /data/processed_assemblies --cpus {threads} --out_dir /data -x fa
 
         apptainer exec -B {params.files}:/data,{params.db}:/refdata gtdbtk_2.1.1.sif \
             gtdbtk align --identify_dir /data --out_dir /data --cpus {threads} 
         
         apptainer exec -B {params.files}:/data,{params.db}:/refdata gtdbtk_2.1.1.sif \
-            gtdbtk classify --genome_dir /data/processed_assemblies --out_dir /data --cpus {threads}  -x fasta  -f --align_dir /data
+            gtdbtk classify --genome_dir /data/processed_assemblies --out_dir /data --cpus {threads}  -x fa  -f --align_dir /data
         """

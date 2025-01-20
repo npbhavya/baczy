@@ -20,6 +20,7 @@ if config['sphaehost']['args']['sequencing'] == 'paired':
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_prophages", "{sample}_phispy.log"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_defense_finder_systems.tsv"), sample=sample_names))
+    targets['asan'].append(expand(os.path.join(dir_bakta_short, "{sample}_capsule", "macsyfinder.log"), sample=sample_names))
     #targets['asan'].append(expand(os.path.join(dir_summary_short, "{sample}", "{sample}_log"),sample=sample_names))
 elif config['sphaehost']['args']['sequencing'] == 'longread':
     print ("entering nanopore targets")
@@ -37,6 +38,7 @@ elif config['sphaehost']['args']['sequencing'] == 'longread':
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_prophage_{sample}.gbff"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_prophages", "{sample}_phispy.log"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_defense_finder_systems.tsv"), sample=sample_names))
+    targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_capsule", "macsyfinder.log"), sample=sample_names))
     #targets['asan'].append(expand(os.path.join(dir_summary_long, "{sample}", "{sample}_log"),sample=sample_names))
 
 #if config['sphaehost']['args']['sequencing'] == 'paired':
