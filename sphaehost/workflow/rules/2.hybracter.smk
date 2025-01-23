@@ -16,18 +16,17 @@ rule hybracter:
     input: 
         os.path.join(input_dir, "hybracter.csv")
     params:
-        o = os.path.join(dir_hybracter, "hybracter.out")
+        o = os.path.join(dir_hybracter, "hybracter.out"),
+        log = os.path.join(dir_hybracter, "hybracter.out", "hybracter.log")
     output:
         tsv = os.path.join(dir_hybracter, "hybracter.out", "FINAL_OUTPUT", "hybracter_summary.tsv"),
     container:
         "docker://quay.io/gbouras13/hybracter:0.10.0"
-    log:
-        os.path.join(dir["log"], "hybracter.log")
     threads: 16
     shell:
         """
-        hybracter long -i {input} -o {params.o} --threads {threads} --verbose -k 2>>{log} || \
-        (echo "ERROR: Snakemake failed" && touch {output.tsv} && touch {log})2>>/dev/null
+        hybracter long -i {input} -o {params.o} --threads {threads} --verbose -k 2>>{params.log} || \
+        (echo "ERROR: Snakemake failed" && touch {output.tsv} && touch {params.log})2>>/dev/null
         """
 
 
