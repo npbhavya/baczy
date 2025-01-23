@@ -37,25 +37,31 @@ rule hybracter_genome_dir:
     params:
         out= os.path.join(dir_hybracter, "hybracter.out", "FINAL_OUTPUT"),
         final=os.path.join(dir_hybracter, "hybracter.out", "final_assemblies"),
+        chrom=os.path.join(dir_hybracter, "hybracter.out", "final_chromosomes"),
         s="{sample}",
         fi= os.path.join(dir_hybracter, "hybracter.out", "DONE"),
     output:
         actual = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"),
+        actual2 = os.path.join(dir_hybracter, "hybracter.out", "final_chromosomes", "{sample}_chromosome.fasta"),
+
     shell:
         """
         echo "{params.s}"
-        cp {params.out}/incomplete/{params.s}_final.fasta {output.actual} 2>/dev/null || \
-        cp {params.out}/complete/{params.s}_final.fasta {output.actual}
+        cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual} 2>/dev/null || \
+        cp {params.out}/complete/{params.s}.fastq_final.fasta {output.actual}
+
+        cp {params.out}/incomplete/{params.s}.fastq_chromosome.fasta {output.actual2} 2>/dev/null || \
+        cp {params.out}/complete/{params.s}.fastq_chromosome.fasta {output.actual2}
         echo "{params.s}" >> {params.fi}
         """
 
 rule checkm2_hybracter:
     input:
-        fi= expand(os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"), sample=SAMPLES),
+        fi= expand(os.path.join(dir_hybracter, "hybracter.out", "final_chromosomes", "{sample}_chromosome.fasta"), sample=SAMPLES),
     output:
         report = os.path.join(dir_hybracter, "checkm2", "quality_report.tsv")
     params:
-        final = os.path.join(dir_hybracter, "hybracter.out", "final_assemblies"),
+        final = os.path.join(dir_hybracter, "hybracter.out", "final_chromosomes"),
         out = os.path.join(dir_hybracter, "checkm2"),
         db= os.path.join(databaseDir),
         container="docker://staphb/checkm2:1.0.2"

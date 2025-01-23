@@ -26,6 +26,7 @@ elif config['sphaehost']['args']['sequencing'] == 'longread':
     print ("entering nanopore targets")
     targets['asan'].append(os.path.join(dir_hybracter, "hybracter.out", "FINAL_OUTPUT", "hybracter_summary.tsv"))
     targets['asan'].append(expand(os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"), sample=sample_names))
+    targets['asan'].append(expand(os.path.join(dir_hybracter, "hybracter.out", "final_chromosomes", "{sample}_chromosome.fasta"), sample=sample_names))
     targets['asan'].append(os.path.join(dir_hybracter, "checkm2", "quality_report.tsv"))
     targets['asan'].append(os.path.join(dir_hybracter, "classify", "gtdbtk.bac120.summary.tsv"))
     targets['asan'].append(expand(os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.gbff"), sample=sample_names))

@@ -6,7 +6,7 @@ rule capsule_long:
         os.path.join(dir_bakta_long, "{sample}_capsule", "macsyfinder.log"),
     params:
         indir= os.path.join(dir_hybracter, "hybracter.out", "final_assemblies"),
-        capsule = os.path.join(dir_bakta_short, "{sample}_capsule"),
+        capsule = os.path.join(dir_bakta_long, "{sample}_capsule"),
         db= os.path.join(databaseDir, "capsuledb"),
         smp = "{sample}",
         container ="docker://biocontainers/macsyfinder:v1.0.5-2-deb_cv1",
@@ -29,7 +29,7 @@ rule capsule_long:
         rm -rf {input.fasta}.psi
         rm -rf {input.fasta}.psq
         """
-    
+
 rule capsule_short:
     input:
         fasta=os.path.join(dir_megahit, "processed_assemblies", "{sample}_contigs.fa"),
@@ -61,4 +61,4 @@ rule capsule_short:
         rm -rf {input.fasta}.psi
         rm -rf {input.fasta}.psq
         """
-    
+
