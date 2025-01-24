@@ -49,7 +49,7 @@ rule hybracter_genome_dir:
         cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual} 2>/dev/null || \
         cp {params.out}/complete/{params.s}.fastq_final.fasta {output.actual}
 
-        cp {params.out}/incomplete/{params.s}.fastq_chromosome.fasta {output.actual2} 2>/dev/null || \
+        cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual2} 2>/dev/null || \
         cp {params.out}/complete/{params.s}.fastq_chromosome.fasta {output.actual2}
         echo "{params.s}" >> {params.fi}
         """
