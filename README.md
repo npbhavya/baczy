@@ -14,6 +14,7 @@
 
 This is an extension of sphae (https://github.com/linsalrob/sphae). Sphae assembled and annotates phage genomes, here I am assembling and annotating the bacterial hosts. 
 
+
 ### Install 
 
 Steps for installing sphae workflow 
@@ -33,13 +34,14 @@ sphaehost --help
 ```
 ### Manual installation 
 - Install singularity
+  
   On deepthought run `module load apptainer`
 
 ### Install databases 
 
 Download the following databases to `sphaehost/workflow/databases`
-  - CheckM2_database
-  - GTDBTK database
+  - CheckM2_database - which includes the uniref100.KO.1.dmnd
+  - GTDBTK database for v2.2.1 
 
 ### Running the workflow
 
