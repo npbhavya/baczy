@@ -10,73 +10,111 @@
   <img src="sphaehostlogo.png#gh-dark-mode-only" width="300">
 </p>
 
-## Bacterial asembly and annotation
+## Overview
 
-This is an extension of sphae (https://github.com/linsalrob/sphae). Sphae assembled and annotates phage genomes, here I am assembling and annotating the bacterial hosts. 
+**SphaeHost** is a **Snakemake-based workflow** for **assembling and annotating bacterial host genomes**. It extends **[Sphae](https://github.com/linsalrob/sphae)**, which assembles and annotates phage genomes, by enabling host genome assembly and functional annotation. 
 
+🔹 **Features:**  
+✔ **Quality control** ([Fastp](https://github.com/OpenGene/fastp))  
+✔ **Genome assembly** ([MEGAHIT](https://github.com/voutcn/megahit), [Hybracter](https://github.com/gbouras13/hybracter))  
+✔ **Functional annotation** ([Bakta](https://github.com/oschwengers/bakta))  
+✔ **Taxonomic classification** ([GTDB-Tk](https://github.com/Ecogenomics/GTDBTk))  
+✔ **Taxonomic tree** ([GTDB-Tk](https://github.com/Ecogenomics/GTDBTk)) 
+✔ **Defense & resistance profiling** ([Defense-Finder](https://github.com/mdmparis/defense-finder), [AMRFinderPlus](https://github.com/ncbi/amr), [CapsuleDB](https://research.pasteur.fr/en/tool/capsulefinder/))  
+✔ **Prophage detection** ([PhiSpy](https://github.com/linsalrob/PhiSpy))  
+✔ **Pan-genome analysis** ([Panaroo](https://github.com/gtonkinhill/panaroo))  
 
-### Install 
+## Installion
 
 Steps for installing sphae workflow 
 
-```bash
-#clone sphae repository
-git clone https://github.com/npbhavya/sphaehost.git
+  ```bash
+  #clone sphae repository
+  git clone https://github.com/npbhavya/sphaehost.git
 
-#move to sphae folder
-cd sphaehost
+  #move to sphae folder
+  cd sphaehost
 
-#install sphae
-pip install -e .
+  #install sphae
+  pip install -e .
 
-#confirm the workflow is installed by running the below command 
-sphaehost --help
-```
+  #confirm the workflow is installed by running the below command 
+  sphaehost --help
+  ```
+
 ### Manual installation 
-- Install singularity
-  
-  On deepthought run `module load apptainer`
+- Install singularity or load the module
+    On deepthought cluster \
+    `module load apptainer`
 
-### Install databases 
+- Install miniconda
+    Download and install Miniconda:
+    [Miniconda Installation Guide](https://docs.anaconda.com/miniconda/install/)
 
-Download the following databases to `sphaehost/workflow/databases`
-  - CheckM2_database
-    Follow the steps in https://github.com/chklovski/CheckM2?tab=readme-ov-file#database
-    
-  - GTDBTK database
-    Follow the steps in https://ecogenomics.github.io/GTDBTk/installing/index.html 
+## Database setup
 
-  - capsuledb database
-    Download from https://gitlab.pasteur.fr/gem/capsuledb/-/tree/master/CapsuleFinder_models?ref_type=heads 
+Download and place the required databases in:
+  `sphaehost/workflow/databases`
+
+  - [CheckM2_database](https://github.com/chklovski/CheckM2?tab=readme-ov-file#database)
+  - [GTDBTK database](https://ecogenomics.github.io/GTDBTk/installing/index.html)
+  - [Capsuledb](https://gitlab.pasteur.fr/gem/capsuledb/-/tree/master/CapsuleFinder_models?ref_type=heads)
 
 ### Running the workflow
 
-The command `sphaehost run` will run QC, assembly and annotation
+Run SphaeHost using a single command!
 
-**Commands to run**
+**Before starting the run**
+A couple things to note:
+  - the taxonomic tree is generated using [GTDB-Tk](https://github.com/Ecogenomics/GTDBTk), so update the lines 
+      
+      ```
+      gtdbtk:
+        outgroup: "d__Archaea"
+        taxa_filter: "d__Bacteria"
+      ```
+    An example would be, 
+      ```
+      gtdbtk:
+        outgroup: "g__Escherichia"
+        taxa_filter: "g__Achromobacter"
+      ```
 
-Only one command needs to be submitted to run all the above steps: QC, assembly and assembly stats
+**For paired end reads**
+  ```
+  sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda
+  ```
 
-```bash
-#For illumina reads, place the reads both forward and reverse reads to one directory
-sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda
-
-#For nanopore reads, place the reads, one file per sample in a directory
-sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda
-```
+**For long reads**
+  ```
+  sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda
+  ```
 
 ### Intermediate files 
-Saved to `sphae.out/PROCESSING`
+Stored in:
+  `sphae.out/PROCESSING`
 
-A folder should be generated for each sample. This samples should have
-  - Final assembly saved in file ending with {sample}*_final.fasta
-  - bakta annotations 
-  - defensefinder annotations
-  - Phispy prophage predictions
-  - NCBI AMRFInderPlus predictions per genome
-  - CapsuleFinder search using MacSyFinder
+### Final Results and Output
+Stored in `RESULT-short` for short reads or `RESULTS-long` for long reads
 
-### Output
-Saved to `sphae.out/RESULTS` 
-
-This is still not being generated. Currently working through the best way to format the results so it can be easily used for downstream analysis. 
+Each folder contains:
+  - *{sample} folder*
+    - {sample}_amrfinderplus table: identified AMR genes in the genome
+    - {sample}_contigs.fa or {sample}_final.fasta : assembled genomes for each genome
+    - {sample}.faa : identified proteins
+    - {sample}.fna : identified genes
+    - {sample}.gbff
+    - {sample}.gff3
+    - {sample}.png and {sample}.svg : genome visualized
+    - {sample}.txt: summary 
+    - {sample}_prophage_coordinates.tsv: location of the identified prophages using Phispy
+  - *amrfinder_summary.tsv* : a table with all the AMRFinder genes in all the samples
+  - *bakta_summary.tsv* : Bakta summary for all the samples saved to one table
+  - *checkm2_quality_report.tsv* : Checkm2 completenes results
+  - *defensefinder_summary.tsv* : All the defense systems found in all the samples 
+  - *gtdbtk.ba120_summary.tsv* : GTDBTK summary with the predicted taxa for each of the samples
+  - *gtdbtk.bac120.decorated.tree* , *gtdbtk.bac120.tree.table* : GTDBTK tree and the tree table
+    - visualize the tree on iTOL
+  - *prophage_regions.tsv* : Location of the prophage regions in al the samples
+  - Panaroo folder
+    - output from running [panaroo](https://github.com/gtonkinhill/panaroo)  

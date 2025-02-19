@@ -19,5 +19,9 @@ sphaehost:
         #Vibrio_cholerae, Vibrio_parahaemolyticus, Vibrio_vulnificus
         organism: ""
 
+gtdbtk:
+    outgroup: "d__Archaea"
+    taxa_filter: "d__Bacteria"
+
 singularity: true
 useconda: true
