@@ -65,15 +65,16 @@ Download and place the required databases in:
 Run SphaeHost using a single command!
 
 **Before starting the run**
-A couple things to note:
-  - the taxonomic tree is generated using [GTDB-Tk](https://github.com/Ecogenomics/GTDBTk), so update the lines 
+The taxonomic tree is generated using [GTDB-Tk](https://github.com/Ecogenomics/GTDBTk), so update the lines 
       
       ```
       gtdbtk:
         outgroup: "d__Archaea"
         taxa_filter: "d__Bacteria"
       ```
-    An example would be, 
+
+    This can be set to more specific genera: 
+
       ```
       gtdbtk:
         outgroup: "g__Escherichia"
@@ -81,14 +82,10 @@ A couple things to note:
       ```
 
 **For paired end reads**
-  ```
-  sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda
-  ```
+  `sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda`
 
 **For long reads**
-  ```
-  sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda
-  ```
+  `sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda`
 
 ### Intermediate files 
 Stored in:
