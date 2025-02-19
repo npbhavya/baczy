@@ -82,13 +82,16 @@ This can be set to more specific genera:
   ```
 
 **For paired end reads**
+
   `sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda`
 
 **For long reads**
+
   `sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda`
 
 ### Intermediate files 
 Stored in:
+
   `sphae.out/PROCESSING`
 
 ### Final Results and Output
