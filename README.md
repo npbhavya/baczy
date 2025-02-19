@@ -98,7 +98,7 @@ Stored in:
 Stored in `RESULT-short` for short reads or `RESULTS-long` for long reads
 
 Each folder contains:
-  - *{sample} folder*
+  - **{sample} folder**
     - {sample}_amrfinderplus table: identified AMR genes in the genome
     - {sample}_contigs.fa or {sample}_final.fasta : assembled genomes for each genome
     - {sample}.faa : identified proteins
@@ -108,13 +108,13 @@ Each folder contains:
     - {sample}.png and {sample}.svg : genome visualized
     - {sample}.txt: summary 
     - {sample}_prophage_coordinates.tsv: location of the identified prophages using Phispy
-  - *amrfinder_summary.tsv* : a table with all the AMRFinder genes in all the samples
-  - *bakta_summary.tsv* : Bakta summary for all the samples saved to one table
-  - *checkm2_quality_report.tsv* : Checkm2 completenes results
-  - *defensefinder_summary.tsv* : All the defense systems found in all the samples 
-  - *gtdbtk.ba120_summary.tsv* : GTDBTK summary with the predicted taxa for each of the samples
-  - *gtdbtk.bac120.decorated.tree* , *gtdbtk.bac120.tree.table* : GTDBTK tree and the tree table
+  - **amrfinder_summary.tsv** : a table with all the AMRFinder genes in all the samples
+  - **bakta_summary.tsv** : Bakta summary for all the samples saved to one table
+  - **checkm2_quality_report.tsv** : Checkm2 completenes results
+  - **defensefinder_summary.tsv** : All the defense systems found in all the samples 
+  - **gtdbtk.ba120_summary.tsv** : GTDBTK summary with the predicted taxa for each of the samples
+  - **gtdbtk.bac120.decorated.tree** , *gtdbtk.bac120.tree.table* : GTDBTK tree and the tree table
     - visualize the tree on iTOL
-  - *prophage_regions.tsv* : Location of the prophage regions in al the samples
-  - Panaroo folder
+  - **prophage_regions.tsv** : Location of the prophage regions in al the samples
+  - **Panaroo folder**
     - output from running [panaroo](https://github.com/gtonkinhill/panaroo)  
