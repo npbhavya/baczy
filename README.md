@@ -14,6 +14,7 @@
 
 This is an extension of sphae (https://github.com/linsalrob/sphae). Sphae assembled and annotates phage genomes, here I am assembling and annotating the bacterial hosts. 
 
+
 ### Install 
 
 Steps for installing sphae workflow 
@@ -33,6 +34,7 @@ sphaehost --help
 ```
 ### Manual installation 
 - Install singularity
+  
   On deepthought run `module load apptainer`
 
 ### Install databases 
@@ -66,10 +68,15 @@ sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k -
 ### Intermediate files 
 Saved to `sphae.out/PROCESSING`
 
-### Output
-Saved to `sphae.out/RESULTS` 
-
 A folder should be generated for each sample. This samples should have
   - Final assembly saved in file ending with {sample}*_final.fasta
   - bakta annotations 
   - defensefinder annotations
+  - Phispy prophage predictions
+  - NCBI AMRFInderPlus predictions per genome
+  - CapsuleFinder search using MacSyFinder
+
+### Output
+Saved to `sphae.out/RESULTS` 
+
+This is still not being generated. Currently working through the best way to format the results so it can be easily used for downstream analysis. 
