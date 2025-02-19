@@ -66,20 +66,20 @@ Run SphaeHost using a single command!
 
 **Before starting the run**
 The taxonomic tree is generated using [GTDB-Tk](https://github.com/Ecogenomics/GTDBTk), so update the lines 
-      
-      ```
-      gtdbtk:
-        outgroup: "d__Archaea"
-        taxa_filter: "d__Bacteria"
-      ```
+  
+  ```
+  gtdbtk:
+    outgroup: "d__Archaea"
+    taxa_filter: "d__Bacteria"
+  ```
 
-    This can be set to more specific genera: 
-
-      ```
-      gtdbtk:
-        outgroup: "g__Escherichia"
-        taxa_filter: "g__Achromobacter"
-      ```
+This can be set to more specific genera: 
+  
+  ```
+  gtdbtk:
+    outgroup: "g__Escherichia"
+    taxa_filter: "g__Achromobacter"
+  ```
 
 **For paired end reads**
   `sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda`
