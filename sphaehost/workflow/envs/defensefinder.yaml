@@ -1,0 +1,11 @@
+name: defensefinder 
+channels:
+    - defaults
+    - conda-forge
+    - bioconda
+dependencies:
+    - hmmer>=3.4
+    - python=3.10  # Adjust if needed
+    - pip
+    - pip:
+        - mdmparis-defense-finder

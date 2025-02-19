@@ -3,18 +3,19 @@ rule defensefinder_short:
         os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}.faa")
     params:
         out = os.path.join(dir_bakta_short, "{sample}_bakta"),
+        db=os.path.join(databaseDir, "macysfinder"),
         sample = "{sample}"
     output:
         os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_defense_finder_systems.tsv"),
         os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_defense_finder_genes.tsv"),
         os.path.join(dir_bakta_short, "{sample}_bakta", "{sample}_defense_finder_hmmer.tsv")
-    container:
-        "docker://mesti90/defensefinder:1.0"
+    conda:
+        os.path.join(dir_env, "defensefinder.yaml")
+    threads: 8
     shell:
         """
-        defense-finder update
-        defense-finder run {input}
-        mv {params.sample}_defense_finder* {params.out}/.
+        defense-finder update --models-dir {params.db}
+        defense-finder run {input} --models-dir {params.db} -o {params.out} -w {threads}
         """
 
 rule defensefinder_long:
@@ -22,16 +23,17 @@ rule defensefinder_long:
         os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}.faa"),
     params:
         out = os.path.join(dir_bakta_long, "{sample}_bakta"),
+        db=os.path.join(databaseDir, "macysfinder"),
         sample = "{sample}"
     output:
         os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_defense_finder_systems.tsv"),
         os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_defense_finder_genes.tsv"),
         os.path.join(dir_bakta_long, "{sample}_bakta", "{sample}_defense_finder_hmmer.tsv")
-    container:
-        "docker://mesti90/defensefinder:1.0"
+    conda:
+        os.path.join(dir_env, "defensefinder.yaml")
+    threads: 8
     shell:
         """
-        defense-finder update
-        defense-finder run {input}
-        mv {params.sample}_defense_finder* {params.out}/.
+        defense-finder update --models-dir {params.db}
+        defense-finder run {input} --models-dir {params.db} -o {params.out} -w {threads}
         """

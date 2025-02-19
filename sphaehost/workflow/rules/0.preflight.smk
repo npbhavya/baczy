@@ -37,7 +37,19 @@ if config['sphaehost']['args']['sequencing'] == 'paired':
     extn = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[1] + os.path.splitext(os.path.basename(file_path))[1] for file_path in file_paths]
 elif config['sphaehost']['args']['sequencing'] == 'longread':
     file_paths = glob.glob(os.path.join(input_dir, '*.fastq*'))
-    sample_names, extn = zip(*(os.path.splitext(os.path.basename(file_path)) if '.' in os.path.basename(file_path) else (os.path.basename(file_path), '') for file_path in file_paths))
+    sample_names, extn = zip(*(
+    (
+        os.path.basename(file_path).rsplit('.', maxsplit=2)[0],  # Split by the last two dots for extensions like `.fastq.gz`
+        '.' + '.'.join(os.path.basename(file_path).rsplit('.', maxsplit=2)[1:])
+    )
+    if file_path.endswith(('.fastq.gz', '.fq.gz')) else
+    (
+        os.path.splitext(os.path.basename(file_path))[0],  # Regular split for single-extension files like `.fastq`
+        os.path.splitext(os.path.basename(file_path))[1]
+    )
+    for file_path in file_paths
+    ))
+
     
 print(f"Samples are {sample_names}")
 print(f"Extensions are {extn}")

@@ -39,7 +39,13 @@ sphaehost --help
 
 Download the following databases to `sphaehost/workflow/databases`
   - CheckM2_database
+    Follow the steps in https://github.com/chklovski/CheckM2?tab=readme-ov-file#database
+    
   - GTDBTK database
+    Follow the steps in https://ecogenomics.github.io/GTDBTk/installing/index.html 
+
+  - capsuledb database
+    Download from https://gitlab.pasteur.fr/gem/capsuledb/-/tree/master/CapsuleFinder_models?ref_type=heads 
 
 ### Running the workflow
 

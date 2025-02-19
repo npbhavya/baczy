@@ -8,8 +8,8 @@ rule phispy_short:
     params:
         out = os.path.join(dir_bakta_short, "{sample}_prophages"),
         s = "{sample}_prophage"
-    container:
-        "docker://multifractal/phispy:v4.2.19"
+    conda:
+        os.path.join(dir_env, "phispy.yaml")
     log:
         os.path.join(dir["log"], "phispy.{sample}.log")
     shell:
@@ -35,8 +35,8 @@ rule long_phispy:
     params:
         out = os.path.join(dir_bakta_long, "{sample}_prophages"),
         s = "{sample}_prophage"
-    container:
-        "docker://multifractal/phispy:v4.2.19"
+    conda:
+        os.path.join(dir_env, "phispy.yaml")
     log:
         os.path.join(dir["log"], "phispy-long.{sample}.log")
     shell:

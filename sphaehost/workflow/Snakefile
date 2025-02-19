@@ -18,8 +18,8 @@ include: os.path.join("rules", "4.phispy.smk")
 include: os.path.join("rules", "5.defensefinder.smk")
 include: os.path.join("rules", "6.gtdbtk.smk")
 include: os.path.join("rules", "7.capsulefinder.smk")
-#include: os.path.join("rules", "7.summary.smk") 
-#include: os.path.join("rules", "8.pan:aroo.smk")
+#include: os.path.join("rules", "8.summary.smk") 
+#include: os.path.join("rules", "98.panaroo.smk")
 
 """TARGETS"""
 include: os.path.join("rules", "99.targets.smk")
@@ -27,7 +27,6 @@ include: os.path.join("rules", "99.targets.smk")
 rule all:
     input:
         targets['asan'],
-        targets['pan']
 
 rule asan:
     input:

@@ -27,6 +27,7 @@ rule hybracter:
         """
         hybracter long -i {input} -o {params.o} --threads {threads} --verbose -k 2>>{params.log} || \
         (echo "ERROR: Snakemake failed" && touch {output.tsv} && touch {params.log})2>>/dev/null
+        touch {output.tsv}
         """
 
 
@@ -46,12 +47,14 @@ rule hybracter_genome_dir:
     shell:
         """
         echo "{params.s}"
-        cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual} 2>/dev/null || \
-        cp {params.out}/complete/{params.s}.fastq_final.fasta {output.actual}
+        if [ -e "{params.out}/incomplete/{params.s}.fastq_final.fasta" ] || [ -e "{params.out}/complete/{params.s}.fastq_final.fasta" ]; then
+            cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual} 2>/dev/null || \
+            cp {params.out}/complete/{params.s}.fastq_final.fasta {output.actual}
 
-        cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual2} 2>/dev/null || \
-        cp {params.out}/complete/{params.s}.fastq_chromosome.fasta {output.actual2}
-        echo "{params.s}" >> {params.fi}
+            cp {params.out}/incomplete/{params.s}.fastq_final.fasta {output.actual2} 2>/dev/null || \
+            cp {params.out}/complete/{params.s}.fastq_chromosome.fasta {output.actual2}
+            echo "{params.s}" >> {params.fi}
+        fi
         """
 
 rule checkm2_hybracter:
@@ -71,4 +74,8 @@ rule checkm2_hybracter:
 
         apptainer exec -B {params.final}:/data,{params.out}:/out,{params.db}:/database checkm2_1.0.2.sif \
             checkm2 predict -t {threads} -x fasta -i /data -o /out --database_path /database/CheckM2_database/uniref100.KO.1.dmnd --force
+
+        if [[ -f {output.report} ]]; then
+            touch {output.report}
+        fi
         """

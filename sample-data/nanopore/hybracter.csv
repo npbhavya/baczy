@@ -1,2 +1,0 @@
-test_long_reads.fastq,sample-data/nanopore/test_long_reads.fastq.gz,5000000
-test_long_reads_subsampled.fastq,sample-data/nanopore/test_long_reads_subsampled.fastq.gz,5000000

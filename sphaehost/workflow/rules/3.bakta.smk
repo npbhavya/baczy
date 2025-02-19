@@ -12,9 +12,7 @@ rule bakta_short:
         smp = "{sample}"
     container:
         "docker://staphb/bakta:1.10.3-5.1-light"
-    log:
-        os.path.join(dir["log"], "bakta.{sample}.log")
-    threads: 32
+    threads: 16
     shell:
         """
         bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --force
@@ -34,9 +32,7 @@ rule bakta_long:
         smp = "{sample}"
     container:
         "docker://staphb/bakta:1.10.3-5.1-light"
-    log:
-        os.path.join(dir["log"], "bakta-long.{sample}.log")
-    threads: 32
+    threads: 16
     shell:
         """
         bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --force
