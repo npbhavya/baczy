@@ -1,10 +1,10 @@
 [![Edwards Lab](https://img.shields.io/badge/Bioinformatics-EdwardsLab-03A9F4)](https://edwards.flinders.edu.au)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub language count](https://img.shields.io/github/languages/count/npbhavya/sphaehost)
+![GitHub language count](https://img.shields.io/github/languages/count/npbhavya/baczy)
 [![](https://img.shields.io/static/v1?label=CLI&message=Snaketool&color=blueviolet)](https://github.com/beardymcjohnface/Snaketool)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/npbhavya/sphaehost)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/npbhavya/baczy)
 
-# sphaehost
+# Baczy
 <p align="center">
   <img src="sphaehostlogo.png#gh-light-mode-only" width="300">
   <img src="sphaehostlogo.png#gh-dark-mode-only" width="300">
@@ -12,7 +12,7 @@
 
 ## Overview
 
-**SphaeHost** is a **Snakemake-based workflow** for **assembling and annotating bacterial host genomes**. It extends **[Sphae](https://github.com/linsalrob/sphae)**, which assembles and annotates phage genomes, by enabling host genome assembly and functional annotation. 
+**Baczy** is a **Snakemake-based workflow** for **assembling and annotating bacterial host genomes**. It extends **[Sphae](https://github.com/linsalrob/sphae)**, which assembles and annotates phage genomes, by enabling host genome assembly and functional annotation. 
 
 🔹 **Features:**  
 ✔ **Quality control** ([Fastp](https://github.com/OpenGene/fastp))  
@@ -26,20 +26,20 @@
 
 ## Installion
 
-Steps for installing sphae workflow 
+Steps for installing workflow 
 
   ```bash
-  #clone sphae repository
-  git clone https://github.com/npbhavya/sphaehost.git
+  #clone repository
+  git clone https://github.com/npbhavya/baczy.git
 
   #move to sphae folder
-  cd sphaehost
+  cd baczy
 
-  #install sphae
+  #install
   pip install -e .
 
   #confirm the workflow is installed by running the below command 
-  sphaehost --help
+  baczy --help
   ```
 
 ### Manual installation 
@@ -54,7 +54,7 @@ Steps for installing sphae workflow
 ## Database setup
 
 Download and place the required databases in:
-  `sphaehost/workflow/databases`
+  `baczy/workflow/databases`
 
   - [CheckM2_database](https://github.com/chklovski/CheckM2?tab=readme-ov-file#database)
   - [GTDBTK database](https://ecogenomics.github.io/GTDBTk/installing/index.html)
@@ -62,7 +62,7 @@ Download and place the required databases in:
 
 ### Running the workflow
 
-Run SphaeHost using a single command!
+Run Baczy using a single command!
 
 **Before starting the run**
 The taxonomic tree is generated using [GTDB-Tk](https://github.com/Ecogenomics/GTDBTk), so update the lines 
@@ -83,16 +83,17 @@ This can be set to more specific genera:
 
 **For paired end reads**
 
-  `sphaehost run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda`
+  `baczy run --input sample-data/illumina --cores 32 --use-singularity --sdm apptainer --output test -k --use-conda`
 
 **For long reads**
 
-  `sphaehost run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda`
+  `baczy run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test -k --use-conda`
 
 ### Intermediate files 
 Stored in:
 
-  `sphae.out/PROCESSING`
+
+  `baczy.out/PROCESSING`
 
 ### Final Results and Output
 Stored in `RESULT-short` for short reads or `RESULTS-long` for long reads
