@@ -5,9 +5,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
     
 
 jobs:
@@ -32,16 +32,16 @@ jobs:
       # Setup env
       - uses: conda-incubator/setup-miniconda@v3
         with:
-          activate-environment: sphae
+          activate-environment: baczy
           environment-file: environment.yml
           python-version: ${{ matrix.python-version }}
           auto-activate-base: false
 
-      - name: "Setup Sphaehost on ${{ matrix.os }} for Python ${{ matrix.python-version }}"
+      - name: "Setup Baczy on ${{ matrix.os }} for Python ${{ matrix.python-version }}"
         run: |
-          git clone https://github.com/npbhavya/sphaehost.git
-          cd sphaehost
+          git clone https://github.com/npbhavya/baczy.git
+          cd baczy
           pip install -e .
-          sphaehost --help
+          baczy --help
       
           
