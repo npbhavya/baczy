@@ -39,6 +39,7 @@ jobs:
 
       - name: "Setup Baczy on ${{ matrix.os }} for Python ${{ matrix.python-version }}"
         run: |
+          rm -rf baczy
           git clone https://github.com/npbhavya/baczy.git
           cd baczy
           pip install -e .
