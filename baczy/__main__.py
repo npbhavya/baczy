@@ -18,14 +18,14 @@ def snake_base(rel_path):
 
 def get_version():
     """Read and print the version from the version file"""
-    with open(snake_base("sphaehost.VERSION"), "r") as f:
+    with open(snake_base("baczy.VERSION"), "r") as f:
         version = f.readline()
     return version
 
 
 def print_citation():
     """Read and print the Citation information from the citation file"""
-    with open(snake_base("sphaehost.CITATION"), "r") as f:
+    with open(snake_base("baczy.CITATION"), "r") as f:
         for line in f:
             echo_click(line)
 
@@ -44,7 +44,7 @@ def common_options(func):
     options = [
         click.option("--output",help="Output directory",
             type=click.Path(),
-            default="sphaehost.out",
+            default="baczy.out",
             show_default=True,
         ),
         click.option(
@@ -95,7 +95,7 @@ def common_options(func):
         ),
         click.option(
             "--log",
-            default="sphaehost.log",
+            default="baczy.log",
             callback=default_to_output,
             hidden=True,
         ),
@@ -119,7 +119,7 @@ def cli():
     """Bacterial asembly and annotation
     \b
     For more options, run:
-    sphaehost command --help"""
+    baczy command --help"""
     pass
 
 
@@ -128,10 +128,10 @@ help_msg_extra = """
 INSTALLING DATABASES REQUIRED
 This command downloads the databases to the directory 'database' 
 \b
-sphae install 
+baczy install 
 \b
 CLUSTER EXECUTION:
-sphaehost run ... --profile [profile]
+baczy run ... --profile [profile]
 For information on Snakemake profiles see:
 https://snakemake.readthedocs.io/en/stable/executing/cli.html#profiles
 \b
@@ -142,7 +142,7 @@ https://snakemake.readthedocs.io/en/stable/executing/cli.html#profiles
 def install(**kwargs):
     """The install function for databases"""
     merge_config = {
-        'sphaehost': {
+        'baczy': {
             'args': kwargs   
         }
     }
@@ -165,10 +165,10 @@ def install(**kwargs):
                 type=click.Choice(['paired', 'longread']))
 @common_options
 def run(**kwargs):
-    """Run sphaehost"""
+    """Run baczy"""
     # Config to add or update in configfile
     merge_config = {
-        "sphaehost": {
+        "baczy": {
             "args": kwargs
         }
     }
@@ -197,7 +197,7 @@ def citation(**kwargs):
 
 cli.add_command(run)
 cli.add_command(config)
-cli.add_command(install)
+#cli.add_command(install)
 cli.add_command(citation)
 
 

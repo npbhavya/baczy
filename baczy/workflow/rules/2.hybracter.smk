@@ -5,7 +5,7 @@ rule generate_csv:
     input:
         fastp = os.path.join(input_dir)
     params:
-        gensize = config['sphaehost']['args']['gen_size']
+        gensize = config['baczy']['args']['gen_size']
     output:
         csv = os.path.join(input_dir, "hybracter.csv")
     localrule: True

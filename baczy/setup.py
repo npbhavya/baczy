@@ -6,8 +6,8 @@ def get_version():
     with open(
         os.path.join(
             os.path.dirname(os.path.realpath(__file__)),
-            "sphaehost",
-            "sphaehost.VERSION",
+            "baczy",
+            "baczy.VERSION",
         )
     ) as f:
         return f.readline().strip()
@@ -39,7 +39,7 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name="sphaehost",
+    name="baczy",
     packages=find_packages(),
     url="",
     python_requires=">=3.9",
@@ -50,7 +50,7 @@ setup(
     author="Bhavya Papudeshi",
     author_email="npbhavya13@gmail.com",
     data_files=get_data_files(),
-    py_modules=["sphaehost"],
+    py_modules=["baczy"],
     install_requires=[
         "snaketool-utils>=0.0.4",
         "snakemake>=7.14.0",
@@ -60,7 +60,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "sphaehost=sphaehost.__main__:main"
+            "baczy=baczy.__main__:main"
         ]
     },
     include_package_data=True,

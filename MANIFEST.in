@@ -1,4 +1,4 @@
-include sphaehost/sphaehost.LICENSE
-include sphaehost/sphaehost.CITATION
-include sphaehost/sphaehost.VERSION
-recursive-include sphaehost *
+include baczy/baczy.LICENSE
+include baczy/baczy.CITATION
+include baczy/baczy.VERSION
+recursive-include baczy *

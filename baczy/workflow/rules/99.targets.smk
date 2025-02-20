@@ -2,7 +2,7 @@
 
 targets = {'asan': [], 'pan': []}
 
-if config['sphaehost']['args']['sequencing'] == 'paired':
+if config['baczy']['args']['sequencing'] == 'paired':
     print ("Entering paired targets")
     targets['asan'].append(expand(os.path.join(dir_fastp_short,"{sample}_R1.fastq.gz"), sample=sample_names))
     targets['asan'].append(expand(os.path.join(dir_fastp_short,"{sample}_R2.fastq.gz"), sample=sample_names))
@@ -30,7 +30,7 @@ if config['sphaehost']['args']['sequencing'] == 'paired':
     targets['asan'].append(os.path.join(dir_summary_short, "gtdbtk.bac120.summary.tsv"))
     targets['asan'].append(os.path.join(dir_summary_short, "bakta_summary.tsv"))
     targets['asan'].append(os.path.join(dir_summary_short, "amrfinder_summary.tsv"))
-elif config['sphaehost']['args']['sequencing'] == 'longread':
+elif config['baczy']['args']['sequencing'] == 'longread':
     print ("entering nanopore targets")
     targets['asan'].append(os.path.join(dir_hybracter, "hybracter.out", "FINAL_OUTPUT", "hybracter_summary.tsv"))
     targets['asan'].append(expand(os.path.join(dir_hybracter, "hybracter.out", "final_assemblies", "{sample}_final.fasta"), sample=sample_names))
@@ -58,9 +58,9 @@ elif config['sphaehost']['args']['sequencing'] == 'longread':
     targets['asan'].append(os.path.join(dir_summary_long, "bakta_summary.tsv"))
     targets['asan'].append(os.path.join(dir_summary_long, "amrfinder_summary.tsv"))
 
-if config['sphaehost']['args']['sequencing'] == 'paired':
+if config['baczy']['args']['sequencing'] == 'paired':
     targets['pan'].append(os.path.join(dir_panaroo_short, "summary_statistics.txt"))
     targets['pan'].append(os.path.join(dir_panaroo_short, "gene_presence_absence.csv"))
-elif config['sphaehost']['args']['sequencing'] == 'longread':
+elif config['baczy']['args']['sequencing'] == 'longread':
     targets['pan'].append(os.path.join(dir_panaroo_long, "summary_statistics.txt"))
     targets['pan'].append(os.path.join(dir_panaroo_long, "gene_presence_absence.csv"))

@@ -4,10 +4,10 @@
 .macsyfinder
 sphaehost.out
 *.sif
-sphaehost/workflow/databases/
-sphaehost.egg-info/
-sphaehost/workflow/conda
-sphaehost/__pycache__
+baczy/workflow/databases/
+baczy.egg-info/
+baczy/workflow/conda
+baczy/__pycache__
 .snakemake
 *.err.txt
 *.out.txt

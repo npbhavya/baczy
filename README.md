@@ -6,8 +6,8 @@
 
 # Baczy
 <p align="center">
-  <img src="sphaehostlogo.png#gh-light-mode-only" width="300">
-  <img src="sphaehostlogo.png#gh-dark-mode-only" width="300">
+  <img src="baczy.png#gh-light-mode-only" width="300">
+  <img src="baczy.png#gh-dark-mode-only" width="300">
 </p>
 
 ## Overview

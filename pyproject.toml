@@ -3,7 +3,7 @@ requires = ["setuptools>=42", "setuptools_scm", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sphaehost"
+name = "baczy"
 version = "1.0.0"  # Set an initial version here
 description = "Bacterial assembly and annotation"
 readme = "README.md"
@@ -36,7 +36,7 @@ dependencies = [
 ]
 
 [project.scripts]
-sphaehost = "sphaehost.__main__:main"
+baczy = "baczy.__main__:main"
 
 [tool.setuptools_scm]
 version_scheme = "post-release"

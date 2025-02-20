@@ -8,9 +8,12 @@ rule amrfinderplus_paired:
     container:
         "docker://staphb/ncbi-amrfinderplus:4.0.3-2024-10-22.1"
     params:
-        organism = config['sphaehost']['args']['organism'],
+        organism = config['baczy']['args']['organism'],
     shell:
         """
+        mkdir -p temp
+        export TMPDIR=temp
+        
         if [[ "{params.organism}" != "" ]]; then
             amrfinder -u 
             amrfinder -p {input.faa} -g {input.gff3} -n {input.contigs} -O {params.organism} -a bakta -o {output} --plus
@@ -29,9 +32,12 @@ rule amrfinderplus_long:
     container:
         "docker://staphb/ncbi-amrfinderplus:4.0.3-2024-10-22.1"
     params:
-        organism = config['sphaehost']['args']['organism'],
+        organism = config['baczy']['args']['organism'],
     shell:
         """
+        mkdir -p temp
+        export TMPDIR=temp
+
         if [[ "{params.organism}" != "" ]]; then
             amrfinder -u 
             amrfinder -p {input.faa} -g {input.gff3} -n {input.contigs} -O {params.organism} -a bakta -o {output} --plus

@@ -14,28 +14,28 @@ configfile: os.path.join(workflow.basedir, "..", "config", "config.yaml")
 dir ={}
 # output dir
 try:
-    if config['sphaehost']['args']['output'] is None:
-        dir_out = os.path.join('sphaehost.out')
+    if config['baczy']['args']['output'] is None:
+        dir_out = os.path.join('baczy.out')
     else:
-        dir_out = config['sphaehost']['args']['output']
+        dir_out = config['baczy']['args']['output']
 except KeyError:
-    dir_out = os.path.join('sphaehost.out')
+    dir_out = os.path.join('baczy.out')
 
 # Load the YAML file
-config_path = os.path.join(config['sphaehost']['args']['output'], 'config.yaml')
+config_path = os.path.join(config['baczy']['args']['output'], 'config.yaml')
 
 with open(config_path, 'r') as yaml_file:
     config_data = yaml.safe_load(yaml_file)
 
 # Access the value of _input from the loaded YAML data
-input_dir = config_data.get('sphaehost', {}).get('args', {}).get('_input')
+input_dir = config_data.get('baczy', {}).get('args', {}).get('_input')
 
 # List of file paths matching the pattern
-if config['sphaehost']['args']['sequencing'] == 'paired':
+if config['baczy']['args']['sequencing'] == 'paired':
     file_paths = glob.glob(os.path.join(input_dir, '*_R1*.fastq*'))
     sample_names = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[0] for file_path in file_paths]
     extn = [os.path.splitext(os.path.basename(file_path))[0].rsplit('_R1', 1)[1] + os.path.splitext(os.path.basename(file_path))[1] for file_path in file_paths]
-elif config['sphaehost']['args']['sequencing'] == 'longread':
+elif config['baczy']['args']['sequencing'] == 'longread':
     file_paths = glob.glob(os.path.join(input_dir, '*.fastq*'))
     sample_names, extn = zip(*(
     (
@@ -120,7 +120,7 @@ onstart:
             os.unlink(os.path.join(dir["log"], logfile))
 onsuccess:
     """Print a success message"""
-    sys.stderr.write('\n\nSphaehost ran successfully!\n\n')
+    sys.stderr.write('\n\nBaczy ran successfully!\n\n')
 onerror:
     """Print an error message"""
-    sys.stderr.write('\n\nSphaehost run failed\n\n')
+    sys.stderr.write('\n\nBaczy run failed\n\n')

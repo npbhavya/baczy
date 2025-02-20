@@ -1,10 +1,10 @@
 # Namespaced config file example
-sphaehost:
+baczy:
     args: # Command line args will be (over)written here at runtime
         input:
         output:
         db_dir:
-        temp_dir:
+        temp_dir: "/tmp"
         sequencing:
 
         # Add customisable config here

@@ -15,7 +15,7 @@ rule bakta_short:
     threads: 16
     shell:
         """
-        bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --force
+        bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --skip-trna --skip-tmrna --force
         """
 
 rule bakta_long:
@@ -35,5 +35,5 @@ rule bakta_long:
     threads: 16
     shell:
         """
-        bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --force
+        bakta --output {params.bakta} --prefix {params.smp} --threads {threads} {input} --skip-trna --skip-tmrna --force 
         """
