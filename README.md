@@ -37,7 +37,16 @@
     [Miniconda Installation Guide](https://docs.anaconda.com/miniconda/install/)
 
 ### Steps for installing workflow 
-**Source Installation**
+
+**Setting up a conda environment**
+
+  ```bash
+  conda create -n baczy python=3.12
+  conda activate baczy
+  ```
+Using one of the methods below baczy can be downloaded within this environment
+
+**Option 1: Source Installation**
 
   ```bash
   #clone repository
@@ -52,7 +61,7 @@
   #confirm the workflow is installed by running the below command 
   baczy --help
   ```
-**Pip installation**
+**Option 2: Pip installation**
 Note: This installation doesnt include singualrity/docker, so that has to be downloaded separately.
 
   ```bash
@@ -69,13 +78,12 @@ Download and place the required databases to a directory:
   - [GTDBTK database](https://ecogenomics.github.io/GTDBTk/installing/index.html)
   - [Capsuledb](https://gitlab.pasteur.fr/gem/capsuledb/-/tree/master/CapsuleFinder_models?ref_type=heads)
 
-Define the path to datbase directory. Let's say the databases are saved to the directory `databases`
+Set the databases path to variable `$BACZY_DATABASE_PATH`
 
-  ```bash 
-  #Update the database path here
-  db_dir: "/scratch/user/nala0006/baczy/databases" 
-  ``` 
+  `export $BACZY_DATABASE_PATH=/home/user/database`
 
+  Update the path `/home/user/database` to the correct database directory path 
+  
 ## Running the workflow
 
 Run Baczy using a single command!

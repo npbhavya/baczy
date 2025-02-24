@@ -54,14 +54,13 @@ elif config['baczy']['args']['sequencing'] == 'longread':
 print(f"Samples are {sample_names}")
 print(f"Extensions are {extn}")
 
-try:
-    db_dir = config.get('baczy', {}).get('args', {}).get('db_dir', None)
-    if db_dir is None:
-        databaseDir = os.path.join(workflow.basedir, 'databases')
-    else:
+databaseDir = os.environ.get("BACZY_DATABASE_DIR")
+if not databaseDir:
+    try:
+        db_dir = config.get('baczy', {}).get('args', {}).get('db_dir', None)
         databaseDir = db_dir
-except KeyError:
-    databaseDir = os.path.join(workflow.basedir, 'databases')
+    except KeyError:
+        databaseDir = os.path.join(workflow.basedir, 'databases')
 
 print(f"Database found in {databaseDir}")
 
