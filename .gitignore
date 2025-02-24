@@ -4,6 +4,7 @@
 .macsyfinder
 sphaehost.out
 *.sif
+databases
 baczy/workflow/databases/
 baczy.egg-info/
 baczy/workflow/conda
