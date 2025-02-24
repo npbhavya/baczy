@@ -7,6 +7,8 @@
 
 [![install with pip](https://img.shields.io/static/v1?label=Install%20with&message=PIP&color=success)](https://pypi.org/project/baczy/)
 [![Pip Downloads](https://static.pepy.tech/badge/baczy)](https://www.pepy.tech/projects/baczy)
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/baczy/README.html)
+[![Bioconda Downloads](https://img.shields.io/conda/dn/bioconda/baczy)](https://img.shields.io/conda/dn/bioconda/baczy)
 
 # Baczy
 <p align="center">
@@ -71,6 +73,11 @@ Note: This installation doesnt include singualrity/docker, so that has to be dow
 
   pip install baczy
 
+  ```
+**Option 3:Conda installation**
+
+  ```bash
+  mamba install bioconda::baczy
   ```
 
 ## Database setup
