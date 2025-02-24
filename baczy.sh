@@ -13,5 +13,5 @@
 module load singularity
 export BACZY_DATABASE_DIR=/scratch/user/nala0006/baczy-databases
 #test datasets
-#baczy run --input sample-data/illumina --cores 1 --use-singularity --sdm apptainer --output test --use-conda --configfile baczy/config/config.yaml
+baczy run --input sample-data/illumina --cores 1 --use-singularity --sdm apptainer --output test --use-conda --configfile baczy/config/config.yaml
 baczy run --input sample-data/nanopore --sequencing longread --cores 32 -k --use-singularity --sdm apptainer --output test --use-conda
