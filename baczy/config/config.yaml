@@ -1,9 +1,12 @@
 # Namespaced config file example
+
+#Update the database path here
+db_dir: "/scratch/user/nala0006/baczy/databases"
+
 baczy:
     args: # Command line args will be (over)written here at runtime
         input:
         output:
-        db_dir:
         temp_dir: "/tmp"
         sequencing:
 

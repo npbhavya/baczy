@@ -125,11 +125,6 @@ def cli():
 
 help_msg_extra = """
 \b
-INSTALLING DATABASES REQUIRED
-This command downloads the databases to the directory 'database' 
-\b
-baczy install 
-\b
 CLUSTER EXECUTION:
 baczy run ... --profile [profile]
 For information on Snakemake profiles see:
@@ -184,6 +179,12 @@ def run(**kwargs):
 
 @click.command()
 @click.option('--configfile', default='config.yaml', help='Copy template config to file', show_default=True)
+@click.option(
+    '--system-config',
+    default=lambda: snake_base(os.path.join("config", "config.yaml")),
+    hidden=True,
+    help="System config file"
+)
 def config(configfile, system_config, **kwargs):
     """Copy the system default config file"""
     copy_config(configfile, system_config=system_config)
@@ -197,9 +198,7 @@ def citation(**kwargs):
 
 cli.add_command(run)
 cli.add_command(config)
-#cli.add_command(install)
 cli.add_command(citation)
-
 
 def main():
     cli()

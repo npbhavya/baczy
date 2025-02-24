@@ -27,7 +27,17 @@
 
 ## Installion
 
-Steps for installing workflow 
+### Prerequisites installation 
+- Install singularity or load the module
+    On deepthought cluster \
+    `module load apptainer`
+
+- Install miniconda
+    Download and install Miniconda:
+    [Miniconda Installation Guide](https://docs.anaconda.com/miniconda/install/)
+
+### Steps for installing workflow 
+**Source Installation**
 
   ```bash
   #clone repository
@@ -42,26 +52,31 @@ Steps for installing workflow
   #confirm the workflow is installed by running the below command 
   baczy --help
   ```
+**Pip installation**
+Note: This installation doesnt include singualrity/docker, so that has to be downloaded separately.
 
-### Manual installation 
-- Install singularity or load the module
-    On deepthought cluster \
-    `module load apptainer`
+  ```bash
 
-- Install miniconda
-    Download and install Miniconda:
-    [Miniconda Installation Guide](https://docs.anaconda.com/miniconda/install/)
+  pip install baczy
+
+  ```
 
 ## Database setup
 
-Download and place the required databases in:
-  `baczy/workflow/databases`
+Download and place the required databases to a directory:
 
   - [CheckM2_database](https://github.com/chklovski/CheckM2?tab=readme-ov-file#database)
   - [GTDBTK database](https://ecogenomics.github.io/GTDBTk/installing/index.html)
   - [Capsuledb](https://gitlab.pasteur.fr/gem/capsuledb/-/tree/master/CapsuleFinder_models?ref_type=heads)
 
-### Running the workflow
+Define the path to datbase directory. Let's say the databases are saved to the directory `databases`
+
+  ```bash 
+  #Update the database path here
+  db_dir: "/scratch/user/nala0006/baczy/databases" 
+  ``` 
+
+## Running the workflow
 
 Run Baczy using a single command!
 

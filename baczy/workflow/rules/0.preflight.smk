@@ -55,13 +55,15 @@ print(f"Samples are {sample_names}")
 print(f"Extensions are {extn}")
 
 try:
-    if config['db_dir'] is None:
+    db_dir = config.get('baczy', {}).get('args', {}).get('db_dir', None)
+    if db_dir is None:
         databaseDir = os.path.join(workflow.basedir, 'databases')
     else:
-        databaseDir = config['db_dir']
+        databaseDir = db_dir
 except KeyError:
     databaseDir = os.path.join(workflow.basedir, 'databases')
 
+print(f"Database found in {databaseDir}")
 
 if len(sample_names) == 0:
 	sys.stderr.write(f"We did not find any fastq files in {sample_names}. Is this the right read dir?\n")
@@ -76,8 +78,6 @@ if len(unique_strings)>2:
 FQEXTN = extn[0]
 PATTERN_R1 = '{sample}_R1' + FQEXTN
 PATTERN_R2 = '{sample}_R2' + FQEXTN
-
-
 
 # Set default database directory
 default_db_dir = os.path.join(workflow.basedir, 'databases')
