@@ -5,6 +5,9 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/npbhavya/baczy)
 [![CI](https://github.com/npbhavya/baczy/actions/workflows/testing.yml/badge.svg)](https://github.com/npbhavya/baczy/actions/workflows/testing.yml)
 
+[![install with pip](https://img.shields.io/static/v1?label=Install%20with&message=PIP&color=success)](https://pypi.org/project/baczy/)
+[![Pip Downloads](https://static.pepy.tech/badge/baczy)](https://www.pepy.tech/projects/baczy)
+
 # Baczy
 <p align="center">
   <img src="baczy.png#gh-light-mode-only" width="300">
