@@ -75,7 +75,8 @@ Note: This installation doesnt include singualrity/docker, so that has to be dow
 
   ```
 **Option 3:Conda installation**
-
+  Note: This is currently not working - fixing this with the next version. Until then, use `pip install`
+  
   ```bash
   mamba install bioconda::baczy
   ```
